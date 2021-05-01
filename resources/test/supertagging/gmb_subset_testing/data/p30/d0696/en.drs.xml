@@ -1,0 +1,4121 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE xdrs-output SYSTEM "src/data/boxer/xdrs.dtd">
+<xdrs-output version="boxer v2534M (unix build on 1 juli 2014, 15:15:10)">
+<!-- SEEING a ship sailing by upon the sea of politics , an Ambitious Person started in hot pursuit along the strand ; but the people 's eyes being fixed upon the Presidency no one observed the pursuer . This greatly annoyed him , and recollecting that he was not aquatic , he stopped and shouted across the waves ' tumultous roar : " Take my name off the passenger list . " Back to him over the waters , hollow and heartless , like laughter in a tomb , rang the voice of the Skipper : " 'T ai n't on ! " And there , in the focus of a million pairs of convergent eyes , the Ambitious Person sat him down between the sun and moon and murmured sadly to his own soul : " Marooned , by thunder ! " --> 
+
+<xdrs xml:id="1">
+ <taggedtokens>
+  <tagtoken xml:id="i1001">
+   <tags>
+     <tag type="tok">SEEING</tag>
+     <tag type="pos">VBG</tag>
+     <tag type="numex">O</tag>
+     <tag type="animacy">O</tag>
+     <tag type="timex">O</tag>
+     <tag type="lemma">see</tag>
+     <tag type="to">8</tag>
+     <tag type="senseid">see.v.01</tag>
+     <tag type="sense">1</tag>
+     <tag type="from">2</tag>
+     <tag type="namex">O</tag>
+   </tags>
+  </tagtoken>
+  <tagtoken xml:id="i1002">
+   <tags>
+     <tag type="tok">a</tag>
+     <tag type="pos">DT</tag>
+     <tag type="numex">O</tag>
+     <tag type="animacy">O</tag>
+     <tag type="timex">O</tag>
+     <tag type="lemma">a</tag>
+     <tag type="to">10</tag>
+     <tag type="sense">0</tag>
+     <tag type="from">9</tag>
+     <tag type="namex">O</tag>
+   </tags>
+  </tagtoken>
+  <tagtoken xml:id="i1003">
+   <tags>
+     <tag type="tok">ship</tag>
+     <tag type="pos">NN</tag>
+     <tag type="numex">O</tag>
+     <tag type="animacy">Non-concrete</tag>
+     <tag type="timex">O</tag>
+     <tag type="lemma">ship</tag>
+     <tag type="to">15</tag>
+     <tag type="senseid">ship.n.01</tag>
+     <tag type="sense">1</tag>
+     <tag type="from">11</tag>
+     <tag type="namex">O</tag>
+   </tags>
+  </tagtoken>
+  <tagtoken xml:id="i1004">
+   <tags>
+     <tag type="tok">sailing</tag>
+     <tag type="pos">NN</tag>
+     <tag type="numex">O</tag>
+     <tag type="animacy">Non-concrete</tag>
+     <tag type="timex">O</tag>
+     <tag type="lemma">sailing</tag>
+     <tag type="to">23</tag>
+     <tag type="senseid">seafaring.n.01</tag>
+     <tag type="sense">1</tag>
+     <tag type="from">16</tag>
+     <tag type="namex">O</tag>
+   </tags>
+  </tagtoken>
+  <tagtoken xml:id="i1005">
+   <tags>
+     <tag type="tok">by</tag>
+     <tag type="pos">IN</tag>
+     <tag type="numex">O</tag>
+     <tag type="animacy">O</tag>
+     <tag type="timex">O</tag>
+     <tag type="lemma">by</tag>
+     <tag type="to">26</tag>
+     <tag type="sense">0</tag>
+     <tag type="from">24</tag>
+     <tag type="namex">O</tag>
+   </tags>
+  </tagtoken>
+  <tagtoken xml:id="i1006">
+   <tags>
+     <tag type="tok">upon</tag>
+     <tag type="pos">IN</tag>
+     <tag type="numex">O</tag>
+     <tag type="animacy">O</tag>
+     <tag type="timex">O</tag>
+     <tag type="lemma">upon</tag>
+     <tag type="to">31</tag>
+     <tag type="sense">0</tag>
+     <tag type="from">27</tag>
+     <tag type="namex">O</tag>
+   </tags>
+  </tagtoken>
+  <tagtoken xml:id="i1007">
+   <tags>
+     <tag type="tok">the</tag>
+     <tag type="pos">DT</tag>
+     <tag type="numex">O</tag>
+     <tag type="animacy">O</tag>
+     <tag type="timex">O</tag>
+     <tag type="lemma">the</tag>
+     <tag type="to">35</tag>
+     <tag type="sense">0</tag>
+     <tag type="from">32</tag>
+     <tag type="namex">O</tag>
+   </tags>
+  </tagtoken>
+  <tagtoken xml:id="i1008">
+   <tags>
+     <tag type="tok">sea</tag>
+     <tag type="pos">NN</tag>
+     <tag type="numex">O</tag>
+     <tag type="animacy">Non-concrete</tag>
+     <tag type="timex">O</tag>
+     <tag type="lemma">sea</tag>
+     <tag type="to">39</tag>
+     <tag type="senseid">sea.n.01</tag>
+     <tag type="sense">1</tag>
+     <tag type="from">36</tag>
+     <tag type="namex">O</tag>
+   </tags>
+  </tagtoken>
+  <tagtoken xml:id="i1009">
+   <tags>
+     <tag type="tok">of</tag>
+     <tag type="pos">IN</tag>
+     <tag type="numex">O</tag>
+     <tag type="animacy">O</tag>
+     <tag type="timex">O</tag>
+     <tag type="lemma">of</tag>
+     <tag type="to">42</tag>
+     <tag type="sense">0</tag>
+     <tag type="from">40</tag>
+     <tag type="namex">O</tag>
+   </tags>
+  </tagtoken>
+  <tagtoken xml:id="i1010">
+   <tags>
+     <tag type="tok">politics</tag>
+     <tag type="pos">NNS</tag>
+     <tag type="numex">O</tag>
+     <tag type="animacy">Non-concrete</tag>
+     <tag type="timex">O</tag>
+     <tag type="lemma">politics</tag>
+     <tag type="to">51</tag>
+     <tag type="senseid">politics.n.01</tag>
+     <tag type="sense">1</tag>
+     <tag type="from">43</tag>
+     <tag type="namex">O</tag>
+   </tags>
+  </tagtoken>
+  <tagtoken xml:id="i1011">
+   <tags>
+     <tag type="tok">,</tag>
+     <tag type="pos">,</tag>
+     <tag type="numex">O</tag>
+     <tag type="animacy">O</tag>
+     <tag type="timex">O</tag>
+     <tag type="lemma">,</tag>
+     <tag type="to">52</tag>
+     <tag type="sense">0</tag>
+     <tag type="from">51</tag>
+     <tag type="namex">O</tag>
+   </tags>
+  </tagtoken>
+  <tagtoken xml:id="i1012">
+   <tags>
+     <tag type="tok">an</tag>
+     <tag type="pos">DT</tag>
+     <tag type="numex">O</tag>
+     <tag type="animacy">O</tag>
+     <tag type="timex">O</tag>
+     <tag type="lemma">an</tag>
+     <tag type="to">55</tag>
+     <tag type="sense">0</tag>
+     <tag type="from">53</tag>
+     <tag type="namex">O</tag>
+   </tags>
+  </tagtoken>
+  <tagtoken xml:id="i1013">
+   <tags>
+     <tag type="tok">Ambitious</tag>
+     <tag type="pos">JJ</tag>
+     <tag type="numex">O</tag>
+     <tag type="animacy">O</tag>
+     <tag type="timex">O</tag>
+     <tag type="lemma">ambitious</tag>
+     <tag type="to">65</tag>
+     <tag type="senseid">ambitious.a.01</tag>
+     <tag type="sense">1</tag>
+     <tag type="from">56</tag>
+     <tag type="namex">O</tag>
+   </tags>
+  </tagtoken>
+  <tagtoken xml:id="i1014">
+   <tags>
+     <tag type="tok">Person</tag>
+     <tag type="pos">NN</tag>
+     <tag type="numex">O</tag>
+     <tag type="animacy">Non-concrete</tag>
+     <tag type="timex">O</tag>
+     <tag type="lemma">person</tag>
+     <tag type="to">73</tag>
+     <tag type="senseid">person.n.01</tag>
+     <tag type="sense">1</tag>
+     <tag type="from">67</tag>
+     <tag type="namex">O</tag>
+   </tags>
+  </tagtoken>
+  <tagtoken xml:id="i1015">
+   <tags>
+     <tag type="tok">started</tag>
+     <tag type="pos">VBD</tag>
+     <tag type="numex">O</tag>
+     <tag type="animacy">O</tag>
+     <tag type="timex">O</tag>
+     <tag type="lemma">start</tag>
+     <tag type="to">81</tag>
+     <tag type="senseid">get_down.v.07</tag>
+     <tag type="sense">1</tag>
+     <tag type="from">74</tag>
+     <tag type="namex">O</tag>
+   </tags>
+  </tagtoken>
+  <tagtoken xml:id="i1016">
+   <tags>
+     <tag type="tok">in</tag>
+     <tag type="pos">IN</tag>
+     <tag type="numex">O</tag>
+     <tag type="animacy">O</tag>
+     <tag type="timex">O</tag>
+     <tag type="lemma">in</tag>
+     <tag type="to">84</tag>
+     <tag type="sense">0</tag>
+     <tag type="from">82</tag>
+     <tag type="namex">O</tag>
+   </tags>
+  </tagtoken>
+  <tagtoken xml:id="i1017">
+   <tags>
+     <tag type="tok">hot</tag>
+     <tag type="pos">JJ</tag>
+     <tag type="numex">O</tag>
+     <tag type="animacy">O</tag>
+     <tag type="timex">O</tag>
+     <tag type="lemma">hot</tag>
+     <tag type="to">88</tag>
+     <tag type="senseid">hot.a.01</tag>
+     <tag type="sense">1</tag>
+     <tag type="from">85</tag>
+     <tag type="namex">O</tag>
+   </tags>
+  </tagtoken>
+  <tagtoken xml:id="i1018">
+   <tags>
+     <tag type="tok">pursuit</tag>
+     <tag type="pos">NN</tag>
+     <tag type="numex">O</tag>
+     <tag type="animacy">Non-concrete</tag>
+     <tag type="timex">O</tag>
+     <tag type="lemma">pursuit</tag>
+     <tag type="to">96</tag>
+     <tag type="senseid">pursuit.n.01</tag>
+     <tag type="sense">1</tag>
+     <tag type="from">89</tag>
+     <tag type="namex">O</tag>
+   </tags>
+  </tagtoken>
+  <tagtoken xml:id="i1019">
+   <tags>
+     <tag type="tok">along</tag>
+     <tag type="pos">IN</tag>
+     <tag type="numex">O</tag>
+     <tag type="animacy">O</tag>
+     <tag type="timex">O</tag>
+     <tag type="lemma">along</tag>
+     <tag type="to">102</tag>
+     <tag type="sense">0</tag>
+     <tag type="from">97</tag>
+     <tag type="namex">O</tag>
+   </tags>
+  </tagtoken>
+  <tagtoken xml:id="i1020">
+   <tags>
+     <tag type="tok">the</tag>
+     <tag type="pos">DT</tag>
+     <tag type="numex">O</tag>
+     <tag type="animacy">O</tag>
+     <tag type="timex">O</tag>
+     <tag type="lemma">the</tag>
+     <tag type="to">106</tag>
+     <tag type="sense">0</tag>
+     <tag type="from">103</tag>
+     <tag type="namex">O</tag>
+   </tags>
+  </tagtoken>
+  <tagtoken xml:id="i1021">
+   <tags>
+     <tag type="tok">strand</tag>
+     <tag type="pos">NN</tag>
+     <tag type="numex">O</tag>
+     <tag type="animacy">Non-concrete</tag>
+     <tag type="timex">O</tag>
+     <tag type="lemma">strand</tag>
+     <tag type="to">113</tag>
+     <tag type="senseid">strand.n.01</tag>
+     <tag type="sense">1</tag>
+     <tag type="from">107</tag>
+     <tag type="namex">O</tag>
+   </tags>
+  </tagtoken>
+  <tagtoken xml:id="i1022">
+   <tags>
+     <tag type="tok">;</tag>
+     <tag type="pos">;</tag>
+     <tag type="numex">O</tag>
+     <tag type="animacy">O</tag>
+     <tag type="timex">O</tag>
+     <tag type="lemma">;</tag>
+     <tag type="to">114</tag>
+     <tag type="sense">0</tag>
+     <tag type="from">113</tag>
+     <tag type="namex">O</tag>
+   </tags>
+  </tagtoken>
+  <tagtoken xml:id="i1023">
+   <tags>
+     <tag type="tok">but</tag>
+     <tag type="pos">CC</tag>
+     <tag type="numex">O</tag>
+     <tag type="animacy">O</tag>
+     <tag type="timex">O</tag>
+     <tag type="lemma">but</tag>
+     <tag type="to">118</tag>
+     <tag type="sense">0</tag>
+     <tag type="from">115</tag>
+     <tag type="namex">O</tag>
+   </tags>
+  </tagtoken>
+  <tagtoken xml:id="i1024">
+   <tags>
+     <tag type="tok">the</tag>
+     <tag type="pos">DT</tag>
+     <tag type="numex">O</tag>
+     <tag type="animacy">O</tag>
+     <tag type="timex">O</tag>
+     <tag type="lemma">the</tag>
+     <tag type="to">122</tag>
+     <tag type="sense">0</tag>
+     <tag type="from">119</tag>
+     <tag type="namex">O</tag>
+   </tags>
+  </tagtoken>
+  <tagtoken xml:id="i1025">
+   <tags>
+     <tag type="tok">people</tag>
+     <tag type="pos">NNS</tag>
+     <tag type="numex">O</tag>
+     <tag type="animacy">Human</tag>
+     <tag type="timex">O</tag>
+     <tag type="lemma">people</tag>
+     <tag type="to">129</tag>
+     <tag type="senseid">people.n.01</tag>
+     <tag type="sense">1</tag>
+     <tag type="from">123</tag>
+     <tag type="namex">O</tag>
+   </tags>
+  </tagtoken>
+  <tagtoken xml:id="i1026">
+   <tags>
+     <tag type="tok">'s</tag>
+     <tag type="pos">POS</tag>
+     <tag type="numex">O</tag>
+     <tag type="animacy">O</tag>
+     <tag type="timex">O</tag>
+     <tag type="lemma">'s</tag>
+     <tag type="to">131</tag>
+     <tag type="sense">0</tag>
+     <tag type="from">129</tag>
+     <tag type="namex">O</tag>
+   </tags>
+  </tagtoken>
+  <tagtoken xml:id="i1027">
+   <tags>
+     <tag type="tok">eyes</tag>
+     <tag type="pos">NNS</tag>
+     <tag type="numex">O</tag>
+     <tag type="animacy">Non-concrete</tag>
+     <tag type="timex">O</tag>
+     <tag type="lemma">eye</tag>
+     <tag type="to">137</tag>
+     <tag type="senseid">eye.n.01</tag>
+     <tag type="sense">1</tag>
+     <tag type="from">133</tag>
+     <tag type="namex">O</tag>
+   </tags>
+  </tagtoken>
+  <tagtoken xml:id="i1028">
+   <tags>
+     <tag type="tok">being</tag>
+     <tag type="pos">VBG</tag>
+     <tag type="numex">O</tag>
+     <tag type="animacy">O</tag>
+     <tag type="timex">O</tag>
+     <tag type="lemma">be</tag>
+     <tag type="to">143</tag>
+     <tag type="sense">0</tag>
+     <tag type="from">138</tag>
+     <tag type="namex">O</tag>
+   </tags>
+  </tagtoken>
+  <tagtoken xml:id="i1029">
+   <tags>
+     <tag type="tok">fixed</tag>
+     <tag type="pos">VBN</tag>
+     <tag type="numex">O</tag>
+     <tag type="animacy">O</tag>
+     <tag type="timex">O</tag>
+     <tag type="lemma">fix</tag>
+     <tag type="to">149</tag>
+     <tag type="senseid">repair.v.01</tag>
+     <tag type="sense">1</tag>
+     <tag type="from">144</tag>
+     <tag type="namex">O</tag>
+   </tags>
+  </tagtoken>
+  <tagtoken xml:id="i1030">
+   <tags>
+     <tag type="tok">upon</tag>
+     <tag type="pos">IN</tag>
+     <tag type="numex">O</tag>
+     <tag type="animacy">O</tag>
+     <tag type="timex">O</tag>
+     <tag type="lemma">upon</tag>
+     <tag type="to">154</tag>
+     <tag type="sense">0</tag>
+     <tag type="from">150</tag>
+     <tag type="namex">O</tag>
+   </tags>
+  </tagtoken>
+  <tagtoken xml:id="i1031">
+   <tags>
+     <tag type="tok">the</tag>
+     <tag type="pos">DT</tag>
+     <tag type="numex">O</tag>
+     <tag type="animacy">O</tag>
+     <tag type="timex">O</tag>
+     <tag type="lemma">the</tag>
+     <tag type="to">158</tag>
+     <tag type="sense">0</tag>
+     <tag type="from">155</tag>
+     <tag type="namex">O</tag>
+   </tags>
+  </tagtoken>
+  <tagtoken xml:id="i1032">
+   <tags>
+     <tag type="tok">Presidency</tag>
+     <tag type="pos">NN</tag>
+     <tag type="numex">O</tag>
+     <tag type="animacy">Non-concrete</tag>
+     <tag type="timex">O</tag>
+     <tag type="lemma">presidency</tag>
+     <tag type="to">169</tag>
+     <tag type="senseid">presidency.n.01</tag>
+     <tag type="sense">1</tag>
+     <tag type="from">159</tag>
+     <tag type="namex">O</tag>
+   </tags>
+  </tagtoken>
+  <tagtoken xml:id="i1033">
+   <tags>
+     <tag type="tok">no</tag>
+     <tag type="pos">DT</tag>
+     <tag type="numex">O</tag>
+     <tag type="animacy">O</tag>
+     <tag type="timex">O</tag>
+     <tag type="lemma">no</tag>
+     <tag type="to">172</tag>
+     <tag type="sense">0</tag>
+     <tag type="from">170</tag>
+     <tag type="namex">O</tag>
+   </tags>
+  </tagtoken>
+  <tagtoken xml:id="i1034">
+   <tags>
+     <tag type="tok">one</tag>
+     <tag type="pos">NN</tag>
+     <tag type="numex">O</tag>
+     <tag type="animacy">Human</tag>
+     <tag type="timex">O</tag>
+     <tag type="lemma">one</tag>
+     <tag type="to">176</tag>
+     <tag type="senseid">one.n.01</tag>
+     <tag type="sense">1</tag>
+     <tag type="from">173</tag>
+     <tag type="namex">O</tag>
+   </tags>
+  </tagtoken>
+  <tagtoken xml:id="i1035">
+   <tags>
+     <tag type="tok">observed</tag>
+     <tag type="pos">VBD</tag>
+     <tag type="numex">O</tag>
+     <tag type="animacy">O</tag>
+     <tag type="timex">O</tag>
+     <tag type="lemma">observe</tag>
+     <tag type="to">185</tag>
+     <tag type="senseid">detect.v.01</tag>
+     <tag type="sense">1</tag>
+     <tag type="from">177</tag>
+     <tag type="namex">O</tag>
+   </tags>
+  </tagtoken>
+  <tagtoken xml:id="i1036">
+   <tags>
+     <tag type="tok">the</tag>
+     <tag type="pos">DT</tag>
+     <tag type="numex">O</tag>
+     <tag type="animacy">O</tag>
+     <tag type="timex">O</tag>
+     <tag type="lemma">the</tag>
+     <tag type="to">189</tag>
+     <tag type="sense">0</tag>
+     <tag type="from">186</tag>
+     <tag type="namex">O</tag>
+   </tags>
+  </tagtoken>
+  <tagtoken xml:id="i1037">
+   <tags>
+     <tag type="tok">pursuer</tag>
+     <tag type="pos">NN</tag>
+     <tag type="numex">O</tag>
+     <tag type="animacy">Non-concrete</tag>
+     <tag type="timex">O</tag>
+     <tag type="lemma">pursuer</tag>
+     <tag type="to">197</tag>
+     <tag type="senseid">pursuer.n.01</tag>
+     <tag type="sense">1</tag>
+     <tag type="from">190</tag>
+     <tag type="namex">O</tag>
+   </tags>
+  </tagtoken>
+  <tagtoken xml:id="i1038">
+   <tags>
+     <tag type="tok">.</tag>
+     <tag type="pos">.</tag>
+     <tag type="numex">O</tag>
+     <tag type="animacy">O</tag>
+     <tag type="timex">O</tag>
+     <tag type="lemma">.</tag>
+     <tag type="to">198</tag>
+     <tag type="sense">0</tag>
+     <tag type="from">197</tag>
+     <tag type="namex">O</tag>
+   </tags>
+  </tagtoken>
+  <tagtoken xml:id="i2001">
+   <tags>
+     <tag type="tok">This</tag>
+     <tag type="pos">DT</tag>
+     <tag type="numex">O</tag>
+     <tag type="animacy">O</tag>
+     <tag type="timex">O</tag>
+     <tag type="lemma">this</tag>
+     <tag type="to">205</tag>
+     <tag type="sense">0</tag>
+     <tag type="from">201</tag>
+     <tag type="namex">O</tag>
+   </tags>
+  </tagtoken>
+  <tagtoken xml:id="i2002">
+   <tags>
+     <tag type="tok">greatly</tag>
+     <tag type="pos">RB</tag>
+     <tag type="numex">O</tag>
+     <tag type="animacy">O</tag>
+     <tag type="timex">O</tag>
+     <tag type="lemma">greatly</tag>
+     <tag type="to">213</tag>
+     <tag type="senseid">greatly.r.01</tag>
+     <tag type="sense">1</tag>
+     <tag type="from">206</tag>
+     <tag type="namex">O</tag>
+   </tags>
+  </tagtoken>
+  <tagtoken xml:id="i2003">
+   <tags>
+     <tag type="tok">annoyed</tag>
+     <tag type="pos">VBD</tag>
+     <tag type="numex">O</tag>
+     <tag type="animacy">O</tag>
+     <tag type="timex">O</tag>
+     <tag type="lemma">annoy</tag>
+     <tag type="to">221</tag>
+     <tag type="senseid">annoy.v.01</tag>
+     <tag type="sense">1</tag>
+     <tag type="from">214</tag>
+     <tag type="namex">O</tag>
+   </tags>
+  </tagtoken>
+  <tagtoken xml:id="i2004">
+   <tags>
+     <tag type="tok">him</tag>
+     <tag type="pos">PRP</tag>
+     <tag type="numex">O</tag>
+     <tag type="animacy">Human</tag>
+     <tag type="timex">O</tag>
+     <tag type="lemma">him</tag>
+     <tag type="to">225</tag>
+     <tag type="sense">0</tag>
+     <tag type="from">222</tag>
+     <tag type="namex">O</tag>
+   </tags>
+  </tagtoken>
+  <tagtoken xml:id="i2005">
+   <tags>
+     <tag type="tok">,</tag>
+     <tag type="pos">,</tag>
+     <tag type="numex">O</tag>
+     <tag type="animacy">O</tag>
+     <tag type="timex">O</tag>
+     <tag type="lemma">,</tag>
+     <tag type="to">226</tag>
+     <tag type="sense">0</tag>
+     <tag type="from">225</tag>
+     <tag type="namex">O</tag>
+   </tags>
+  </tagtoken>
+  <tagtoken xml:id="i2006">
+   <tags>
+     <tag type="tok">and</tag>
+     <tag type="pos">CC</tag>
+     <tag type="numex">O</tag>
+     <tag type="animacy">O</tag>
+     <tag type="timex">O</tag>
+     <tag type="lemma">and</tag>
+     <tag type="to">230</tag>
+     <tag type="sense">0</tag>
+     <tag type="from">227</tag>
+     <tag type="namex">O</tag>
+   </tags>
+  </tagtoken>
+  <tagtoken xml:id="i2007">
+   <tags>
+     <tag type="tok">recollecting</tag>
+     <tag type="pos">VBG</tag>
+     <tag type="numex">O</tag>
+     <tag type="animacy">O</tag>
+     <tag type="timex">O</tag>
+     <tag type="lemma">recollect</tag>
+     <tag type="to">243</tag>
+     <tag type="senseid">remember.v.01</tag>
+     <tag type="sense">1</tag>
+     <tag type="from">231</tag>
+     <tag type="namex">O</tag>
+   </tags>
+  </tagtoken>
+  <tagtoken xml:id="i2008">
+   <tags>
+     <tag type="tok">that</tag>
+     <tag type="pos">IN</tag>
+     <tag type="numex">O</tag>
+     <tag type="animacy">O</tag>
+     <tag type="timex">O</tag>
+     <tag type="lemma">that</tag>
+     <tag type="to">248</tag>
+     <tag type="sense">0</tag>
+     <tag type="from">244</tag>
+     <tag type="namex">O</tag>
+   </tags>
+  </tagtoken>
+  <tagtoken xml:id="i2009">
+   <tags>
+     <tag type="tok">he</tag>
+     <tag type="pos">PRP</tag>
+     <tag type="numex">O</tag>
+     <tag type="animacy">Human</tag>
+     <tag type="timex">O</tag>
+     <tag type="lemma">he</tag>
+     <tag type="to">251</tag>
+     <tag type="sense">0</tag>
+     <tag type="from">249</tag>
+     <tag type="namex">O</tag>
+   </tags>
+  </tagtoken>
+  <tagtoken xml:id="i2010">
+   <tags>
+     <tag type="tok">was</tag>
+     <tag type="pos">VBD</tag>
+     <tag type="numex">O</tag>
+     <tag type="animacy">O</tag>
+     <tag type="timex">O</tag>
+     <tag type="lemma">be</tag>
+     <tag type="to">255</tag>
+     <tag type="sense">0</tag>
+     <tag type="from">252</tag>
+     <tag type="namex">O</tag>
+   </tags>
+  </tagtoken>
+  <tagtoken xml:id="i2011">
+   <tags>
+     <tag type="tok">not</tag>
+     <tag type="pos">RB</tag>
+     <tag type="numex">O</tag>
+     <tag type="animacy">O</tag>
+     <tag type="timex">O</tag>
+     <tag type="lemma">not</tag>
+     <tag type="to">259</tag>
+     <tag type="senseid">not.r.01</tag>
+     <tag type="sense">1</tag>
+     <tag type="from">256</tag>
+     <tag type="namex">O</tag>
+   </tags>
+  </tagtoken>
+  <tagtoken xml:id="i2012">
+   <tags>
+     <tag type="tok">aquatic</tag>
+     <tag type="pos">JJ</tag>
+     <tag type="numex">O</tag>
+     <tag type="animacy">O</tag>
+     <tag type="timex">O</tag>
+     <tag type="lemma">aquatic</tag>
+     <tag type="to">267</tag>
+     <tag type="senseid">aquatic.a.01</tag>
+     <tag type="sense">1</tag>
+     <tag type="from">260</tag>
+     <tag type="namex">O</tag>
+   </tags>
+  </tagtoken>
+  <tagtoken xml:id="i2013">
+   <tags>
+     <tag type="tok">,</tag>
+     <tag type="pos">,</tag>
+     <tag type="numex">O</tag>
+     <tag type="animacy">O</tag>
+     <tag type="timex">O</tag>
+     <tag type="lemma">,</tag>
+     <tag type="to">268</tag>
+     <tag type="sense">0</tag>
+     <tag type="from">267</tag>
+     <tag type="namex">O</tag>
+   </tags>
+  </tagtoken>
+  <tagtoken xml:id="i2014">
+   <tags>
+     <tag type="tok">he</tag>
+     <tag type="pos">PRP</tag>
+     <tag type="numex">O</tag>
+     <tag type="animacy">Human</tag>
+     <tag type="timex">O</tag>
+     <tag type="lemma">he</tag>
+     <tag type="to">272</tag>
+     <tag type="sense">0</tag>
+     <tag type="from">270</tag>
+     <tag type="namex">O</tag>
+   </tags>
+  </tagtoken>
+  <tagtoken xml:id="i2015">
+   <tags>
+     <tag type="tok">stopped</tag>
+     <tag type="pos">VBD</tag>
+     <tag type="numex">O</tag>
+     <tag type="animacy">O</tag>
+     <tag type="timex">O</tag>
+     <tag type="lemma">stop</tag>
+     <tag type="to">280</tag>
+     <tag type="senseid">stop.v.01</tag>
+     <tag type="sense">1</tag>
+     <tag type="from">273</tag>
+     <tag type="namex">O</tag>
+   </tags>
+  </tagtoken>
+  <tagtoken xml:id="i2016">
+   <tags>
+     <tag type="tok">and</tag>
+     <tag type="pos">CC</tag>
+     <tag type="numex">O</tag>
+     <tag type="animacy">O</tag>
+     <tag type="timex">O</tag>
+     <tag type="lemma">and</tag>
+     <tag type="to">284</tag>
+     <tag type="sense">0</tag>
+     <tag type="from">281</tag>
+     <tag type="namex">O</tag>
+   </tags>
+  </tagtoken>
+  <tagtoken xml:id="i2017">
+   <tags>
+     <tag type="tok">shouted</tag>
+     <tag type="pos">VBD</tag>
+     <tag type="numex">O</tag>
+     <tag type="animacy">O</tag>
+     <tag type="timex">O</tag>
+     <tag type="lemma">shout</tag>
+     <tag type="to">292</tag>
+     <tag type="senseid">shout.v.01</tag>
+     <tag type="sense">1</tag>
+     <tag type="from">285</tag>
+     <tag type="namex">O</tag>
+   </tags>
+  </tagtoken>
+  <tagtoken xml:id="i2018">
+   <tags>
+     <tag type="tok">across</tag>
+     <tag type="pos">IN</tag>
+     <tag type="numex">O</tag>
+     <tag type="animacy">O</tag>
+     <tag type="timex">O</tag>
+     <tag type="lemma">across</tag>
+     <tag type="to">299</tag>
+     <tag type="sense">0</tag>
+     <tag type="from">293</tag>
+     <tag type="namex">O</tag>
+   </tags>
+  </tagtoken>
+  <tagtoken xml:id="i2019">
+   <tags>
+     <tag type="tok">the</tag>
+     <tag type="pos">DT</tag>
+     <tag type="numex">O</tag>
+     <tag type="animacy">O</tag>
+     <tag type="timex">O</tag>
+     <tag type="lemma">the</tag>
+     <tag type="to">303</tag>
+     <tag type="sense">0</tag>
+     <tag type="from">300</tag>
+     <tag type="namex">O</tag>
+   </tags>
+  </tagtoken>
+  <tagtoken xml:id="i2020">
+   <tags>
+     <tag type="tok">waves</tag>
+     <tag type="pos">NNS</tag>
+     <tag type="numex">O</tag>
+     <tag type="animacy">Human</tag>
+     <tag type="timex">O</tag>
+     <tag type="lemma">wave</tag>
+     <tag type="to">309</tag>
+     <tag type="senseid">wave.n.01</tag>
+     <tag type="sense">1</tag>
+     <tag type="from">304</tag>
+     <tag type="namex">O</tag>
+   </tags>
+  </tagtoken>
+  <tagtoken xml:id="i2021">
+   <tags>
+     <tag type="tok">'</tag>
+     <tag type="pos">POS</tag>
+     <tag type="numex">O</tag>
+     <tag type="animacy">O</tag>
+     <tag type="timex">O</tag>
+     <tag type="lemma">'</tag>
+     <tag type="to">310</tag>
+     <tag type="sense">0</tag>
+     <tag type="from">309</tag>
+     <tag type="namex">O</tag>
+   </tags>
+  </tagtoken>
+  <tagtoken xml:id="i2022">
+   <tags>
+     <tag type="tok">tumultous</tag>
+     <tag type="pos">JJ</tag>
+     <tag type="numex">O</tag>
+     <tag type="animacy">O</tag>
+     <tag type="timex">O</tag>
+     <tag type="lemma">tumultous</tag>
+     <tag type="to">320</tag>
+     <tag type="sense">0</tag>
+     <tag type="from">311</tag>
+     <tag type="namex">O</tag>
+   </tags>
+  </tagtoken>
+  <tagtoken xml:id="i2023">
+   <tags>
+     <tag type="tok">roar</tag>
+     <tag type="pos">NN</tag>
+     <tag type="numex">O</tag>
+     <tag type="animacy">Non-concrete</tag>
+     <tag type="timex">O</tag>
+     <tag type="lemma">roar</tag>
+     <tag type="to">325</tag>
+     <tag type="senseid">boom.n.01</tag>
+     <tag type="sense">1</tag>
+     <tag type="from">321</tag>
+     <tag type="namex">O</tag>
+   </tags>
+  </tagtoken>
+  <tagtoken xml:id="i2024">
+   <tags>
+     <tag type="tok">:</tag>
+     <tag type="pos">:</tag>
+     <tag type="numex">O</tag>
+     <tag type="animacy">O</tag>
+     <tag type="timex">O</tag>
+     <tag type="lemma">:</tag>
+     <tag type="to">326</tag>
+     <tag type="sense">0</tag>
+     <tag type="from">325</tag>
+     <tag type="namex">O</tag>
+   </tags>
+  </tagtoken>
+  <tagtoken xml:id="i3001">
+   <tags>
+     <tag type="tok">&quot;</tag>
+     <tag type="pos">LQU</tag>
+     <tag type="numex">O</tag>
+     <tag type="animacy">O</tag>
+     <tag type="timex">O</tag>
+     <tag type="lemma">&quot;</tag>
+     <tag type="to">331</tag>
+     <tag type="sense">0</tag>
+     <tag type="from">330</tag>
+     <tag type="namex">O</tag>
+   </tags>
+  </tagtoken>
+  <tagtoken xml:id="i3002">
+   <tags>
+     <tag type="tok">Take</tag>
+     <tag type="pos">VB</tag>
+     <tag type="numex">O</tag>
+     <tag type="animacy">O</tag>
+     <tag type="timex">O</tag>
+     <tag type="lemma">take</tag>
+     <tag type="to">335</tag>
+     <tag type="senseid">take.v.01</tag>
+     <tag type="sense">1</tag>
+     <tag type="from">331</tag>
+     <tag type="namex">O</tag>
+   </tags>
+  </tagtoken>
+  <tagtoken xml:id="i3003">
+   <tags>
+     <tag type="tok">my</tag>
+     <tag type="pos">PRP$</tag>
+     <tag type="numex">O</tag>
+     <tag type="animacy">Non-concrete</tag>
+     <tag type="timex">O</tag>
+     <tag type="lemma">my</tag>
+     <tag type="to">338</tag>
+     <tag type="sense">0</tag>
+     <tag type="from">336</tag>
+     <tag type="namex">O</tag>
+   </tags>
+  </tagtoken>
+  <tagtoken xml:id="i3004">
+   <tags>
+     <tag type="tok">name</tag>
+     <tag type="pos">NN</tag>
+     <tag type="numex">O</tag>
+     <tag type="animacy">Non-concrete</tag>
+     <tag type="timex">O</tag>
+     <tag type="lemma">name</tag>
+     <tag type="to">343</tag>
+     <tag type="senseid">name.n.01</tag>
+     <tag type="sense">1</tag>
+     <tag type="from">339</tag>
+     <tag type="namex">O</tag>
+   </tags>
+  </tagtoken>
+  <tagtoken xml:id="i3005">
+   <tags>
+     <tag type="tok">off</tag>
+     <tag type="pos">IN</tag>
+     <tag type="numex">O</tag>
+     <tag type="animacy">O</tag>
+     <tag type="timex">O</tag>
+     <tag type="lemma">off</tag>
+     <tag type="to">347</tag>
+     <tag type="sense">0</tag>
+     <tag type="from">344</tag>
+     <tag type="namex">O</tag>
+   </tags>
+  </tagtoken>
+  <tagtoken xml:id="i3006">
+   <tags>
+     <tag type="tok">the</tag>
+     <tag type="pos">DT</tag>
+     <tag type="numex">O</tag>
+     <tag type="animacy">O</tag>
+     <tag type="timex">O</tag>
+     <tag type="lemma">the</tag>
+     <tag type="to">351</tag>
+     <tag type="sense">0</tag>
+     <tag type="from">348</tag>
+     <tag type="namex">O</tag>
+   </tags>
+  </tagtoken>
+  <tagtoken xml:id="i3007">
+   <tags>
+     <tag type="tok">passenger</tag>
+     <tag type="pos">NN</tag>
+     <tag type="numex">O</tag>
+     <tag type="animacy">Non-concrete</tag>
+     <tag type="timex">O</tag>
+     <tag type="lemma">passenger</tag>
+     <tag type="to">361</tag>
+     <tag type="senseid">passenger.n.01</tag>
+     <tag type="sense">1</tag>
+     <tag type="from">352</tag>
+     <tag type="namex">O</tag>
+   </tags>
+  </tagtoken>
+  <tagtoken xml:id="i3008">
+   <tags>
+     <tag type="tok">list</tag>
+     <tag type="pos">NN</tag>
+     <tag type="numex">O</tag>
+     <tag type="animacy">Non-concrete</tag>
+     <tag type="timex">O</tag>
+     <tag type="lemma">list</tag>
+     <tag type="to">366</tag>
+     <tag type="senseid">list.n.01</tag>
+     <tag type="sense">1</tag>
+     <tag type="from">362</tag>
+     <tag type="namex">O</tag>
+   </tags>
+  </tagtoken>
+  <tagtoken xml:id="i3009">
+   <tags>
+     <tag type="tok">.</tag>
+     <tag type="pos">.</tag>
+     <tag type="numex">O</tag>
+     <tag type="animacy">O</tag>
+     <tag type="timex">O</tag>
+     <tag type="lemma">.</tag>
+     <tag type="to">367</tag>
+     <tag type="sense">0</tag>
+     <tag type="from">366</tag>
+     <tag type="namex">O</tag>
+   </tags>
+  </tagtoken>
+  <tagtoken xml:id="i3010">
+   <tags>
+     <tag type="tok">&quot;</tag>
+     <tag type="pos">RQU</tag>
+     <tag type="numex">O</tag>
+     <tag type="animacy">O</tag>
+     <tag type="timex">O</tag>
+     <tag type="lemma">&quot;</tag>
+     <tag type="to">368</tag>
+     <tag type="sense">0</tag>
+     <tag type="from">367</tag>
+     <tag type="namex">O</tag>
+   </tags>
+  </tagtoken>
+  <tagtoken xml:id="i4001">
+   <tags>
+     <tag type="tok">Back</tag>
+     <tag type="pos">RB</tag>
+     <tag type="numex">O</tag>
+     <tag type="animacy">O</tag>
+     <tag type="timex">O</tag>
+     <tag type="lemma">back</tag>
+     <tag type="to">376</tag>
+     <tag type="senseid">back.r.01</tag>
+     <tag type="sense">1</tag>
+     <tag type="from">372</tag>
+     <tag type="namex">O</tag>
+   </tags>
+  </tagtoken>
+  <tagtoken xml:id="i4002">
+   <tags>
+     <tag type="tok">to</tag>
+     <tag type="pos">TO</tag>
+     <tag type="numex">O</tag>
+     <tag type="animacy">O</tag>
+     <tag type="timex">O</tag>
+     <tag type="lemma">to</tag>
+     <tag type="to">379</tag>
+     <tag type="sense">0</tag>
+     <tag type="from">377</tag>
+     <tag type="namex">O</tag>
+   </tags>
+  </tagtoken>
+  <tagtoken xml:id="i4003">
+   <tags>
+     <tag type="tok">him</tag>
+     <tag type="pos">PRP</tag>
+     <tag type="numex">O</tag>
+     <tag type="animacy">Human</tag>
+     <tag type="timex">O</tag>
+     <tag type="lemma">him</tag>
+     <tag type="to">383</tag>
+     <tag type="sense">0</tag>
+     <tag type="from">380</tag>
+     <tag type="namex">O</tag>
+   </tags>
+  </tagtoken>
+  <tagtoken xml:id="i4004">
+   <tags>
+     <tag type="tok">over</tag>
+     <tag type="pos">IN</tag>
+     <tag type="numex">O</tag>
+     <tag type="animacy">O</tag>
+     <tag type="timex">O</tag>
+     <tag type="lemma">over</tag>
+     <tag type="to">388</tag>
+     <tag type="sense">0</tag>
+     <tag type="from">384</tag>
+     <tag type="namex">O</tag>
+   </tags>
+  </tagtoken>
+  <tagtoken xml:id="i4005">
+   <tags>
+     <tag type="tok">the</tag>
+     <tag type="pos">DT</tag>
+     <tag type="numex">O</tag>
+     <tag type="animacy">O</tag>
+     <tag type="timex">O</tag>
+     <tag type="lemma">the</tag>
+     <tag type="to">392</tag>
+     <tag type="sense">0</tag>
+     <tag type="from">389</tag>
+     <tag type="namex">O</tag>
+   </tags>
+  </tagtoken>
+  <tagtoken xml:id="i4006">
+   <tags>
+     <tag type="tok">waters</tag>
+     <tag type="pos">NNS</tag>
+     <tag type="numex">O</tag>
+     <tag type="animacy">Non-concrete</tag>
+     <tag type="timex">O</tag>
+     <tag type="lemma">water</tag>
+     <tag type="to">399</tag>
+     <tag type="senseid">water.n.01</tag>
+     <tag type="sense">1</tag>
+     <tag type="from">393</tag>
+     <tag type="namex">O</tag>
+   </tags>
+  </tagtoken>
+  <tagtoken xml:id="i4007">
+   <tags>
+     <tag type="tok">,</tag>
+     <tag type="pos">,</tag>
+     <tag type="numex">O</tag>
+     <tag type="animacy">O</tag>
+     <tag type="timex">O</tag>
+     <tag type="lemma">,</tag>
+     <tag type="to">400</tag>
+     <tag type="sense">0</tag>
+     <tag type="from">399</tag>
+     <tag type="namex">O</tag>
+   </tags>
+  </tagtoken>
+  <tagtoken xml:id="i4008">
+   <tags>
+     <tag type="tok">hollow</tag>
+     <tag type="pos">JJ</tag>
+     <tag type="numex">O</tag>
+     <tag type="animacy">O</tag>
+     <tag type="timex">O</tag>
+     <tag type="lemma">hollow</tag>
+     <tag type="to">407</tag>
+     <tag type="senseid">hollow.a.01</tag>
+     <tag type="sense">1</tag>
+     <tag type="from">401</tag>
+     <tag type="namex">O</tag>
+   </tags>
+  </tagtoken>
+  <tagtoken xml:id="i4009">
+   <tags>
+     <tag type="tok">and</tag>
+     <tag type="pos">CC</tag>
+     <tag type="numex">O</tag>
+     <tag type="animacy">O</tag>
+     <tag type="timex">O</tag>
+     <tag type="lemma">and</tag>
+     <tag type="to">411</tag>
+     <tag type="sense">0</tag>
+     <tag type="from">408</tag>
+     <tag type="namex">O</tag>
+   </tags>
+  </tagtoken>
+  <tagtoken xml:id="i4010">
+   <tags>
+     <tag type="tok">heartless</tag>
+     <tag type="pos">JJ</tag>
+     <tag type="numex">O</tag>
+     <tag type="animacy">O</tag>
+     <tag type="timex">O</tag>
+     <tag type="lemma">heartless</tag>
+     <tag type="to">421</tag>
+     <tag type="senseid">hardhearted.a.01</tag>
+     <tag type="sense">1</tag>
+     <tag type="from">412</tag>
+     <tag type="namex">O</tag>
+   </tags>
+  </tagtoken>
+  <tagtoken xml:id="i4011">
+   <tags>
+     <tag type="tok">,</tag>
+     <tag type="pos">,</tag>
+     <tag type="numex">O</tag>
+     <tag type="animacy">O</tag>
+     <tag type="timex">O</tag>
+     <tag type="lemma">,</tag>
+     <tag type="to">422</tag>
+     <tag type="sense">0</tag>
+     <tag type="from">421</tag>
+     <tag type="namex">O</tag>
+   </tags>
+  </tagtoken>
+  <tagtoken xml:id="i4012">
+   <tags>
+     <tag type="tok">like</tag>
+     <tag type="pos">IN</tag>
+     <tag type="numex">O</tag>
+     <tag type="animacy">O</tag>
+     <tag type="timex">O</tag>
+     <tag type="lemma">like</tag>
+     <tag type="to">427</tag>
+     <tag type="sense">0</tag>
+     <tag type="from">423</tag>
+     <tag type="namex">O</tag>
+   </tags>
+  </tagtoken>
+  <tagtoken xml:id="i4013">
+   <tags>
+     <tag type="tok">laughter</tag>
+     <tag type="pos">NN</tag>
+     <tag type="numex">O</tag>
+     <tag type="animacy">Non-concrete</tag>
+     <tag type="timex">O</tag>
+     <tag type="lemma">laughter</tag>
+     <tag type="to">436</tag>
+     <tag type="senseid">laugh.n.01</tag>
+     <tag type="sense">1</tag>
+     <tag type="from">428</tag>
+     <tag type="namex">O</tag>
+   </tags>
+  </tagtoken>
+  <tagtoken xml:id="i4014">
+   <tags>
+     <tag type="tok">in</tag>
+     <tag type="pos">IN</tag>
+     <tag type="numex">O</tag>
+     <tag type="animacy">O</tag>
+     <tag type="timex">O</tag>
+     <tag type="lemma">in</tag>
+     <tag type="to">439</tag>
+     <tag type="sense">0</tag>
+     <tag type="from">437</tag>
+     <tag type="namex">O</tag>
+   </tags>
+  </tagtoken>
+  <tagtoken xml:id="i4015">
+   <tags>
+     <tag type="tok">a</tag>
+     <tag type="pos">DT</tag>
+     <tag type="numex">O</tag>
+     <tag type="animacy">O</tag>
+     <tag type="timex">O</tag>
+     <tag type="lemma">a</tag>
+     <tag type="to">442</tag>
+     <tag type="sense">0</tag>
+     <tag type="from">441</tag>
+     <tag type="namex">O</tag>
+   </tags>
+  </tagtoken>
+  <tagtoken xml:id="i4016">
+   <tags>
+     <tag type="tok">tomb</tag>
+     <tag type="pos">NN</tag>
+     <tag type="numex">O</tag>
+     <tag type="animacy">Non-concrete</tag>
+     <tag type="timex">O</tag>
+     <tag type="lemma">tomb</tag>
+     <tag type="to">447</tag>
+     <tag type="senseid">grave.n.02</tag>
+     <tag type="sense">1</tag>
+     <tag type="from">443</tag>
+     <tag type="namex">O</tag>
+   </tags>
+  </tagtoken>
+  <tagtoken xml:id="i4017">
+   <tags>
+     <tag type="tok">,</tag>
+     <tag type="pos">,</tag>
+     <tag type="numex">O</tag>
+     <tag type="animacy">O</tag>
+     <tag type="timex">O</tag>
+     <tag type="lemma">,</tag>
+     <tag type="to">448</tag>
+     <tag type="sense">0</tag>
+     <tag type="from">447</tag>
+     <tag type="namex">O</tag>
+   </tags>
+  </tagtoken>
+  <tagtoken xml:id="i4018">
+   <tags>
+     <tag type="tok">rang</tag>
+     <tag type="pos">VBG</tag>
+     <tag type="numex">O</tag>
+     <tag type="animacy">O</tag>
+     <tag type="timex">O</tag>
+     <tag type="lemma">ring</tag>
+     <tag type="to">453</tag>
+     <tag type="senseid">ring.v.01</tag>
+     <tag type="sense">1</tag>
+     <tag type="from">449</tag>
+     <tag type="namex">O</tag>
+   </tags>
+  </tagtoken>
+  <tagtoken xml:id="i4019">
+   <tags>
+     <tag type="tok">the</tag>
+     <tag type="pos">DT</tag>
+     <tag type="numex">O</tag>
+     <tag type="animacy">O</tag>
+     <tag type="timex">O</tag>
+     <tag type="lemma">the</tag>
+     <tag type="to">457</tag>
+     <tag type="sense">0</tag>
+     <tag type="from">454</tag>
+     <tag type="namex">O</tag>
+   </tags>
+  </tagtoken>
+  <tagtoken xml:id="i4020">
+   <tags>
+     <tag type="tok">voice</tag>
+     <tag type="pos">NN</tag>
+     <tag type="numex">O</tag>
+     <tag type="animacy">Non-concrete</tag>
+     <tag type="timex">O</tag>
+     <tag type="lemma">voice</tag>
+     <tag type="to">463</tag>
+     <tag type="senseid">voice.n.01</tag>
+     <tag type="sense">1</tag>
+     <tag type="from">458</tag>
+     <tag type="namex">O</tag>
+   </tags>
+  </tagtoken>
+  <tagtoken xml:id="i4021">
+   <tags>
+     <tag type="tok">of</tag>
+     <tag type="pos">IN</tag>
+     <tag type="numex">O</tag>
+     <tag type="animacy">O</tag>
+     <tag type="timex">O</tag>
+     <tag type="lemma">of</tag>
+     <tag type="to">466</tag>
+     <tag type="sense">0</tag>
+     <tag type="from">464</tag>
+     <tag type="namex">O</tag>
+   </tags>
+  </tagtoken>
+  <tagtoken xml:id="i4022">
+   <tags>
+     <tag type="tok">the</tag>
+     <tag type="pos">DT</tag>
+     <tag type="numex">O</tag>
+     <tag type="animacy">O</tag>
+     <tag type="timex">O</tag>
+     <tag type="lemma">the</tag>
+     <tag type="to">470</tag>
+     <tag type="sense">0</tag>
+     <tag type="from">467</tag>
+     <tag type="namex">O</tag>
+   </tags>
+  </tagtoken>
+  <tagtoken xml:id="i4023">
+   <tags>
+     <tag type="tok">Skipper</tag>
+     <tag type="pos">NN</tag>
+     <tag type="numex">O</tag>
+     <tag type="animacy">Non-concrete</tag>
+     <tag type="timex">O</tag>
+     <tag type="lemma">skipper</tag>
+     <tag type="to">478</tag>
+     <tag type="senseid">skipper.n.01</tag>
+     <tag type="sense">1</tag>
+     <tag type="from">471</tag>
+     <tag type="namex">O</tag>
+   </tags>
+  </tagtoken>
+  <tagtoken xml:id="i4024">
+   <tags>
+     <tag type="tok">:</tag>
+     <tag type="pos">IN</tag>
+     <tag type="numex">O</tag>
+     <tag type="animacy">O</tag>
+     <tag type="timex">O</tag>
+     <tag type="lemma">:</tag>
+     <tag type="to">479</tag>
+     <tag type="sense">0</tag>
+     <tag type="from">478</tag>
+     <tag type="namex">O</tag>
+   </tags>
+  </tagtoken>
+  <tagtoken xml:id="i4025">
+   <tags>
+     <tag type="tok">&quot;</tag>
+     <tag type="pos">RQU</tag>
+     <tag type="numex">O</tag>
+     <tag type="animacy">O</tag>
+     <tag type="timex">O</tag>
+     <tag type="lemma">&quot;</tag>
+     <tag type="to">484</tag>
+     <tag type="sense">0</tag>
+     <tag type="from">483</tag>
+     <tag type="namex">O</tag>
+   </tags>
+  </tagtoken>
+  <tagtoken xml:id="i4026">
+   <tags>
+     <tag type="tok">'T</tag>
+     <tag type="pos">PRP</tag>
+     <tag type="numex">O</tag>
+     <tag type="animacy">Human</tag>
+     <tag type="timex">O</tag>
+     <tag type="lemma">'t</tag>
+     <tag type="to">486</tag>
+     <tag type="sense">0</tag>
+     <tag type="from">484</tag>
+     <tag type="namex">O</tag>
+   </tags>
+  </tagtoken>
+  <tagtoken xml:id="i4027">
+   <tags>
+     <tag type="tok">ai</tag>
+     <tag type="pos">VBP</tag>
+     <tag type="numex">O</tag>
+     <tag type="animacy">O</tag>
+     <tag type="timex">O</tag>
+     <tag type="lemma">be</tag>
+     <tag type="to">489</tag>
+     <tag type="sense">0</tag>
+     <tag type="from">487</tag>
+     <tag type="namex">O</tag>
+   </tags>
+  </tagtoken>
+  <tagtoken xml:id="i4028">
+   <tags>
+     <tag type="tok">n't</tag>
+     <tag type="pos">RB</tag>
+     <tag type="numex">O</tag>
+     <tag type="animacy">O</tag>
+     <tag type="timex">O</tag>
+     <tag type="lemma">not</tag>
+     <tag type="to">492</tag>
+     <tag type="senseid">not.r.01</tag>
+     <tag type="sense">1</tag>
+     <tag type="from">489</tag>
+     <tag type="namex">O</tag>
+   </tags>
+  </tagtoken>
+  <tagtoken xml:id="i4029">
+   <tags>
+     <tag type="tok">on</tag>
+     <tag type="pos">IN</tag>
+     <tag type="numex">O</tag>
+     <tag type="animacy">O</tag>
+     <tag type="timex">O</tag>
+     <tag type="lemma">on</tag>
+     <tag type="to">495</tag>
+     <tag type="sense">0</tag>
+     <tag type="from">493</tag>
+     <tag type="namex">O</tag>
+   </tags>
+  </tagtoken>
+  <tagtoken xml:id="i4030">
+   <tags>
+     <tag type="tok">!</tag>
+     <tag type="pos">.</tag>
+     <tag type="numex">O</tag>
+     <tag type="animacy">O</tag>
+     <tag type="timex">O</tag>
+     <tag type="lemma">!</tag>
+     <tag type="to">496</tag>
+     <tag type="sense">0</tag>
+     <tag type="from">495</tag>
+     <tag type="namex">O</tag>
+   </tags>
+  </tagtoken>
+  <tagtoken xml:id="i4031">
+   <tags>
+     <tag type="tok">&quot;</tag>
+     <tag type="pos">LQU</tag>
+     <tag type="numex">O</tag>
+     <tag type="animacy">O</tag>
+     <tag type="timex">O</tag>
+     <tag type="lemma">&quot;</tag>
+     <tag type="to">497</tag>
+     <tag type="sense">0</tag>
+     <tag type="from">496</tag>
+     <tag type="namex">O</tag>
+   </tags>
+  </tagtoken>
+  <tagtoken xml:id="i5001">
+   <tags>
+     <tag type="tok">And</tag>
+     <tag type="pos">CC</tag>
+     <tag type="numex">O</tag>
+     <tag type="animacy">O</tag>
+     <tag type="timex">O</tag>
+     <tag type="lemma">and</tag>
+     <tag type="to">504</tag>
+     <tag type="sense">0</tag>
+     <tag type="from">501</tag>
+     <tag type="namex">O</tag>
+   </tags>
+  </tagtoken>
+  <tagtoken xml:id="i5002">
+   <tags>
+     <tag type="tok">there</tag>
+     <tag type="pos">RB</tag>
+     <tag type="numex">O</tag>
+     <tag type="animacy">O</tag>
+     <tag type="timex">O</tag>
+     <tag type="lemma">there</tag>
+     <tag type="to">510</tag>
+     <tag type="senseid">there.r.01</tag>
+     <tag type="sense">1</tag>
+     <tag type="from">505</tag>
+     <tag type="namex">O</tag>
+   </tags>
+  </tagtoken>
+  <tagtoken xml:id="i5003">
+   <tags>
+     <tag type="tok">,</tag>
+     <tag type="pos">,</tag>
+     <tag type="numex">O</tag>
+     <tag type="animacy">O</tag>
+     <tag type="timex">O</tag>
+     <tag type="lemma">,</tag>
+     <tag type="to">511</tag>
+     <tag type="sense">0</tag>
+     <tag type="from">510</tag>
+     <tag type="namex">O</tag>
+   </tags>
+  </tagtoken>
+  <tagtoken xml:id="i5004">
+   <tags>
+     <tag type="tok">in</tag>
+     <tag type="pos">IN</tag>
+     <tag type="numex">O</tag>
+     <tag type="animacy">O</tag>
+     <tag type="timex">O</tag>
+     <tag type="lemma">in</tag>
+     <tag type="to">514</tag>
+     <tag type="sense">0</tag>
+     <tag type="from">512</tag>
+     <tag type="namex">O</tag>
+   </tags>
+  </tagtoken>
+  <tagtoken xml:id="i5005">
+   <tags>
+     <tag type="tok">the</tag>
+     <tag type="pos">DT</tag>
+     <tag type="numex">O</tag>
+     <tag type="animacy">O</tag>
+     <tag type="timex">O</tag>
+     <tag type="lemma">the</tag>
+     <tag type="to">518</tag>
+     <tag type="sense">0</tag>
+     <tag type="from">515</tag>
+     <tag type="namex">O</tag>
+   </tags>
+  </tagtoken>
+  <tagtoken xml:id="i5006">
+   <tags>
+     <tag type="tok">focus</tag>
+     <tag type="pos">NN</tag>
+     <tag type="numex">O</tag>
+     <tag type="animacy">Non-concrete</tag>
+     <tag type="timex">O</tag>
+     <tag type="lemma">focus</tag>
+     <tag type="to">524</tag>
+     <tag type="senseid">focus.n.01</tag>
+     <tag type="sense">1</tag>
+     <tag type="from">519</tag>
+     <tag type="namex">O</tag>
+   </tags>
+  </tagtoken>
+  <tagtoken xml:id="i5007">
+   <tags>
+     <tag type="tok">of</tag>
+     <tag type="pos">IN</tag>
+     <tag type="numex">O</tag>
+     <tag type="animacy">O</tag>
+     <tag type="timex">O</tag>
+     <tag type="lemma">of</tag>
+     <tag type="to">527</tag>
+     <tag type="sense">0</tag>
+     <tag type="from">525</tag>
+     <tag type="namex">O</tag>
+   </tags>
+  </tagtoken>
+  <tagtoken xml:id="i5008">
+   <tags>
+     <tag type="tok">a</tag>
+     <tag type="pos">DT</tag>
+     <tag type="numex">O</tag>
+     <tag type="animacy">O</tag>
+     <tag type="timex">O</tag>
+     <tag type="lemma">a</tag>
+     <tag type="to">529</tag>
+     <tag type="sense">0</tag>
+     <tag type="from">528</tag>
+     <tag type="namex">O</tag>
+   </tags>
+  </tagtoken>
+  <tagtoken xml:id="i5009">
+   <tags>
+     <tag type="tok">million</tag>
+     <tag type="pos">CD</tag>
+     <tag type="numex">O</tag>
+     <tag type="animacy">O</tag>
+     <tag type="timex">O</tag>
+     <tag type="lemma">million</tag>
+     <tag type="to">537</tag>
+     <tag type="sense">0</tag>
+     <tag type="from">530</tag>
+     <tag type="namex">O</tag>
+   </tags>
+  </tagtoken>
+  <tagtoken xml:id="i5010">
+   <tags>
+     <tag type="tok">pairs</tag>
+     <tag type="pos">NNS</tag>
+     <tag type="numex">O</tag>
+     <tag type="animacy">Human</tag>
+     <tag type="timex">O</tag>
+     <tag type="lemma">pair</tag>
+     <tag type="to">543</tag>
+     <tag type="senseid">pair.n.01</tag>
+     <tag type="sense">1</tag>
+     <tag type="from">538</tag>
+     <tag type="namex">O</tag>
+   </tags>
+  </tagtoken>
+  <tagtoken xml:id="i5011">
+   <tags>
+     <tag type="tok">of</tag>
+     <tag type="pos">IN</tag>
+     <tag type="numex">O</tag>
+     <tag type="animacy">O</tag>
+     <tag type="timex">O</tag>
+     <tag type="lemma">of</tag>
+     <tag type="to">546</tag>
+     <tag type="sense">0</tag>
+     <tag type="from">544</tag>
+     <tag type="namex">O</tag>
+   </tags>
+  </tagtoken>
+  <tagtoken xml:id="i5012">
+   <tags>
+     <tag type="tok">convergent</tag>
+     <tag type="pos">JJ</tag>
+     <tag type="numex">O</tag>
+     <tag type="animacy">O</tag>
+     <tag type="timex">O</tag>
+     <tag type="lemma">convergent</tag>
+     <tag type="to">557</tag>
+     <tag type="senseid">convergent.a.01</tag>
+     <tag type="sense">1</tag>
+     <tag type="from">547</tag>
+     <tag type="namex">O</tag>
+   </tags>
+  </tagtoken>
+  <tagtoken xml:id="i5013">
+   <tags>
+     <tag type="tok">eyes</tag>
+     <tag type="pos">NNS</tag>
+     <tag type="numex">O</tag>
+     <tag type="animacy">Non-concrete</tag>
+     <tag type="timex">O</tag>
+     <tag type="lemma">eye</tag>
+     <tag type="to">562</tag>
+     <tag type="senseid">eye.n.01</tag>
+     <tag type="sense">1</tag>
+     <tag type="from">558</tag>
+     <tag type="namex">O</tag>
+   </tags>
+  </tagtoken>
+  <tagtoken xml:id="i5014">
+   <tags>
+     <tag type="tok">,</tag>
+     <tag type="pos">,</tag>
+     <tag type="numex">O</tag>
+     <tag type="animacy">O</tag>
+     <tag type="timex">O</tag>
+     <tag type="lemma">,</tag>
+     <tag type="to">563</tag>
+     <tag type="sense">0</tag>
+     <tag type="from">562</tag>
+     <tag type="namex">O</tag>
+   </tags>
+  </tagtoken>
+  <tagtoken xml:id="i5015">
+   <tags>
+     <tag type="tok">the</tag>
+     <tag type="pos">DT</tag>
+     <tag type="numex">O</tag>
+     <tag type="animacy">O</tag>
+     <tag type="timex">O</tag>
+     <tag type="lemma">the</tag>
+     <tag type="to">567</tag>
+     <tag type="sense">0</tag>
+     <tag type="from">564</tag>
+     <tag type="namex">O</tag>
+   </tags>
+  </tagtoken>
+  <tagtoken xml:id="i5016">
+   <tags>
+     <tag type="tok">Ambitious</tag>
+     <tag type="pos">JJ</tag>
+     <tag type="numex">O</tag>
+     <tag type="animacy">O</tag>
+     <tag type="timex">O</tag>
+     <tag type="lemma">ambitious</tag>
+     <tag type="to">578</tag>
+     <tag type="senseid">ambitious.a.01</tag>
+     <tag type="sense">1</tag>
+     <tag type="from">569</tag>
+     <tag type="namex">O</tag>
+   </tags>
+  </tagtoken>
+  <tagtoken xml:id="i5017">
+   <tags>
+     <tag type="tok">Person</tag>
+     <tag type="pos">NN</tag>
+     <tag type="numex">O</tag>
+     <tag type="animacy">Non-concrete</tag>
+     <tag type="timex">O</tag>
+     <tag type="lemma">person</tag>
+     <tag type="to">585</tag>
+     <tag type="senseid">person.n.01</tag>
+     <tag type="sense">1</tag>
+     <tag type="from">579</tag>
+     <tag type="namex">O</tag>
+   </tags>
+  </tagtoken>
+  <tagtoken xml:id="i5018">
+   <tags>
+     <tag type="tok">sat</tag>
+     <tag type="pos">VBD</tag>
+     <tag type="numex">O</tag>
+     <tag type="animacy">O</tag>
+     <tag type="timex">O</tag>
+     <tag type="lemma">sit</tag>
+     <tag type="to">589</tag>
+     <tag type="senseid">sit.v.01</tag>
+     <tag type="sense">1</tag>
+     <tag type="from">586</tag>
+     <tag type="namex">O</tag>
+   </tags>
+  </tagtoken>
+  <tagtoken xml:id="i5019">
+   <tags>
+     <tag type="tok">him</tag>
+     <tag type="pos">PRP</tag>
+     <tag type="numex">O</tag>
+     <tag type="animacy">Human</tag>
+     <tag type="timex">O</tag>
+     <tag type="lemma">him</tag>
+     <tag type="to">593</tag>
+     <tag type="sense">0</tag>
+     <tag type="from">590</tag>
+     <tag type="namex">O</tag>
+   </tags>
+  </tagtoken>
+  <tagtoken xml:id="i5020">
+   <tags>
+     <tag type="tok">down</tag>
+     <tag type="pos">RP</tag>
+     <tag type="numex">O</tag>
+     <tag type="animacy">O</tag>
+     <tag type="timex">O</tag>
+     <tag type="lemma">down</tag>
+     <tag type="to">598</tag>
+     <tag type="sense">0</tag>
+     <tag type="from">594</tag>
+     <tag type="namex">O</tag>
+   </tags>
+  </tagtoken>
+  <tagtoken xml:id="i5021">
+   <tags>
+     <tag type="tok">between</tag>
+     <tag type="pos">IN</tag>
+     <tag type="numex">O</tag>
+     <tag type="animacy">O</tag>
+     <tag type="timex">O</tag>
+     <tag type="lemma">between</tag>
+     <tag type="to">606</tag>
+     <tag type="sense">0</tag>
+     <tag type="from">599</tag>
+     <tag type="namex">O</tag>
+   </tags>
+  </tagtoken>
+  <tagtoken xml:id="i5022">
+   <tags>
+     <tag type="tok">the</tag>
+     <tag type="pos">DT</tag>
+     <tag type="numex">O</tag>
+     <tag type="animacy">O</tag>
+     <tag type="timex">O</tag>
+     <tag type="lemma">the</tag>
+     <tag type="to">610</tag>
+     <tag type="sense">0</tag>
+     <tag type="from">607</tag>
+     <tag type="namex">O</tag>
+   </tags>
+  </tagtoken>
+  <tagtoken xml:id="i5023">
+   <tags>
+     <tag type="tok">sun</tag>
+     <tag type="pos">NN</tag>
+     <tag type="numex">O</tag>
+     <tag type="animacy">Non-concrete</tag>
+     <tag type="timex">O</tag>
+     <tag type="lemma">sun</tag>
+     <tag type="to">614</tag>
+     <tag type="senseid">sun.n.01</tag>
+     <tag type="sense">1</tag>
+     <tag type="from">611</tag>
+     <tag type="namex">O</tag>
+   </tags>
+  </tagtoken>
+  <tagtoken xml:id="i5024">
+   <tags>
+     <tag type="tok">and</tag>
+     <tag type="pos">CC</tag>
+     <tag type="numex">O</tag>
+     <tag type="animacy">O</tag>
+     <tag type="timex">O</tag>
+     <tag type="lemma">and</tag>
+     <tag type="to">618</tag>
+     <tag type="sense">0</tag>
+     <tag type="from">615</tag>
+     <tag type="namex">O</tag>
+   </tags>
+  </tagtoken>
+  <tagtoken xml:id="i5025">
+   <tags>
+     <tag type="tok">moon</tag>
+     <tag type="pos">NN</tag>
+     <tag type="numex">O</tag>
+     <tag type="animacy">Non-concrete</tag>
+     <tag type="timex">O</tag>
+     <tag type="lemma">moon</tag>
+     <tag type="to">623</tag>
+     <tag type="senseid">moon.n.01</tag>
+     <tag type="sense">1</tag>
+     <tag type="from">619</tag>
+     <tag type="namex">O</tag>
+   </tags>
+  </tagtoken>
+  <tagtoken xml:id="i5026">
+   <tags>
+     <tag type="tok">and</tag>
+     <tag type="pos">CC</tag>
+     <tag type="numex">O</tag>
+     <tag type="animacy">O</tag>
+     <tag type="timex">O</tag>
+     <tag type="lemma">and</tag>
+     <tag type="to">627</tag>
+     <tag type="sense">0</tag>
+     <tag type="from">624</tag>
+     <tag type="namex">O</tag>
+   </tags>
+  </tagtoken>
+  <tagtoken xml:id="i5027">
+   <tags>
+     <tag type="tok">murmured</tag>
+     <tag type="pos">VBD</tag>
+     <tag type="numex">O</tag>
+     <tag type="animacy">O</tag>
+     <tag type="timex">O</tag>
+     <tag type="lemma">murmur</tag>
+     <tag type="to">636</tag>
+     <tag type="senseid">murmur.v.01</tag>
+     <tag type="sense">1</tag>
+     <tag type="from">628</tag>
+     <tag type="namex">O</tag>
+   </tags>
+  </tagtoken>
+  <tagtoken xml:id="i5028">
+   <tags>
+     <tag type="tok">sadly</tag>
+     <tag type="pos">RB</tag>
+     <tag type="numex">O</tag>
+     <tag type="animacy">O</tag>
+     <tag type="timex">O</tag>
+     <tag type="lemma">sadly</tag>
+     <tag type="to">643</tag>
+     <tag type="senseid">sadly.r.01</tag>
+     <tag type="sense">1</tag>
+     <tag type="from">638</tag>
+     <tag type="namex">O</tag>
+   </tags>
+  </tagtoken>
+  <tagtoken xml:id="i5029">
+   <tags>
+     <tag type="tok">to</tag>
+     <tag type="pos">TO</tag>
+     <tag type="numex">O</tag>
+     <tag type="animacy">O</tag>
+     <tag type="timex">O</tag>
+     <tag type="lemma">to</tag>
+     <tag type="to">646</tag>
+     <tag type="sense">0</tag>
+     <tag type="from">644</tag>
+     <tag type="namex">O</tag>
+   </tags>
+  </tagtoken>
+  <tagtoken xml:id="i5030">
+   <tags>
+     <tag type="tok">his</tag>
+     <tag type="pos">PRP$</tag>
+     <tag type="numex">O</tag>
+     <tag type="animacy">Non-concrete</tag>
+     <tag type="timex">O</tag>
+     <tag type="lemma">his</tag>
+     <tag type="to">650</tag>
+     <tag type="sense">0</tag>
+     <tag type="from">647</tag>
+     <tag type="namex">O</tag>
+   </tags>
+  </tagtoken>
+  <tagtoken xml:id="i5031">
+   <tags>
+     <tag type="tok">own</tag>
+     <tag type="pos">JJ</tag>
+     <tag type="numex">O</tag>
+     <tag type="animacy">O</tag>
+     <tag type="timex">O</tag>
+     <tag type="lemma">own</tag>
+     <tag type="to">654</tag>
+     <tag type="senseid">own.s.01</tag>
+     <tag type="sense">1</tag>
+     <tag type="from">651</tag>
+     <tag type="namex">O</tag>
+   </tags>
+  </tagtoken>
+  <tagtoken xml:id="i5032">
+   <tags>
+     <tag type="tok">soul</tag>
+     <tag type="pos">NN</tag>
+     <tag type="numex">O</tag>
+     <tag type="animacy">Non-concrete</tag>
+     <tag type="timex">O</tag>
+     <tag type="lemma">soul</tag>
+     <tag type="to">659</tag>
+     <tag type="senseid">soul.n.01</tag>
+     <tag type="sense">1</tag>
+     <tag type="from">655</tag>
+     <tag type="namex">O</tag>
+   </tags>
+  </tagtoken>
+  <tagtoken xml:id="i5033">
+   <tags>
+     <tag type="tok">:</tag>
+     <tag type="pos">:</tag>
+     <tag type="numex">O</tag>
+     <tag type="animacy">O</tag>
+     <tag type="timex">O</tag>
+     <tag type="lemma">:</tag>
+     <tag type="to">660</tag>
+     <tag type="sense">0</tag>
+     <tag type="from">659</tag>
+     <tag type="namex">O</tag>
+   </tags>
+  </tagtoken>
+  <tagtoken xml:id="i6001">
+   <tags>
+     <tag type="tok">&quot;</tag>
+     <tag type="pos">LQU</tag>
+     <tag type="numex">O</tag>
+     <tag type="animacy">O</tag>
+     <tag type="timex">O</tag>
+     <tag type="lemma">&quot;</tag>
+     <tag type="to">665</tag>
+     <tag type="sense">0</tag>
+     <tag type="from">664</tag>
+     <tag type="namex">O</tag>
+   </tags>
+  </tagtoken>
+  <tagtoken xml:id="i6002">
+   <tags>
+     <tag type="tok">Marooned</tag>
+     <tag type="pos">VBN</tag>
+     <tag type="numex">O</tag>
+     <tag type="animacy">O</tag>
+     <tag type="timex">O</tag>
+     <tag type="lemma">maroon</tag>
+     <tag type="to">673</tag>
+     <tag type="senseid">maroon.v.01</tag>
+     <tag type="sense">1</tag>
+     <tag type="from">665</tag>
+     <tag type="namex">O</tag>
+   </tags>
+  </tagtoken>
+  <tagtoken xml:id="i6003">
+   <tags>
+     <tag type="tok">,</tag>
+     <tag type="pos">,</tag>
+     <tag type="numex">O</tag>
+     <tag type="animacy">O</tag>
+     <tag type="timex">O</tag>
+     <tag type="lemma">,</tag>
+     <tag type="to">674</tag>
+     <tag type="sense">0</tag>
+     <tag type="from">673</tag>
+     <tag type="namex">O</tag>
+   </tags>
+  </tagtoken>
+  <tagtoken xml:id="i6004">
+   <tags>
+     <tag type="tok">by</tag>
+     <tag type="pos">IN</tag>
+     <tag type="numex">O</tag>
+     <tag type="animacy">O</tag>
+     <tag type="timex">O</tag>
+     <tag type="lemma">by</tag>
+     <tag type="to">677</tag>
+     <tag type="sense">0</tag>
+     <tag type="from">675</tag>
+     <tag type="namex">O</tag>
+   </tags>
+  </tagtoken>
+  <tagtoken xml:id="i6005">
+   <tags>
+     <tag type="tok">thunder</tag>
+     <tag type="pos">NN</tag>
+     <tag type="numex">O</tag>
+     <tag type="animacy">Non-concrete</tag>
+     <tag type="timex">O</tag>
+     <tag type="lemma">thunder</tag>
+     <tag type="to">685</tag>
+     <tag type="senseid">boom.n.01</tag>
+     <tag type="sense">1</tag>
+     <tag type="from">678</tag>
+     <tag type="namex">O</tag>
+   </tags>
+  </tagtoken>
+  <tagtoken xml:id="i6006">
+   <tags>
+     <tag type="tok">!</tag>
+     <tag type="pos">.</tag>
+     <tag type="numex">O</tag>
+     <tag type="animacy">O</tag>
+     <tag type="timex">O</tag>
+     <tag type="lemma">!</tag>
+     <tag type="to">686</tag>
+     <tag type="sense">0</tag>
+     <tag type="from">685</tag>
+     <tag type="namex">O</tag>
+   </tags>
+  </tagtoken>
+  <tagtoken xml:id="i6007">
+   <tags>
+     <tag type="tok">&quot;</tag>
+     <tag type="pos">RQU</tag>
+     <tag type="numex">O</tag>
+     <tag type="animacy">O</tag>
+     <tag type="timex">O</tag>
+     <tag type="lemma">&quot;</tag>
+     <tag type="to">687</tag>
+     <tag type="sense">0</tag>
+     <tag type="from">686</tag>
+     <tag type="namex">O</tag>
+   </tags>
+  </tagtoken>
+ </taggedtokens>
+ <sdrs>
+  <constituents>
+   <constituent label="k1">
+    <drs type="sentence" label="b1">
+     <tokens>
+      <token>SEEING</token>
+      <token>a</token>
+      <token>ship</token>
+      <token>sailing</token>
+      <token>by</token>
+      <token>upon</token>
+      <token>the</token>
+      <token>sea</token>
+      <token>of</token>
+      <token>politics</token>
+      <token>,</token>
+      <token>an</token>
+      <token>Ambitious</token>
+      <token>Person</token>
+      <token>started</token>
+      <token>in</token>
+      <token>hot</token>
+      <token>pursuit</token>
+      <token>along</token>
+      <token>the</token>
+      <token>strand</token>
+      <token>;</token>
+      <token>but</token>
+      <token>the</token>
+      <token>people</token>
+      <token>'s</token>
+      <token>eyes</token>
+      <token>being</token>
+      <token>fixed</token>
+      <token>upon</token>
+      <token>the</token>
+      <token>Presidency</token>
+      <token>no</token>
+      <token>one</token>
+      <token>observed</token>
+      <token>the</token>
+      <token>pursuer</token>
+     </tokens>
+     <domain>
+      <dr label="b1" name="x1">
+      <indexlist>
+      </indexlist>
+      </dr>
+      <dr label="b1" name="x2">
+      <indexlist>
+      <index pos="2">i1002</index>
+      </indexlist>
+      </dr>
+      <dr label="b1" name="x3">
+      <indexlist>
+      </indexlist>
+      </dr>
+      <dr label="b1" name="e1">
+      <indexlist>
+      </indexlist>
+      </dr>
+      <dr label="b2" name="x4">
+      <indexlist>
+      <index pos="7">i1007</index>
+      </indexlist>
+      </dr>
+      <dr label="b1" name="x5">
+      <indexlist>
+      </indexlist>
+      </dr>
+      <dr label="b1" name="x6">
+      <indexlist>
+      <index pos="12">i1012</index>
+      </indexlist>
+      </dr>
+      <dr label="b1" name="s1">
+      <indexlist>
+      </indexlist>
+      </dr>
+      <dr label="b1" name="e2">
+      <indexlist>
+      </indexlist>
+      </dr>
+      <dr label="b3" name="t1">
+      <indexlist>
+      </indexlist>
+      </dr>
+      <dr label="b1" name="t2">
+      <indexlist>
+      </indexlist>
+      </dr>
+      <dr label="b1" name="x7">
+      <indexlist>
+      <index pos="23">i1023</index>
+      </indexlist>
+      </dr>
+      <dr label="b1" name="x8">
+      <indexlist>
+      </indexlist>
+      </dr>
+      <dr label="b1" name="s2">
+      <indexlist>
+      </indexlist>
+      </dr>
+      <dr label="b4" name="x9">
+      <indexlist>
+      <index pos="20">i1020</index>
+      </indexlist>
+      </dr>
+      <dr label="b5" name="x10">
+      <indexlist>
+      <index pos="24">i1024</index>
+      </indexlist>
+      </dr>
+      <dr label="b6" name="x11">
+      <indexlist>
+      </indexlist>
+      </dr>
+      <dr label="b1" name="x12">
+      <indexlist>
+      </indexlist>
+      </dr>
+      <dr label="b1" name="e3">
+      <indexlist>
+      </indexlist>
+      </dr>
+      <dr label="b7" name="x13">
+      <indexlist>
+      <index pos="31">i1031</index>
+      </indexlist>
+      </dr>
+      <dr label="b1" name="p1">
+      <indexlist>
+      </indexlist>
+      </dr>
+     </domain>
+     <conds>
+      <cond label="b1">
+       <pred arg="x1" symbol="thing" type="n" sense="12">
+       <indexlist>
+       </indexlist>
+       </pred>
+      </cond>
+      <cond label="b1">
+       <pred arg="x3" symbol="ship" type="n" sense="1">
+       <indexlist>
+       <index pos="3">i1003</index>
+       </indexlist>
+       </pred>
+      </cond>
+      <cond label="b1">
+       <rel arg1="x2" arg2="x3" symbol="of" sense="0">
+       <indexlist>
+       </indexlist>
+       </rel>
+      </cond>
+      <cond label="b1">
+       <pred arg="x2" symbol="sailing" type="n" sense="1">
+       <indexlist>
+       <index pos="4">i1004</index>
+       </indexlist>
+       </pred>
+      </cond>
+      <cond label="b1">
+       <pred arg="e1" symbol="see" type="v" sense="1">
+       <indexlist>
+       <index pos="1">i1001</index>
+       </indexlist>
+       </pred>
+      </cond>
+      <cond label="b1">
+       <rel arg1="e1" arg2="x1" symbol="Agent" sense="1">
+       <indexlist>
+       </indexlist>
+       </rel>
+      </cond>
+      <cond label="b1">
+       <rel arg1="e1" arg2="x2" symbol="Theme" sense="1">
+       <indexlist>
+       </indexlist>
+       </rel>
+      </cond>
+      <cond label="b1">
+       <pred arg="e1" symbol="by" type="r" sense="0">
+       <indexlist>
+       <index pos="5">i1005</index>
+       </indexlist>
+       </pred>
+      </cond>
+      <cond label="b2">
+       <pred arg="x4" symbol="sea" type="n" sense="1">
+       <indexlist>
+       <index pos="8">i1008</index>
+       </indexlist>
+       </pred>
+      </cond>
+      <cond label="b1">
+       <pred arg="x5" symbol="politics" type="n" sense="1">
+       <indexlist>
+       <index pos="10">i1010</index>
+       </indexlist>
+       </pred>
+      </cond>
+      <cond label="b1">
+       <rel arg1="x4" arg2="x5" symbol="of" sense="0">
+       <indexlist>
+       <index pos="9">i1009</index>
+       </indexlist>
+       </rel>
+      </cond>
+      <cond label="b1">
+       <rel arg1="e1" arg2="x4" symbol="upon" sense="0">
+       <indexlist>
+       <index pos="6">i1006</index>
+       </indexlist>
+       </rel>
+      </cond>
+      <cond label="b1">
+       <rel arg1="s1" arg2="x6" symbol="Topic" sense="1">
+       <indexlist>
+       </indexlist>
+       </rel>
+      </cond>
+      <cond label="b1">
+       <pred arg="s1" symbol="ambitious" type="a" sense="1">
+       <indexlist>
+       <index pos="13">i1013</index>
+       </indexlist>
+       </pred>
+      </cond>
+      <cond label="b1">
+       <pred arg="x6" symbol="person" type="n" sense="1">
+       <indexlist>
+       <index pos="14">i1014</index>
+       </indexlist>
+       </pred>
+      </cond>
+      <cond label="b1">
+       <pred arg="e2" symbol="start" type="v" sense="1">
+       <indexlist>
+       <index pos="15">i1015</index>
+       </indexlist>
+       </pred>
+      </cond>
+      <cond label="b1">
+       <rel arg1="e2" arg2="x6" symbol="Theme" sense="1">
+       <indexlist>
+       </indexlist>
+       </rel>
+      </cond>
+      <cond label="b3">
+       <pred arg="t1" symbol="now" type="a" sense="1">
+       <indexlist>
+       </indexlist>
+       </pred>
+      </cond>
+      <cond label="b1">
+       <rel arg1="e2" arg2="t2" symbol="temp_included" sense="1">
+       <indexlist>
+       </indexlist>
+       </rel>
+      </cond>
+      <cond label="b1">
+       <rel arg1="t2" arg2="t1" symbol="temp_before" sense="1">
+       <indexlist>
+       </indexlist>
+       </rel>
+      </cond>
+      <cond label="b1">
+       <rel arg1="s2" arg2="x8" symbol="Topic" sense="1">
+       <indexlist>
+       </indexlist>
+       </rel>
+      </cond>
+      <cond label="b1">
+       <pred arg="s2" symbol="hot" type="a" sense="1">
+       <indexlist>
+       <index pos="17">i1017</index>
+       </indexlist>
+       </pred>
+      </cond>
+      <cond label="b1">
+       <pred arg="x8" symbol="pursuit" type="n" sense="1">
+       <indexlist>
+       <index pos="18">i1018</index>
+       </indexlist>
+       </pred>
+      </cond>
+      <cond label="b4">
+       <pred arg="x9" symbol="strand" type="n" sense="1">
+       <indexlist>
+       <index pos="21">i1021</index>
+       </indexlist>
+       </pred>
+      </cond>
+      <cond label="b1">
+       <rel arg1="x8" arg2="x9" symbol="along" sense="0">
+       <indexlist>
+       <index pos="19">i1019</index>
+       </indexlist>
+       </rel>
+      </cond>
+      <cond label="b1">
+       <rel arg1="x8" arg2="x7" symbol="subset_of" sense="1">
+       <indexlist>
+       </indexlist>
+       </rel>
+      </cond>
+      <cond label="b5">
+       <pred arg="x10" symbol="people" type="n" sense="1">
+       <indexlist>
+       <index pos="25">i1025</index>
+       </indexlist>
+       </pred>
+      </cond>
+      <cond label="b6">
+       <rel arg1="x11" arg2="x10" symbol="of" sense="0">
+       <indexlist>
+       <index pos="26">i1026</index>
+       </indexlist>
+       </rel>
+      </cond>
+      <cond label="b6">
+       <pred arg="x11" symbol="eye" type="n" sense="1">
+       <indexlist>
+       <index pos="27">i1027</index>
+       </indexlist>
+       </pred>
+      </cond>
+      <cond label="b1">
+       <eq arg1="x11" arg2="x12">
+       <indexlist>
+       </indexlist>
+       </eq>
+      </cond>
+      <cond label="b1">
+       <pred arg="e3" symbol="fix" type="v" sense="1">
+       <indexlist>
+       <index pos="29">i1029</index>
+       </indexlist>
+       </pred>
+      </cond>
+      <cond label="b1">
+       <rel arg1="e3" arg2="x12" symbol="Product" sense="1">
+       <indexlist>
+       </indexlist>
+       </rel>
+      </cond>
+      <cond label="b7">
+       <pred arg="x13" symbol="presidency" type="n" sense="1">
+       <indexlist>
+       <index pos="32">i1032</index>
+       </indexlist>
+       </pred>
+      </cond>
+      <cond label="b1">
+       <rel arg1="x13" arg2="p1" symbol="that" sense="0">
+       <indexlist>
+       </indexlist>
+       </rel>
+      </cond>
+      <cond label="b1">
+       <prop argument="p1">
+       <indexlist>
+       </indexlist>
+        <drs type="normal" label="b8">
+         <domain>
+         </domain>
+         <conds>
+          <cond label="b8">
+           <not>
+           <indexlist>
+           <index pos="33">i1033</index>
+           </indexlist>
+            <drs type="normal" label="b9">
+             <domain>
+              <dr label="b9" name="x14">
+              <indexlist>
+              <index pos="33">i1033</index>
+              </indexlist>
+              </dr>
+              <dr label="b10" name="x15">
+              <indexlist>
+              <index pos="36">i1036</index>
+              </indexlist>
+              </dr>
+              <dr label="b9" name="e4">
+              <indexlist>
+              </indexlist>
+              </dr>
+              <dr label="b3" name="t1">
+              <indexlist>
+              </indexlist>
+              </dr>
+              <dr label="b9" name="t3">
+              <indexlist>
+              </indexlist>
+              </dr>
+             </domain>
+             <conds>
+              <cond label="b9">
+               <pred arg="x14" symbol="one" type="n" sense="1">
+               <indexlist>
+               <index pos="34">i1034</index>
+               </indexlist>
+               </pred>
+              </cond>
+              <cond label="b10">
+               <pred arg="x15" symbol="pursuer" type="n" sense="1">
+               <indexlist>
+               <index pos="37">i1037</index>
+               </indexlist>
+               </pred>
+              </cond>
+              <cond label="b9">
+               <pred arg="e4" symbol="observe" type="v" sense="1">
+               <indexlist>
+               <index pos="35">i1035</index>
+               </indexlist>
+               </pred>
+              </cond>
+              <cond label="b9">
+               <rel arg1="e4" arg2="x14" symbol="Agent" sense="1">
+               <indexlist>
+               </indexlist>
+               </rel>
+              </cond>
+              <cond label="b9">
+               <rel arg1="e4" arg2="x15" symbol="Theme" sense="1">
+               <indexlist>
+               </indexlist>
+               </rel>
+              </cond>
+              <cond label="b3">
+               <pred arg="t1" symbol="now" type="a" sense="1">
+               <indexlist>
+               </indexlist>
+               </pred>
+              </cond>
+              <cond label="b9">
+               <rel arg1="e4" arg2="t3" symbol="temp_included" sense="1">
+               <indexlist>
+               </indexlist>
+               </rel>
+              </cond>
+              <cond label="b9">
+               <rel arg1="t3" arg2="t1" symbol="temp_before" sense="1">
+               <indexlist>
+               </indexlist>
+               </rel>
+              </cond>
+             </conds>
+            </drs>
+           </not>
+          </cond>
+         </conds>
+        </drs>
+       </prop>
+      </cond>
+      <cond label="b1">
+       <rel arg1="e3" arg2="x13" symbol="upon" sense="0">
+       <indexlist>
+       <index pos="30">i1030</index>
+       </indexlist>
+       </rel>
+      </cond>
+      <cond label="b1">
+       <rel arg1="x11" arg2="x7" symbol="subset_of" sense="1">
+       <indexlist>
+       </indexlist>
+       </rel>
+      </cond>
+      <cond label="b1">
+       <rel arg1="e2" arg2="x7" symbol="in" sense="0">
+       <indexlist>
+       <index pos="16">i1016</index>
+       </indexlist>
+       </rel>
+      </cond>
+      <cond label="b1">
+       <rel arg1="e2" arg2="e1" symbol="while" sense="0">
+       <indexlist>
+       </indexlist>
+       </rel>
+      </cond>
+     </conds>
+    </drs>
+   </constituent>
+   <constituent label="k2">
+    <drs type="sentence" label="b11">
+     <tokens>
+      <token>This</token>
+      <token>greatly</token>
+      <token>annoyed</token>
+      <token>him</token>
+     </tokens>
+     <domain>
+      <dr label="b4" name="x9">
+      <indexlist>
+      </indexlist>
+      </dr>
+      <dr label="b5" name="x10">
+      <indexlist>
+      </indexlist>
+      </dr>
+      <dr label="b11" name="e5">
+      <indexlist>
+      </indexlist>
+      </dr>
+      <dr label="b3" name="t1">
+      <indexlist>
+      </indexlist>
+      </dr>
+      <dr label="b11" name="t4">
+      <indexlist>
+      </indexlist>
+      </dr>
+     </domain>
+     <conds>
+      <cond label="b4">
+       <pred arg="x9" symbol="thing" type="n" sense="12">
+       <indexlist>
+       <index pos="1">i2001</index>
+       </indexlist>
+       </pred>
+      </cond>
+      <cond label="b5">
+       <pred arg="x10" symbol="male" type="n" sense="2">
+       <indexlist>
+       <index pos="4">i2004</index>
+       </indexlist>
+       </pred>
+      </cond>
+      <cond label="b11">
+       <pred arg="e5" symbol="annoy" type="v" sense="1">
+       <indexlist>
+       <index pos="3">i2003</index>
+       </indexlist>
+       </pred>
+      </cond>
+      <cond label="b11">
+       <rel arg1="e5" arg2="x9" symbol="Stimulus" sense="1">
+       <indexlist>
+       </indexlist>
+       </rel>
+      </cond>
+      <cond label="b11">
+       <rel arg1="e5" arg2="x10" symbol="Experiencer" sense="1">
+       <indexlist>
+       </indexlist>
+       </rel>
+      </cond>
+      <cond label="b3">
+       <pred arg="t1" symbol="now" type="a" sense="1">
+       <indexlist>
+       </indexlist>
+       </pred>
+      </cond>
+      <cond label="b11">
+       <rel arg1="e5" arg2="t4" symbol="temp_included" sense="1">
+       <indexlist>
+       </indexlist>
+       </rel>
+      </cond>
+      <cond label="b11">
+       <rel arg1="t4" arg2="t1" symbol="temp_before" sense="1">
+       <indexlist>
+       </indexlist>
+       </rel>
+      </cond>
+      <cond label="b11">
+       <pred arg="e5" symbol="greatly" type="r" sense="1">
+       <indexlist>
+       <index pos="2">i2002</index>
+       </indexlist>
+       </pred>
+      </cond>
+     </conds>
+    </drs>
+   </constituent>
+   <constituent label="k3">
+    <sdrs>
+     <constituents>
+      <constituent label="k4">
+       <drs type="sentence" label="b12">
+        <tokens>
+         <token>recollecting</token>
+         <token>that</token>
+         <token>he</token>
+         <token>was</token>
+         <token>not</token>
+         <token>aquatic</token>
+         <token>,</token>
+         <token>he</token>
+         <token>stopped</token>
+        </tokens>
+        <domain>
+         <dr label="b12" name="x16">
+         <indexlist>
+         </indexlist>
+         </dr>
+         <dr label="b12" name="p2">
+         <indexlist>
+         <index pos="8">i2008</index>
+         </indexlist>
+         </dr>
+         <dr label="b12" name="e6">
+         <indexlist>
+         </indexlist>
+         </dr>
+         <dr label="b4" name="x9">
+         <indexlist>
+         </indexlist>
+         </dr>
+         <dr label="b12" name="e7">
+         <indexlist>
+         </indexlist>
+         </dr>
+         <dr label="b3" name="t1">
+         <indexlist>
+         </indexlist>
+         </dr>
+         <dr label="b12" name="t5">
+         <indexlist>
+         </indexlist>
+         </dr>
+        </domain>
+        <conds>
+         <cond label="b12">
+          <pred arg="x16" symbol="thing" type="n" sense="12">
+          <indexlist>
+          </indexlist>
+          </pred>
+         </cond>
+         <cond label="b12">
+          <prop argument="p2">
+          <indexlist>
+          </indexlist>
+           <drs type="normal" label="b13">
+            <domain>
+             <dr label="b4" name="x9">
+             <indexlist>
+             </indexlist>
+             </dr>
+            </domain>
+            <conds>
+             <cond label="b4">
+              <pred arg="x9" symbol="male" type="n" sense="2">
+              <indexlist>
+              <index pos="9">i2009</index>
+              </indexlist>
+              </pred>
+             </cond>
+             <cond label="b13">
+              <not>
+              <indexlist>
+              <index pos="11">i2011</index>
+              </indexlist>
+               <drs type="normal" label="b14">
+                <domain>
+                 <dr label="b14" name="s3">
+                 <indexlist>
+                 </indexlist>
+                 </dr>
+                 <dr label="b3" name="t1">
+                 <indexlist>
+                 </indexlist>
+                 </dr>
+                 <dr label="b14" name="t6">
+                 <indexlist>
+                 <index pos="10">i2010</index>
+                 </indexlist>
+                 </dr>
+                </domain>
+                <conds>
+                 <cond label="b14">
+                  <pred arg="s3" symbol="aquatic" type="a" sense="1">
+                  <indexlist>
+                  <index pos="12">i2012</index>
+                  </indexlist>
+                  </pred>
+                 </cond>
+                 <cond label="b14">
+                  <rel arg1="s3" arg2="x9" symbol="Topic" sense="1">
+                  <indexlist>
+                  </indexlist>
+                  </rel>
+                 </cond>
+                 <cond label="b3">
+                  <pred arg="t1" symbol="now" type="a" sense="1">
+                  <indexlist>
+                  </indexlist>
+                  </pred>
+                 </cond>
+                 <cond label="b14">
+                  <rel arg1="s3" arg2="t6" symbol="temp_included" sense="1">
+                  <indexlist>
+                  </indexlist>
+                  </rel>
+                 </cond>
+                 <cond label="b14">
+                  <rel arg1="t6" arg2="t1" symbol="temp_before" sense="1">
+                  <indexlist>
+                  </indexlist>
+                  </rel>
+                 </cond>
+                </conds>
+               </drs>
+              </not>
+             </cond>
+            </conds>
+           </drs>
+          </prop>
+         </cond>
+         <cond label="b12">
+          <pred arg="e6" symbol="recollect" type="v" sense="1">
+          <indexlist>
+          <index pos="7">i2007</index>
+          </indexlist>
+          </pred>
+         </cond>
+         <cond label="b12">
+          <rel arg1="e6" arg2="x16" symbol="Agent" sense="1">
+          <indexlist>
+          </indexlist>
+          </rel>
+         </cond>
+         <cond label="b12">
+          <rel arg1="e6" arg2="p2" symbol="Theme" sense="1">
+          <indexlist>
+          </indexlist>
+          </rel>
+         </cond>
+         <cond label="b4">
+          <pred arg="x9" symbol="male" type="n" sense="2">
+          <indexlist>
+          <index pos="14">i2014</index>
+          </indexlist>
+          </pred>
+         </cond>
+         <cond label="b12">
+          <pred arg="e7" symbol="stop" type="v" sense="1">
+          <indexlist>
+          <index pos="15">i2015</index>
+          </indexlist>
+          </pred>
+         </cond>
+         <cond label="b12">
+          <rel arg1="e7" arg2="x9" symbol="Theme" sense="1">
+          <indexlist>
+          </indexlist>
+          </rel>
+         </cond>
+         <cond label="b3">
+          <pred arg="t1" symbol="now" type="a" sense="1">
+          <indexlist>
+          </indexlist>
+          </pred>
+         </cond>
+         <cond label="b12">
+          <rel arg1="e7" arg2="t5" symbol="temp_included" sense="1">
+          <indexlist>
+          </indexlist>
+          </rel>
+         </cond>
+         <cond label="b12">
+          <rel arg1="t5" arg2="t1" symbol="temp_before" sense="1">
+          <indexlist>
+          </indexlist>
+          </rel>
+         </cond>
+         <cond label="b12">
+          <rel arg1="e7" arg2="e6" symbol="while" sense="0">
+          <indexlist>
+          </indexlist>
+          </rel>
+         </cond>
+        </conds>
+       </drs>
+      </constituent>
+      <constituent label="k5">
+       <drs type="sentence" label="b15">
+        <tokens>
+         <token>he</token>
+         <token>stopped</token>
+         <token>and</token>
+         <token>shouted</token>
+         <token>across</token>
+         <token>the</token>
+         <token>waves</token>
+         <token>'</token>
+         <token>tumultous</token>
+         <token>roar</token>
+        </tokens>
+        <domain>
+         <dr label="b4" name="x9">
+         <indexlist>
+         </indexlist>
+         </dr>
+         <dr label="b15" name="e8">
+         <indexlist>
+         </indexlist>
+         </dr>
+         <dr label="b3" name="t1">
+         <indexlist>
+         </indexlist>
+         </dr>
+         <dr label="b15" name="t7">
+         <indexlist>
+         </indexlist>
+         </dr>
+         <dr label="b16" name="x17">
+         <indexlist>
+         <index pos="19">i2019</index>
+         </indexlist>
+         </dr>
+         <dr label="b17" name="x18">
+         <indexlist>
+         </indexlist>
+         </dr>
+         <dr label="b17" name="s4">
+         <indexlist>
+         </indexlist>
+         </dr>
+        </domain>
+        <conds>
+         <cond label="b4">
+          <pred arg="x9" symbol="male" type="n" sense="2">
+          <indexlist>
+          <index pos="14">i2014</index>
+          </indexlist>
+          </pred>
+         </cond>
+         <cond label="b15">
+          <pred arg="e8" symbol="shout" type="v" sense="1">
+          <indexlist>
+          <index pos="17">i2017</index>
+          </indexlist>
+          </pred>
+         </cond>
+         <cond label="b15">
+          <rel arg1="e8" arg2="x9" symbol="Agent" sense="1">
+          <indexlist>
+          </indexlist>
+          </rel>
+         </cond>
+         <cond label="b3">
+          <pred arg="t1" symbol="now" type="a" sense="1">
+          <indexlist>
+          </indexlist>
+          </pred>
+         </cond>
+         <cond label="b15">
+          <rel arg1="e8" arg2="t7" symbol="temp_included" sense="1">
+          <indexlist>
+          </indexlist>
+          </rel>
+         </cond>
+         <cond label="b15">
+          <rel arg1="t7" arg2="t1" symbol="temp_before" sense="1">
+          <indexlist>
+          </indexlist>
+          </rel>
+         </cond>
+         <cond label="b16">
+          <pred arg="x17" symbol="wave" type="n" sense="1">
+          <indexlist>
+          <index pos="20">i2020</index>
+          </indexlist>
+          </pred>
+         </cond>
+         <cond label="b17">
+          <rel arg1="x18" arg2="x17" symbol="of" sense="0">
+          <indexlist>
+          <index pos="21">i2021</index>
+          </indexlist>
+          </rel>
+         </cond>
+         <cond label="b17">
+          <rel arg1="s4" arg2="x18" symbol="Topic" sense="1">
+          <indexlist>
+          </indexlist>
+          </rel>
+         </cond>
+         <cond label="b17">
+          <pred arg="s4" symbol="tumultous" type="a" sense="0">
+          <indexlist>
+          <index pos="22">i2022</index>
+          </indexlist>
+          </pred>
+         </cond>
+         <cond label="b17">
+          <pred arg="x18" symbol="roar" type="n" sense="1">
+          <indexlist>
+          <index pos="23">i2023</index>
+          </indexlist>
+          </pred>
+         </cond>
+         <cond label="b15">
+          <rel arg1="e8" arg2="x18" symbol="across" sense="0">
+          <indexlist>
+          <index pos="18">i2018</index>
+          </indexlist>
+          </rel>
+         </cond>
+         <cond label="b15">
+          <rel arg1="e8" arg2="e6" symbol="while" sense="0">
+          <indexlist>
+          </indexlist>
+          </rel>
+         </cond>
+        </conds>
+       </drs>
+      </constituent>
+     </constituents>
+     <relations>
+      <drel arg1="k4" arg2="k5" sym="continuation">
+      <indexlist>
+      <index pos="16">i2016</index>
+      </indexlist>
+      </drel>
+      <drel arg1="k4" arg2="k5" sym="parallel">
+      <indexlist>
+      </indexlist>
+      </drel>
+     </relations>
+    </sdrs>
+   </constituent>
+   <constituent label="k6">
+    <drs type="sentence" label="b18">
+     <tokens>
+      <token>Take</token>
+      <token>my</token>
+      <token>name</token>
+      <token>off</token>
+      <token>the</token>
+      <token>passenger</token>
+      <token>list</token>
+     </tokens>
+     <domain>
+      <dr label="b18" name="x19">
+      <indexlist>
+      </indexlist>
+      </dr>
+      <dr label="b4" name="x9">
+      <indexlist>
+      </indexlist>
+      </dr>
+      <dr label="b19" name="x20">
+      <indexlist>
+      </indexlist>
+      </dr>
+      <dr label="b18" name="e9">
+      <indexlist>
+      </indexlist>
+      </dr>
+      <dr label="b20" name="x21">
+      <indexlist>
+      <index pos="6">i3006</index>
+      </indexlist>
+      </dr>
+      <dr label="b20" name="x22">
+      <indexlist>
+      </indexlist>
+      </dr>
+     </domain>
+     <conds>
+      <cond label="b18">
+       <pred arg="x19" symbol="thing" type="n" sense="12">
+       <indexlist>
+       </indexlist>
+       </pred>
+      </cond>
+      <cond label="b4">
+       <pred arg="x9" symbol="person" type="n" sense="1">
+       <indexlist>
+       <index pos="3">i3003</index>
+       </indexlist>
+       </pred>
+      </cond>
+      <cond label="b19">
+       <rel arg1="x20" arg2="x9" symbol="of" sense="1">
+       <indexlist>
+       </indexlist>
+       </rel>
+      </cond>
+      <cond label="b19">
+       <pred arg="x20" symbol="name" type="n" sense="1">
+       <indexlist>
+       <index pos="4">i3004</index>
+       </indexlist>
+       </pred>
+      </cond>
+      <cond label="b18">
+       <pred arg="e9" symbol="take" type="v" sense="1">
+       <indexlist>
+       <index pos="2">i3002</index>
+       </indexlist>
+       </pred>
+      </cond>
+      <cond label="b18">
+       <rel arg1="e9" arg2="x19" symbol="Agent" sense="1">
+       <indexlist>
+       </indexlist>
+       </rel>
+      </cond>
+      <cond label="b18">
+       <rel arg1="e9" arg2="x20" symbol="Theme" sense="1">
+       <indexlist>
+       </indexlist>
+       </rel>
+      </cond>
+      <cond label="b20">
+       <pred arg="x22" symbol="passenger" type="n" sense="1">
+       <indexlist>
+       <index pos="7">i3007</index>
+       </indexlist>
+       </pred>
+      </cond>
+      <cond label="b20">
+       <rel arg1="x21" arg2="x22" symbol="of" sense="0">
+       <indexlist>
+       </indexlist>
+       </rel>
+      </cond>
+      <cond label="b20">
+       <pred arg="x21" symbol="list" type="n" sense="1">
+       <indexlist>
+       <index pos="8">i3008</index>
+       </indexlist>
+       </pred>
+      </cond>
+      <cond label="b18">
+       <rel arg1="e9" arg2="x21" symbol="off" sense="0">
+       <indexlist>
+       <index pos="5">i3005</index>
+       </indexlist>
+       </rel>
+      </cond>
+     </conds>
+    </drs>
+   </constituent>
+   <constituent label="k7">
+    <drs type="sentence" label="b21">
+     <tokens>
+      <token>Back</token>
+      <token>to</token>
+      <token>him</token>
+      <token>over</token>
+      <token>the</token>
+      <token>waters</token>
+      <token>,</token>
+      <token>hollow</token>
+     </tokens>
+     <domain>
+      <dr label="b21" name="x23">
+      <indexlist>
+      </indexlist>
+      </dr>
+      <dr label="b4" name="x9">
+      <indexlist>
+      </indexlist>
+      </dr>
+      <dr label="b22" name="x24">
+      <indexlist>
+      <index pos="5">i4005</index>
+      </indexlist>
+      </dr>
+      <dr label="b21" name="x25">
+      <indexlist>
+      </indexlist>
+      </dr>
+      <dr label="b21" name="s5">
+      <indexlist>
+      </indexlist>
+      </dr>
+     </domain>
+     <conds>
+      <cond label="b21">
+       <pred arg="x23" symbol="event" type="n" sense="1">
+       <indexlist>
+       </indexlist>
+       </pred>
+      </cond>
+      <cond label="b21">
+       <pred arg="x23" symbol="back" type="r" sense="1">
+       <indexlist>
+       <index pos="1">i4001</index>
+       </indexlist>
+       </pred>
+      </cond>
+      <cond label="b4">
+       <pred arg="x9" symbol="male" type="n" sense="2">
+       <indexlist>
+       <index pos="3">i4003</index>
+       </indexlist>
+       </pred>
+      </cond>
+      <cond label="b22">
+       <pred arg="x24" symbol="water" type="n" sense="1">
+       <indexlist>
+       <index pos="6">i4006</index>
+       </indexlist>
+       </pred>
+      </cond>
+      <cond label="b21">
+       <eq arg1="x24" arg2="x25">
+       <indexlist>
+       </indexlist>
+       </eq>
+      </cond>
+      <cond label="b21">
+       <pred arg="s5" symbol="hollow" type="a" sense="1">
+       <indexlist>
+       <index pos="8">i4008</index>
+       </indexlist>
+       </pred>
+      </cond>
+      <cond label="b21">
+       <rel arg1="s5" arg2="x25" symbol="Topic" sense="1">
+       <indexlist>
+       </indexlist>
+       </rel>
+      </cond>
+     </conds>
+    </drs>
+   </constituent>
+   <constituent label="k8">
+    <drs type="sentence" label="b23">
+     <tokens>
+      <token>to</token>
+      <token>him</token>
+      <token>over</token>
+      <token>the</token>
+      <token>waters</token>
+      <token>,</token>
+      <token>hollow</token>
+      <token>and</token>
+      <token>heartless</token>
+      <token>,</token>
+      <token>like</token>
+      <token>laughter</token>
+      <token>in</token>
+      <token>a</token>
+      <token>tomb</token>
+      <token>,</token>
+      <token>rang</token>
+      <token>the</token>
+      <token>voice</token>
+      <token>of</token>
+      <token>the</token>
+      <token>Skipper</token>
+      <token>:</token>
+      <token>&quot;</token>
+      <token>'T</token>
+      <token>ai</token>
+      <token>n't</token>
+      <token>on</token>
+     </tokens>
+     <domain>
+      <dr label="b23" name="x26">
+      <indexlist>
+      </indexlist>
+      </dr>
+      <dr label="b23" name="s6">
+      <indexlist>
+      </indexlist>
+      </dr>
+      <dr label="b23" name="x27">
+      <indexlist>
+      </indexlist>
+      </dr>
+      <dr label="b23" name="x28">
+      <indexlist>
+      <index pos="15">i4015</index>
+      </indexlist>
+      </dr>
+      <dr label="b23" name="x29">
+      <indexlist>
+      </indexlist>
+      </dr>
+      <dr label="b24" name="x30">
+      <indexlist>
+      <index pos="19">i4019</index>
+      </indexlist>
+      </dr>
+      <dr label="b25" name="x31">
+      <indexlist>
+      <index pos="22">i4022</index>
+      </indexlist>
+      </dr>
+      <dr label="b4" name="x9">
+      <indexlist>
+      </indexlist>
+      </dr>
+      <dr label="b23" name="e10">
+      <indexlist>
+      </indexlist>
+      </dr>
+     </domain>
+     <conds>
+      <cond label="b23">
+       <eq arg1="x24" arg2="x26">
+       <indexlist>
+       </indexlist>
+       </eq>
+      </cond>
+      <cond label="b23">
+       <pred arg="s6" symbol="heartless" type="a" sense="1">
+       <indexlist>
+       <index pos="10">i4010</index>
+       </indexlist>
+       </pred>
+      </cond>
+      <cond label="b23">
+       <rel arg1="s6" arg2="x26" symbol="Topic" sense="1">
+       <indexlist>
+       </indexlist>
+       </rel>
+      </cond>
+      <cond label="b23">
+       <pred arg="x27" symbol="laughter" type="n" sense="1">
+       <indexlist>
+       <index pos="13">i4013</index>
+       </indexlist>
+       </pred>
+      </cond>
+      <cond label="b23">
+       <pred arg="x28" symbol="tomb" type="n" sense="1">
+       <indexlist>
+       <index pos="16">i4016</index>
+       </indexlist>
+       </pred>
+      </cond>
+      <cond label="b23">
+       <pred arg="x29" symbol="thing" type="n" sense="12">
+       <indexlist>
+       </indexlist>
+       </pred>
+      </cond>
+      <cond label="b24">
+       <pred arg="x30" symbol="voice" type="n" sense="1">
+       <indexlist>
+       <index pos="20">i4020</index>
+       </indexlist>
+       </pred>
+      </cond>
+      <cond label="b25">
+       <pred arg="x31" symbol="skipper" type="n" sense="1">
+       <indexlist>
+       <index pos="23">i4023</index>
+       </indexlist>
+       </pred>
+      </cond>
+      <cond label="b23">
+       <rel arg1="x30" arg2="x31" symbol="of" sense="0">
+       <indexlist>
+       <index pos="21">i4021</index>
+       </indexlist>
+       </rel>
+      </cond>
+      <cond label="b4">
+       <pred arg="x9" symbol="thing" type="n" sense="12">
+       <indexlist>
+       <index pos="26">i4026</index>
+       </indexlist>
+       </pred>
+      </cond>
+      <cond label="b23">
+       <rel arg1="x30" arg2="x9" symbol=":" sense="0">
+       <indexlist>
+       <index pos="24">i4024</index>
+       </indexlist>
+       </rel>
+      </cond>
+      <cond label="b23">
+       <pred arg="e10" symbol="ring" type="v" sense="1">
+       <indexlist>
+       <index pos="18">i4018</index>
+       </indexlist>
+       </pred>
+      </cond>
+      <cond label="b23">
+       <rel arg1="e10" arg2="x29" symbol="Theme" sense="1">
+       <indexlist>
+       </indexlist>
+       </rel>
+      </cond>
+      <cond label="b23">
+       <rel arg1="e10" arg2="x30" symbol="Co-Theme" sense="1">
+       <indexlist>
+       </indexlist>
+       </rel>
+      </cond>
+      <cond label="b23">
+       <not>
+       <indexlist>
+       <index pos="28">i4028</index>
+       </indexlist>
+        <drs type="normal" label="b26">
+         <domain>
+          <dr label="b26" name="e11">
+          <indexlist>
+          </indexlist>
+          </dr>
+          <dr label="b26" name="x32">
+          <indexlist>
+          </indexlist>
+          </dr>
+          <dr label="b3" name="t1">
+          <indexlist>
+          </indexlist>
+          </dr>
+          <dr label="b26" name="t8">
+          <indexlist>
+          </indexlist>
+          </dr>
+         </domain>
+         <conds>
+          <cond label="b26">
+           <pred arg="e11" symbol="be" type="v" sense="0">
+           <indexlist>
+           <index pos="27">i4027</index>
+           </indexlist>
+           </pred>
+          </cond>
+          <cond label="b26">
+           <rel arg1="e11" arg2="e10" symbol="Agent" sense="1">
+           <indexlist>
+           </indexlist>
+           </rel>
+          </cond>
+          <cond label="b26">
+           <eq arg1="x28" arg2="x32">
+           <indexlist>
+           </indexlist>
+           </eq>
+          </cond>
+          <cond label="b26">
+           <rel arg1="e11" arg2="x32" symbol="on" sense="0">
+           <indexlist>
+           <index pos="29">i4029</index>
+           </indexlist>
+           </rel>
+          </cond>
+          <cond label="b3">
+           <pred arg="t1" symbol="now" type="a" sense="1">
+           <indexlist>
+           </indexlist>
+           </pred>
+          </cond>
+          <cond label="b26">
+           <rel arg1="e11" arg2="t8" symbol="temp_included" sense="1">
+           <indexlist>
+           </indexlist>
+           </rel>
+          </cond>
+          <cond label="b26">
+           <eq arg1="t8" arg2="t1">
+           <indexlist>
+           </indexlist>
+           </eq>
+          </cond>
+         </conds>
+        </drs>
+       </not>
+      </cond>
+      <cond label="b23">
+       <rel arg1="x27" arg2="x28" symbol="in" sense="0">
+       <indexlist>
+       <index pos="14">i4014</index>
+       </indexlist>
+       </rel>
+      </cond>
+      <cond label="b23">
+       <rel arg1="x24" arg2="x27" symbol="like" sense="0">
+       <indexlist>
+       <index pos="12">i4012</index>
+       </indexlist>
+       </rel>
+      </cond>
+      <cond label="b23">
+       <rel arg1="x9" arg2="x24" symbol="over" sense="0">
+       <indexlist>
+       <index pos="4">i4004</index>
+       </indexlist>
+       </rel>
+      </cond>
+      <cond label="b23">
+       <rel arg1="x23" arg2="x9" symbol="to" sense="0">
+       <indexlist>
+       <index pos="2">i4002</index>
+       </indexlist>
+       </rel>
+      </cond>
+     </conds>
+    </drs>
+   </constituent>
+   <constituent label="k9">
+    <drs type="sentence" label="b27">
+     <tokens>
+      <token>And</token>
+      <token>there</token>
+      <token>,</token>
+      <token>in</token>
+      <token>the</token>
+      <token>focus</token>
+      <token>of</token>
+      <token>a</token>
+      <token>million</token>
+      <token>pairs</token>
+      <token>of</token>
+      <token>convergent</token>
+      <token>eyes</token>
+      <token>,</token>
+      <token>the</token>
+      <token>Ambitious</token>
+      <token>Person</token>
+      <token>sat</token>
+      <token>him</token>
+      <token>down</token>
+      <token>between</token>
+      <token>the</token>
+      <token>sun</token>
+      <token>and</token>
+      <token>moon</token>
+     </tokens>
+     <domain>
+      <dr label="b27" name="x33">
+      <indexlist>
+      </indexlist>
+      </dr>
+      <dr label="b27" name="s7">
+      <indexlist>
+      </indexlist>
+      </dr>
+      <dr label="b1" name="x6">
+      <indexlist>
+      <index pos="15">i5015</index>
+      </indexlist>
+      </dr>
+      <dr label="b1" name="s8">
+      <indexlist>
+      </indexlist>
+      </dr>
+      <dr label="b27" name="e12">
+      <indexlist>
+      </indexlist>
+      </dr>
+      <dr label="b3" name="t1">
+      <indexlist>
+      </indexlist>
+      </dr>
+      <dr label="b27" name="t9">
+      <indexlist>
+      </indexlist>
+      </dr>
+      <dr label="b27" name="x34">
+      <indexlist>
+      <index pos="24">i5024</index>
+      </indexlist>
+      </dr>
+      <dr label="b28" name="x35">
+      <indexlist>
+      <index pos="22">i5022</index>
+      </indexlist>
+      </dr>
+      <dr label="b27" name="x36">
+      <indexlist>
+      </indexlist>
+      </dr>
+      <dr label="b29" name="x37">
+      <indexlist>
+      <index pos="5">i5005</index>
+      </indexlist>
+      </dr>
+      <dr label="b27" name="x38">
+      <indexlist>
+      <index pos="8">i5008</index>
+      </indexlist>
+      </dr>
+      <dr label="b27" name="x39">
+      <indexlist>
+      </indexlist>
+      </dr>
+      <dr label="b27" name="s9">
+      <indexlist>
+      </indexlist>
+      </dr>
+     </domain>
+     <conds>
+      <cond label="b27">
+       <pred arg="x33" symbol="thing" type="n" sense="12">
+       <indexlist>
+       </indexlist>
+       </pred>
+      </cond>
+      <cond label="b27">
+       <pred arg="s7" symbol="there" type="a" sense="1">
+       <indexlist>
+       <index pos="2">i5002</index>
+       </indexlist>
+       </pred>
+      </cond>
+      <cond label="b27">
+       <rel arg1="s7" arg2="x33" symbol="Topic" sense="1">
+       <indexlist>
+       </indexlist>
+       </rel>
+      </cond>
+      <cond label="b27">
+       <pred arg="s7" symbol="and" type="r" sense="0">
+       <indexlist>
+       <index pos="1">i5001</index>
+       </indexlist>
+       </pred>
+      </cond>
+      <cond label="b1">
+       <rel arg1="s8" arg2="x6" symbol="Topic" sense="1">
+       <indexlist>
+       </indexlist>
+       </rel>
+      </cond>
+      <cond label="b1">
+       <pred arg="s8" symbol="ambitious" type="a" sense="1">
+       <indexlist>
+       <index pos="16">i5016</index>
+       </indexlist>
+       </pred>
+      </cond>
+      <cond label="b1">
+       <pred arg="x6" symbol="person" type="n" sense="1">
+       <indexlist>
+       <index pos="17">i5017</index>
+       </indexlist>
+       </pred>
+      </cond>
+      <cond label="b27">
+       <pred arg="e12" symbol="sit" type="v" sense="1">
+       <indexlist>
+       <index pos="18">i5018</index>
+       </indexlist>
+       </pred>
+      </cond>
+      <cond label="b27">
+       <rel arg1="e12" arg2="x6" symbol="Agent" sense="1">
+       <indexlist>
+       </indexlist>
+       </rel>
+      </cond>
+      <cond label="b3">
+       <pred arg="t1" symbol="now" type="a" sense="1">
+       <indexlist>
+       </indexlist>
+       </pred>
+      </cond>
+      <cond label="b27">
+       <rel arg1="e12" arg2="t9" symbol="temp_included" sense="1">
+       <indexlist>
+       </indexlist>
+       </rel>
+      </cond>
+      <cond label="b27">
+       <rel arg1="t9" arg2="t1" symbol="temp_before" sense="1">
+       <indexlist>
+       </indexlist>
+       </rel>
+      </cond>
+      <cond label="b27">
+       <pred arg="e12" symbol="him" type="r" sense="0">
+       <indexlist>
+       <index pos="19">i5019</index>
+       </indexlist>
+       </pred>
+      </cond>
+      <cond label="b27">
+       <pred arg="e12" symbol="down" type="r" sense="0">
+       <indexlist>
+       <index pos="20">i5020</index>
+       </indexlist>
+       </pred>
+      </cond>
+      <cond label="b28">
+       <pred arg="x35" symbol="sun" type="n" sense="1">
+       <indexlist>
+       <index pos="23">i5023</index>
+       </indexlist>
+       </pred>
+      </cond>
+      <cond label="b27">
+       <rel arg1="x35" arg2="x34" symbol="subset_of" sense="1">
+       <indexlist>
+       </indexlist>
+       </rel>
+      </cond>
+      <cond label="b27">
+       <pred arg="x36" symbol="moon" type="n" sense="1">
+       <indexlist>
+       <index pos="25">i5025</index>
+       </indexlist>
+       </pred>
+      </cond>
+      <cond label="b27">
+       <rel arg1="x36" arg2="x34" symbol="subset_of" sense="1">
+       <indexlist>
+       </indexlist>
+       </rel>
+      </cond>
+      <cond label="b27">
+       <rel arg1="e12" arg2="x34" symbol="between" sense="0">
+       <indexlist>
+       <index pos="21">i5021</index>
+       </indexlist>
+       </rel>
+      </cond>
+      <cond label="b29">
+       <pred arg="x37" symbol="focus" type="n" sense="1">
+       <indexlist>
+       <index pos="6">i5006</index>
+       </indexlist>
+       </pred>
+      </cond>
+      <cond label="b27">
+       <card arg="x38" value="1000000" type="eq">
+       <indexlist>
+       <index pos="9">i5009</index>
+       </indexlist>
+       </card>
+      </cond>
+      <cond label="b27">
+       <pred arg="x38" symbol="pair" type="n" sense="1">
+       <indexlist>
+       <index pos="10">i5010</index>
+       </indexlist>
+       </pred>
+      </cond>
+      <cond label="b27">
+       <rel arg1="s9" arg2="x39" symbol="Topic" sense="1">
+       <indexlist>
+       </indexlist>
+       </rel>
+      </cond>
+      <cond label="b27">
+       <pred arg="s9" symbol="convergent" type="a" sense="1">
+       <indexlist>
+       <index pos="12">i5012</index>
+       </indexlist>
+       </pred>
+      </cond>
+      <cond label="b27">
+       <pred arg="x39" symbol="eye" type="n" sense="1">
+       <indexlist>
+       <index pos="13">i5013</index>
+       </indexlist>
+       </pred>
+      </cond>
+      <cond label="b27">
+       <rel arg1="x38" arg2="x39" symbol="of" sense="0">
+       <indexlist>
+       <index pos="11">i5011</index>
+       </indexlist>
+       </rel>
+      </cond>
+      <cond label="b27">
+       <rel arg1="x37" arg2="x38" symbol="of" sense="0">
+       <indexlist>
+       <index pos="7">i5007</index>
+       </indexlist>
+       </rel>
+      </cond>
+      <cond label="b27">
+       <rel arg1="e12" arg2="x37" symbol="in" sense="0">
+       <indexlist>
+       <index pos="4">i5004</index>
+       </indexlist>
+       </rel>
+      </cond>
+      <cond label="b27">
+       <rel arg1="e12" arg2="s7" symbol="while" sense="0">
+       <indexlist>
+       </indexlist>
+       </rel>
+      </cond>
+     </conds>
+    </drs>
+   </constituent>
+   <constituent label="k10">
+    <drs type="sentence" label="b30">
+     <tokens>
+      <token>in</token>
+      <token>the</token>
+      <token>focus</token>
+      <token>of</token>
+      <token>a</token>
+      <token>million</token>
+      <token>pairs</token>
+      <token>of</token>
+      <token>convergent</token>
+      <token>eyes</token>
+      <token>,</token>
+      <token>the</token>
+      <token>Ambitious</token>
+      <token>Person</token>
+      <token>sat</token>
+      <token>him</token>
+      <token>down</token>
+      <token>between</token>
+      <token>the</token>
+      <token>sun</token>
+      <token>and</token>
+      <token>moon</token>
+      <token>and</token>
+      <token>murmured</token>
+      <token>sadly</token>
+      <token>to</token>
+      <token>his</token>
+      <token>own</token>
+      <token>soul</token>
+     </tokens>
+     <domain>
+      <dr label="b1" name="x6">
+      <indexlist>
+      <index pos="15">i5015</index>
+      </indexlist>
+      </dr>
+      <dr label="b1" name="s10">
+      <indexlist>
+      </indexlist>
+      </dr>
+      <dr label="b30" name="e13">
+      <indexlist>
+      </indexlist>
+      </dr>
+      <dr label="b4" name="x9">
+      <indexlist>
+      </indexlist>
+      </dr>
+      <dr label="b31" name="x40">
+      <indexlist>
+      </indexlist>
+      </dr>
+      <dr label="b31" name="s11">
+      <indexlist>
+      </indexlist>
+      </dr>
+      <dr label="b3" name="t1">
+      <indexlist>
+      </indexlist>
+      </dr>
+      <dr label="b30" name="t10">
+      <indexlist>
+      </indexlist>
+      </dr>
+      <dr label="b29" name="x41">
+      <indexlist>
+      <index pos="5">i5005</index>
+      </indexlist>
+      </dr>
+      <dr label="b30" name="x42">
+      <indexlist>
+      <index pos="8">i5008</index>
+      </indexlist>
+      </dr>
+      <dr label="b30" name="x43">
+      <indexlist>
+      </indexlist>
+      </dr>
+      <dr label="b30" name="s12">
+      <indexlist>
+      </indexlist>
+      </dr>
+     </domain>
+     <conds>
+      <cond label="b1">
+       <rel arg1="s10" arg2="x6" symbol="Topic" sense="1">
+       <indexlist>
+       </indexlist>
+       </rel>
+      </cond>
+      <cond label="b1">
+       <pred arg="s10" symbol="ambitious" type="a" sense="1">
+       <indexlist>
+       <index pos="16">i5016</index>
+       </indexlist>
+       </pred>
+      </cond>
+      <cond label="b1">
+       <pred arg="x6" symbol="person" type="n" sense="1">
+       <indexlist>
+       <index pos="17">i5017</index>
+       </indexlist>
+       </pred>
+      </cond>
+      <cond label="b30">
+       <pred arg="e13" symbol="murmur" type="v" sense="1">
+       <indexlist>
+       <index pos="27">i5027</index>
+       </indexlist>
+       </pred>
+      </cond>
+      <cond label="b30">
+       <rel arg1="e13" arg2="x6" symbol="Agent" sense="1">
+       <indexlist>
+       </indexlist>
+       </rel>
+      </cond>
+      <cond label="b4">
+       <pred arg="x9" symbol="male" type="n" sense="2">
+       <indexlist>
+       <index pos="30">i5030</index>
+       </indexlist>
+       </pred>
+      </cond>
+      <cond label="b31">
+       <rel arg1="x40" arg2="x9" symbol="of" sense="1">
+       <indexlist>
+       </indexlist>
+       </rel>
+      </cond>
+      <cond label="b31">
+       <rel arg1="s11" arg2="x40" symbol="Topic" sense="1">
+       <indexlist>
+       </indexlist>
+       </rel>
+      </cond>
+      <cond label="b31">
+       <pred arg="s11" symbol="own" type="a" sense="1">
+       <indexlist>
+       <index pos="31">i5031</index>
+       </indexlist>
+       </pred>
+      </cond>
+      <cond label="b31">
+       <pred arg="x40" symbol="soul" type="n" sense="1">
+       <indexlist>
+       <index pos="32">i5032</index>
+       </indexlist>
+       </pred>
+      </cond>
+      <cond label="b30">
+       <rel arg1="e13" arg2="x40" symbol="to" sense="0">
+       <indexlist>
+       <index pos="29">i5029</index>
+       </indexlist>
+       </rel>
+      </cond>
+      <cond label="b3">
+       <pred arg="t1" symbol="now" type="a" sense="1">
+       <indexlist>
+       </indexlist>
+       </pred>
+      </cond>
+      <cond label="b30">
+       <rel arg1="e13" arg2="t10" symbol="temp_included" sense="1">
+       <indexlist>
+       </indexlist>
+       </rel>
+      </cond>
+      <cond label="b30">
+       <rel arg1="t10" arg2="t1" symbol="temp_before" sense="1">
+       <indexlist>
+       </indexlist>
+       </rel>
+      </cond>
+      <cond label="b30">
+       <pred arg="e13" symbol="sadly" type="r" sense="1">
+       <indexlist>
+       <index pos="28">i5028</index>
+       </indexlist>
+       </pred>
+      </cond>
+      <cond label="b29">
+       <pred arg="x41" symbol="focus" type="n" sense="1">
+       <indexlist>
+       <index pos="6">i5006</index>
+       </indexlist>
+       </pred>
+      </cond>
+      <cond label="b30">
+       <card arg="x42" value="1000000" type="eq">
+       <indexlist>
+       <index pos="9">i5009</index>
+       </indexlist>
+       </card>
+      </cond>
+      <cond label="b30">
+       <pred arg="x42" symbol="pair" type="n" sense="1">
+       <indexlist>
+       <index pos="10">i5010</index>
+       </indexlist>
+       </pred>
+      </cond>
+      <cond label="b30">
+       <rel arg1="s12" arg2="x43" symbol="Topic" sense="1">
+       <indexlist>
+       </indexlist>
+       </rel>
+      </cond>
+      <cond label="b30">
+       <pred arg="s12" symbol="convergent" type="a" sense="1">
+       <indexlist>
+       <index pos="12">i5012</index>
+       </indexlist>
+       </pred>
+      </cond>
+      <cond label="b30">
+       <pred arg="x43" symbol="eye" type="n" sense="1">
+       <indexlist>
+       <index pos="13">i5013</index>
+       </indexlist>
+       </pred>
+      </cond>
+      <cond label="b30">
+       <rel arg1="x42" arg2="x43" symbol="of" sense="0">
+       <indexlist>
+       <index pos="11">i5011</index>
+       </indexlist>
+       </rel>
+      </cond>
+      <cond label="b30">
+       <rel arg1="x41" arg2="x42" symbol="of" sense="0">
+       <indexlist>
+       <index pos="7">i5007</index>
+       </indexlist>
+       </rel>
+      </cond>
+      <cond label="b30">
+       <rel arg1="e13" arg2="x41" symbol="in" sense="0">
+       <indexlist>
+       <index pos="4">i5004</index>
+       </indexlist>
+       </rel>
+      </cond>
+      <cond label="b30">
+       <rel arg1="e13" arg2="s7" symbol="while" sense="0">
+       <indexlist>
+       </indexlist>
+       </rel>
+      </cond>
+     </conds>
+    </drs>
+   </constituent>
+   <constituent label="k11">
+    <drs type="sentence" label="b32">
+     <tokens>
+      <token>Marooned</token>
+      <token>,</token>
+      <token>by</token>
+      <token>thunder</token>
+     </tokens>
+     <domain>
+      <dr label="b32" name="x44">
+      <indexlist>
+      </indexlist>
+      </dr>
+      <dr label="b32" name="e14">
+      <indexlist>
+      </indexlist>
+      </dr>
+      <dr label="b32" name="x45">
+      <indexlist>
+      </indexlist>
+      </dr>
+     </domain>
+     <conds>
+      <cond label="b32">
+       <pred arg="x44" symbol="thing" type="n" sense="12">
+       <indexlist>
+       </indexlist>
+       </pred>
+      </cond>
+      <cond label="b32">
+       <pred arg="e14" symbol="maroon" type="v" sense="1">
+       <indexlist>
+       <index pos="2">i6002</index>
+       </indexlist>
+       </pred>
+      </cond>
+      <cond label="b32">
+       <rel arg1="e14" arg2="x44" symbol="Theme" sense="1">
+       <indexlist>
+       </indexlist>
+       </rel>
+      </cond>
+      <cond label="b32">
+       <pred arg="x45" symbol="thunder" type="n" sense="1">
+       <indexlist>
+       <index pos="5">i6005</index>
+       </indexlist>
+       </pred>
+      </cond>
+      <cond label="b32">
+       <rel arg1="e14" arg2="x45" symbol="Agent" sense="1">
+       <indexlist>
+       <index pos="4">i6004</index>
+       </indexlist>
+       </rel>
+      </cond>
+     </conds>
+    </drs>
+   </constituent>
+  </constituents>
+  <relations>
+   <drel arg1="k1" arg2="k2" sym="continuation">
+   <indexlist>
+   </indexlist>
+   </drel>
+   <drel arg1="k2" arg2="k3" sym="continuation">
+   <indexlist>
+   <index pos="6">i2006</index>
+   </indexlist>
+   </drel>
+   <drel arg1="k2" arg2="k3" sym="parallel">
+   <indexlist>
+   </indexlist>
+   </drel>
+   <drel arg1="k3" arg2="k6" sym="continuation">
+   <indexlist>
+   </indexlist>
+   </drel>
+   <drel arg1="k6" arg2="k7" sym="continuation">
+   <indexlist>
+   </indexlist>
+   </drel>
+   <drel arg1="k7" arg2="k8" sym="continuation">
+   <indexlist>
+   <index pos="9">i4009</index>
+   </indexlist>
+   </drel>
+   <drel arg1="k7" arg2="k8" sym="parallel">
+   <indexlist>
+   </indexlist>
+   </drel>
+   <drel arg1="k8" arg2="k9" sym="continuation">
+   <indexlist>
+   </indexlist>
+   </drel>
+   <drel arg1="k9" arg2="k10" sym="continuation">
+   <indexlist>
+   <index pos="26">i5026</index>
+   </indexlist>
+   </drel>
+   <drel arg1="k9" arg2="k10" sym="parallel">
+   <indexlist>
+   </indexlist>
+   </drel>
+   <drel arg1="k10" arg2="k11" sym="continuation">
+   <indexlist>
+   </indexlist>
+   </drel>
+  </relations>
+ </sdrs>
+</xdrs>
+</xdrs-output>
