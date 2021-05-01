@@ -7,7 +7,7 @@ def process_gmb_files(gmb_directory, target_directory):
         target_directory.mkdir(parents=True)
 
     if not gmb_directory.exists():
-        raise FileNotFoundError("Could not find the GMB root directory under: []"
+        raise FileNotFoundError("Could not find the GMB root directory under: {}"
                                 .format(gmb_directory.absolute()))
 
     for document in tqdm(gmb_directory.rglob("data/p*/d*"),
