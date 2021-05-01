@@ -6,7 +6,12 @@ def process_gmb_files(gmb_directory, target_directory):
     if not target_directory.exists():
         target_directory.mkdir(parents=True)
 
-    for document in tqdm(gmb_directory.rglob("data/p*/d*"), desc="Number of documents processed", total=10000):
+    if not gmb_directory.exists():
+        raise FileNotFoundError("Could not find the GMB root directory under: []"
+                                .format(gmb_directory.absolute()))
+
+    for document in tqdm(gmb_directory.rglob("data/p*/d*"),
+                         desc="Number of documents processed", total=10000):
         target_file = target_directory / "gmb_processed"
         token_file = document / "en.tags"
         if token_file.is_file():
