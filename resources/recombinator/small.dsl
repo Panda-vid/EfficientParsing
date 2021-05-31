@@ -3,13 +3,14 @@
     As one can see the file is divided in subsections we call category.
 
     TODO: Add a method to add new categories
-    Right now there are 4 categories:
+    Right now there are 5 categories:
     'complete' denoting complete actions of the DSL,
     'sub' denoting subactions of complete actions
     'conjunction' denoting conjunctions (note that these conjunctions also work in conditions)
     'condition' denoting a condition
+    'conditionals' boolean function such as ==, >=, <= ...
 
-    Each category is started by a tag of form <category_name> and finished with a tag <\category_name>.
+    Each category is started by a tag of form <category_name> and finished with a tag <category_name>.
     The parser cannot parse nested categories.
     Possible inputs are: column, cell, table, value and condition or an ALLCAPS action.
     For condition bodies the special parameter condition_body is used.
@@ -26,15 +27,24 @@
     INSERT INTO [table] (,column) [SELECT]
     DELETE [FROM]
     UPDATE [table] [SET]
-</complete>
+<complete>
 <sub>
     FROM [table] [condition]
-    SET [,"column=value"]
-</sub>
+    SET [,column=value]
+<sub>
 <conjunction>
     AND
     OR
-</conjunction>
+<conjunction>
 <condition>
-    WHERE [condition_body]
-</condition>
+    WHERE
+<condition>
+<conditionals>
+    >
+    <
+    >=
+    <=
+    =
+    ==
+    !=
+<conditionals>
