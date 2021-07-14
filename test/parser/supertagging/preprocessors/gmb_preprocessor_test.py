@@ -1,7 +1,7 @@
 import shutil
 import unittest
 
-from smart_ccg.parser.supertagging.preprocessors.gmb_preprocessor import process_gmb_files
+from smart_ccg.sem_parser.ccg_parser.supertagging.preprocessors.gmb_preprocessor import process_gmb_files
 from test.test_utils import get_test_resource_directory
 
 
