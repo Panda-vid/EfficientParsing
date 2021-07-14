@@ -38,5 +38,5 @@ def process_document_token_file_and_save(input_token_file, target_file):
 
 if __name__ == "__main__":
     gmb_path = Path("/home/pandavid/Downloads/gmb-2.2.0/")
-    target_path = Path("/home/pandavid/PycharmProjects/SmartCCG/resources/supertagging/gmb_processed")
+    target_path = Path("/resources/supertagging/gmb_processed")
     process_gmb_files(gmb_path, target_path)

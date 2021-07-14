@@ -2,7 +2,6 @@
     This file denotes the underlying DSL grammar/operations for the recombinator.
     As one can see the file is divided in subsections we call category.
 
-    TODO: Add a method to add new categories
     Right now there are 5 categories:
     'complete' denoting complete actions of the DSL,
     'sub' denoting subactions of complete actions
@@ -24,11 +23,11 @@
 <complete>
     SELECT [,column] [FROM]
     INSERT INTO [table] (,column) (,value)
-    INSERT INTO [table] (,column) [SELECT]
     DELETE [FROM]
     UPDATE [table] [SET]
 <complete>
 <sub>
+    FROM [table]
     FROM [table] [condition]
     SET [,column=value]
 <sub>
@@ -44,7 +43,6 @@
     <
     >=
     <=
-    =
     ==
     !=
 <conditionals>
