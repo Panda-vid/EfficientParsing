@@ -57,6 +57,7 @@ class Combinator:
 
         return res_input
 
+    # TODO input generation can be part of the corresponding classes to reduce clutter
     def get_randomized_complex_input(self, input_type: Type, table: pd.DataFrame, maxlistdepth: int) -> Input:
         res_input = None
         if input_type[0] == Type.LIST:
