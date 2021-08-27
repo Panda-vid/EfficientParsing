@@ -11,7 +11,7 @@ import pandas as pd
 import tensorflow_text
 from tensorflow.keras import layers, models
 import tensorflow_hub as hub
-from tqdm import trange, tqdm
+from tqdm import trange
 
 
 class Model:
@@ -38,7 +38,7 @@ class Model:
         model.bert = hub.KerasLayer(bert_model_url, trainable=False)
         # example preprocess: hub.load('https://tfhub.dev/tensorflow/bert_en_uncased_preprocess/3')
         model.preprocess = hub.load('https://tfhub.dev/tensorflow/bert_en_uncased_preprocess/3')
-        #tokenizer_init
+        # tokenizer initialization
         BertTokenizer = bert.bert_tokenization.FullTokenizer
         vocabulary_file = model.bert.resolved_object.vocab_file.asset_path.numpy()
         to_lower_case = model.bert.resolved_object.do_lower_case.numpy()
@@ -67,7 +67,7 @@ class Model:
             index = closest.indices.numpy()[0]
             predicted_label = all_trained_labels[index]
         else:
-            #TODO: introduce NOT_SURE label
+            # TODO: introduce NOT_SURE label
             predicted_label = 0
 
         return predicted_label
@@ -82,13 +82,19 @@ class Model:
         lifted_input = bert_output['pooled_output']
         # further positional encoding of the sequence given
         lifted_input += self.positional_encoding[:seq_length]
+
+        # padding the sequence such that the MLP can use the vector
         if seq_length <= self.max_sequence_length:
             lifted_input = tf.pad(lifted_input, tf.constant([[0,  self.max_sequence_length - seq_length], [0, 0]]),
                                   "CONSTANT")
         else:
             raise RuntimeError("The given sequence is too long for the model to handle!")
 
-        return lifted_input
+        # non-linear transform of encoder output (kernel method with quadratic kernel)
+        lifted_input = tf.tensordot(lifted_input, tf.transpose(lifted_input, [1, 0]), axes=1) ** 2
+
+        pre_encoded_input = tf.math.reduce_sum(lifted_input, axis=1)
+        return pre_encoded_input[None, :]
 
     def set_training_examples(self, dataframe: pd.DataFrame):
         self.trained_examples = dataframe
@@ -226,7 +232,8 @@ class ScalarLogisticRegressor:
 class Encoder(tf.keras.Sequential):
     def __init__(self, input_size, hidden_size, output_size):
         super(Encoder, self).__init__()
-        # input_shape is usually 768 because this is the output_size of ELECTRA/BERT base
+        # input_size is equal to the maximum sequence length which is usually 250
+        # thus input_shape is usually (250,)
         self.add(layers.Dense(hidden_size, input_shape=(input_size,), activation='relu'))
         self.add(layers.Dense(output_size, activation='relu'))
         self.compile(optimizer='adam', loss=tf.keras.losses.cosine_similarity)
@@ -234,7 +241,6 @@ class Encoder(tf.keras.Sequential):
     def call(self, inputs, training=None, mask=None):
         for layer in self.layers:
             inputs = layer(inputs)
-        inputs = tf.tensordot(tf.transpose(inputs, [1, 0]), inputs, axes=1)**2
         return inputs
 
 

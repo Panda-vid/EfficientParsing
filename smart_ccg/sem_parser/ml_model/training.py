@@ -4,6 +4,7 @@ from enum import Enum
 from pathlib import Path
 
 import pandas as pd
+import tensorflow as tf
 from smart_ccg.sem_parser.ml_model.model import Encoder, Model, ScalarLogisticRegressor
 
 
@@ -21,7 +22,7 @@ def initialize_model(not_sure_threshold, bert_model_type, encoder_hidden_size, e
                      max_sequence_length=250):
     classifier = ScalarLogisticRegressor()
     bert_model_output_size = bert_model_type.value[1]
-    encoder = Encoder(bert_model_output_size, encoder_hidden_size, encoder_output_size)
+    encoder = Encoder(max_sequence_length, encoder_hidden_size, encoder_output_size)
     return Model.create_model_from(encoder, classifier, not_sure_threshold, bert_model_type.value[0],
                                    bert_model_output_size, max_sequence_length)
 
@@ -49,22 +50,30 @@ def train_classifier(dataframe, model: Model, num_epochs):
 
 
 def classifier_pair_generator(dataframe, model: Model):
-    for example_1, encoded_example_2 in pair_generator(dataframe, model.encoder, 1):
-        encoded_example_1 = model.encoder(example_1)
-        model.similarity.update_state(encoded_example_1, encoded_example_2)
+    dataframe_index_pairs = itertools.combinations(dataframe.index, 2)
+    for id1, id2 in dataframe_index_pairs:
+        encoded_instance_id1 = model.encoder(dataframe.loc[id1, "Lifted instance"])
+        encoded_instance_id2 = model.encoder(dataframe.loc[id2, "Lifted instance"])
+
+        model.similarity.update_state(encoded_instance_id1, encoded_instance_id2)
         cosine_similarity = model.similarity.result()
         model.similarity.reset_state()
-        yield cosine_similarity, float(1)
+
+        has_same_DSL_output = dataframe.loc[id1, "DSL output"] == dataframe.loc[id2, "DSL output"]
+
+        yield cosine_similarity, float(1) if has_same_DSL_output else cosine_similarity, float(0)
 
 
 def train_encoder(dataframe, model: Model, num_epochs):
-    model.encoder.fit(pair_generator(dataframe, model.encoder, 1), steps_per_epoch=len(dataframe.index), epochs=num_epochs, verbose=1)
+    model.encoder.fit(encoder_pair_generator(dataframe, model.encoder, num_epochs),
+                      steps_per_epoch=len(dataframe.index), epochs=num_epochs, verbose=1)
     return model
 
 
-def pair_generator(dataframe, encoder, num_epochs):
+def encoder_pair_generator(dataframe, encoder, num_passes):
     grouped_dict = get_all_examples_grouped_by_label(dataframe)
-    for i in range(num_epochs):
+    # num_passes is used for repeating the input set for training such that the fit function does not run out of data
+    for i in range(num_passes):
         for label, examples in grouped_dict.items():
             for example_1, example_2 in itertools.combinations(examples, 2):
                 encoded_example = encoder(example_2)
