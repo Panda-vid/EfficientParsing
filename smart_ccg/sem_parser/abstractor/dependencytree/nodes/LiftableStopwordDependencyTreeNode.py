@@ -1,0 +1,4 @@
+from smart_ccg.sem_parser.abstractor.dependencytree.nodes.LiftableDependencyTreeNode import LiftableDependencyTreeNode
+
+
+class LiftableStopwordsDependencyTreeNode(LiftableDependencyTreeNode):
