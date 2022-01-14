@@ -5,7 +5,7 @@ from pathlib import Path
 
 import pandas as pd
 import tensorflow as tf
-from smart_ccg.sem_parser.ml_model.model import Encoder, Model, ScalarLogisticRegressor
+from smart_ccg.sem_parser.model.model import Encoder, Model, ScalarLogisticRegressor
 
 
 class ElectraType(Enum):
