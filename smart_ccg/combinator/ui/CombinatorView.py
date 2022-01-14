@@ -1,7 +1,7 @@
-import tkinter as tk
+import _tkinter as tk
 
 from smart_ccg.combinator.model.Combinator import Combinator
-from smart_ccg.combinator.util.wikitablequestions_table_parser import parse_wikitablequestions_tables_from
+from smart_ccg.util.table_parsing import parse_wikitablequestions_tables_from
 from smart_ccg.combinator.util.dsl_parser import parse_dsl_file_from
 from smart_ccg.combinator.ui.DataFrameTable import DataFrameTable
 
