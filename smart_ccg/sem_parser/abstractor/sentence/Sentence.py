@@ -2,6 +2,7 @@ from __future__ import annotations
 
 from typing import List
 
+from smart_ccg.sem_parser.abstractor.Table import Table
 from smart_ccg.sem_parser.abstractor.dependencytree.LiftableDependencyTree import LiftableDependencyTree
 from smart_ccg.sem_parser.abstractor.dependencytree.nodes.LiftableCaseDependencyTreeNode import \
     LiftableCaseDependencyTreeNode
@@ -29,7 +30,7 @@ class Sentence:
     def lifted(self, table: Table = None) -> str:
         nonempty_lifted_strings = [node.lifted(table) for node in self.dependency_tree.nodes()
                                    if node.lifted(table) != ""]
-        return " ".join(nonempty_lifted_strings[:-1]) + nonempty_lifted_strings[-1]
+        return " ".join(nonempty_lifted_strings)
 
     def case_lifted(self, table: Table = None) -> List[str]:
         return [" ".join([node.case_lifted(table)

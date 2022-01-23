@@ -20,7 +20,7 @@ class LiftableCaseDependencyTreeNode(LiftableDependencyTreeNode):
         res.extend(self.get_subcases())
         return res
 
-    def lifted(self, table: Table) -> str:
+    def lifted(self, table: Table = None) -> str:
         if LiftableCaseDependencyTreeNode.isinstance(self.parent):
             res = ""
         elif self.is_case_enumeration():
@@ -39,7 +39,7 @@ class LiftableCaseDependencyTreeNode(LiftableDependencyTreeNode):
     def get_subcases(self) -> List[LiftableCaseDependencyTreeNode]:
         return [child for child in self.children if self.isinstance(child)]
 
-    def case_lifted(self, table: Table) -> str:
+    def case_lifted(self, table: Table = None) -> str:
         return super(LiftableCaseDependencyTreeNode, self).lifted(table)
 
     def get_values(self) -> List[LiftableValueDependencyTreeNode]:
