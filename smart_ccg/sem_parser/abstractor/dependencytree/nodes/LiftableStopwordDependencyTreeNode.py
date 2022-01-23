@@ -10,8 +10,8 @@ class LiftableStopwordDependencyTreeNode(LiftableDependencyTreeNode):
     def isinstance(cls, node: LiftableDependencyTreeNode):
         return isinstance(node, LiftableStopwordDependencyTreeNode)
 
-    def case_lifted(self, table: Table):
+    def case_lifted(self, table: Table = None):
         return self.lifted(table)
 
-    def lifted(self, table: Table):
+    def lifted(self, table: Table = None):
         return ""

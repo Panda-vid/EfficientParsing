@@ -15,7 +15,7 @@ class ElectraType(Enum):
 
 
 def read_initial_dataset_from(csv_file):
-    return pd.read_csv(csv_file, sep=";")
+    return pd.read_csv(csv_file, sep=";", dtype="string")
 
 
 def initialize_model(not_sure_threshold, bert_model_type, encoder_hidden_size, encoder_output_size,

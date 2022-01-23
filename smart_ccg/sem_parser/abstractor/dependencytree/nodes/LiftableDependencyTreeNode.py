@@ -29,10 +29,10 @@ class LiftableDependencyTreeNode:
     def isinstance(cls, node: Any) -> bool:
         return isinstance(node, LiftableDependencyTreeNode)
 
-    def case_lifted(self, table: Table):
+    def case_lifted(self, table: Table = None):
         return self.lifted(table)
 
-    def lifted(self, table: Table) -> str:
+    def lifted(self, table: Table = None) -> str:
         return self.word
 
     def nodes(self) -> List[LiftableDependencyTreeNode]:
@@ -83,12 +83,12 @@ class LiftableDependencyTreeNode:
             node_id_equals = self.node_id == other.node_id
             dependency_equals = self.dependency == other.dependency
             word_equals = self.get_word() == other.get_word()
-            lifted_equals = self.lifted(None) == other.lifted(None)
+            lifted_equals = self.lifted() == other.lifted()
             children_equals = self.children == other.children
             depth_equals = self.depth == other.depth
             parent_equals = self.parent == other.parent
             res = node_id_equals and dependency_equals and word_equals and children_equals and depth_equals and \
-                  parent_equals and lifted_equals
+                parent_equals and lifted_equals
         return res
 
     def __gt__(self, other) -> bool:

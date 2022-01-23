@@ -12,8 +12,8 @@ class LiftableValueDependencyTreeNode(LiftableDependencyTreeNode):
     def isinstance(cls, node: LiftableDependencyTreeNode):
         return isinstance(node, LiftableValueDependencyTreeNode)
 
-    def lifted(self, table: Table) -> str:
+    def lifted(self, table: Table = None) -> str:
         return ""
 
-    def case_lifted(self, table: Table) -> str:
+    def case_lifted(self, table: Table = None) -> str:
         return "<val>"

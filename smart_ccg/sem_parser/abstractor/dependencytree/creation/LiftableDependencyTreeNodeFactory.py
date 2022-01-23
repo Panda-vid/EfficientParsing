@@ -2,6 +2,8 @@ from typing import Tuple, List
 
 from smart_ccg.sem_parser.abstractor.dependencytree.nodes.LiftableCaseDependencyTreeNode import \
     LiftableCaseDependencyTreeNode
+from smart_ccg.sem_parser.abstractor.dependencytree.nodes.LiftableCompoundDependencyTreeNode import \
+    LiftableCompoundDependencyTreeNode
 from smart_ccg.sem_parser.abstractor.dependencytree.nodes.LiftableDependencyTreeNode import LiftableDependencyTreeNode
 from smart_ccg.sem_parser.abstractor.dependencytree.nodes.LiftableDependencyTreeRootNode import \
     LiftableDependencyTreeRootNode
@@ -18,6 +20,7 @@ class LiftableDependencyTreeNodeFactory:
                  value_dependency_tokens: List[str],
                  stopword_dependency_tokens: List[str],
                  oblique_dependency_token: str,
+                 compound_dependency_token: str,
                  conjunction_dependency_token: str,
                  case_dependency_token: str,
                  auxilliary_dependency_token: str,
@@ -26,6 +29,7 @@ class LiftableDependencyTreeNodeFactory:
         self.value_dependency_tokens = value_dependency_tokens
         self.stopword_dependency_tokens = stopword_dependency_tokens
         self.oblique_dependency_token = oblique_dependency_token
+        self.compound_dependency_token = compound_dependency_token
         self.conjunction_dependency_token = conjunction_dependency_token
         self.case_dependency_token = case_dependency_token
         self.auxilliary_dependency_token = auxilliary_dependency_token
@@ -33,10 +37,12 @@ class LiftableDependencyTreeNodeFactory:
 
     @classmethod
     def get_default_instance(cls):
+        # TODO: acl, acl:relcl and oblique are dependent on their children and need a class modeling this
         object_dependency_tokens = ["obj", "appos", "nmod"]
         value_dependency_tokens = ["nummod", "amod", "acl:relcl"]
-        stopword_dependency_tokens = ["det", "nsubj"]
+        stopword_dependency_tokens = ["det", "nsubj", "punct", "cc", "acl"]
         oblique_dependency_token = "obl"
+        compound_dependency_token = "compound"
         conjunction_dependency_token = "conj"
         case_dependency_token = "case"
         auxilliary_dependency_token = "aux"
@@ -45,13 +51,15 @@ class LiftableDependencyTreeNodeFactory:
                    value_dependency_tokens,
                    stopword_dependency_tokens,
                    oblique_dependency_token,
+                   compound_dependency_token,
                    conjunction_dependency_token,
                    case_dependency_token,
                    auxilliary_dependency_token,
                    root_token)
 
     @classmethod
-    def create_initial_root_node(self, root_node_data: Tuple[int, str, str, int, str]) -> LiftableDependencyTreeRootNode:
+    def create_initial_root_node(cls, root_node_data: Tuple[int, str, str, int, str]) \
+            -> LiftableDependencyTreeRootNode:
         node_id, word, word_type, parent_id, dependency = root_node_data
         dependency = "ROOT"
         return LiftableDependencyTreeRootNode(node_id, word, word_type, parent_id, dependency)
@@ -67,6 +75,8 @@ class LiftableDependencyTreeNodeFactory:
             node = LiftableValueDependencyTreeNode(node_id, word, word_type, parent_id, dependency, depth)
         elif self.is_stopword_dependency(dependency):
             node = LiftableStopwordDependencyTreeNode(node_id, word, word_type, parent_id, dependency, depth)
+        elif self.is_compound_dependency(dependency):
+            node = LiftableCompoundDependencyTreeNode(node_id, word, word_type, parent_id, dependency, depth)
         elif self.is_auxilliary_dependency(dependency):
             node = self.resolve_auxilliary_dependency(parent_node, node_id, word, word_type, parent_id, dependency,
                                                       depth)
@@ -121,5 +131,8 @@ class LiftableDependencyTreeNodeFactory:
     def is_auxilliary_dependency(self, dependency: str) -> bool:
         return dependency == self.auxilliary_dependency_token
 
-    def is_oblique_dependency(self, dependency: str):
+    def is_oblique_dependency(self, dependency: str) -> bool:
         return dependency == self.oblique_dependency_token
+
+    def is_compound_dependency(self, dependency: str) -> bool:
+        return dependency == self.compound_dependency_token
