@@ -16,4 +16,4 @@ class LiftableValueDependencyTreeNode(LiftableDependencyTreeNode):
         return ""
 
     def case_lifted(self, table: Table = None) -> str:
-        return "<val>"
+        return "[value]"

@@ -24,9 +24,9 @@ class LiftableCaseDependencyTreeNode(LiftableDependencyTreeNode):
         if LiftableCaseDependencyTreeNode.isinstance(self.parent):
             res = ""
         elif self.is_case_enumeration():
-            res = "<cases>"
+            res = "[,case]"
         else:
-            res = "<case>"
+            res = "[case]"
         return res
 
     def nodes(self) -> List[LiftableDependencyTreeNode]:
