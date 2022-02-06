@@ -1,11 +1,18 @@
 import itertools
 import argparse
+from typing import Tuple
+
+import numpy as np
 from enum import Enum
 from pathlib import Path
 
 import pandas as pd
 import tensorflow as tf
-from smart_ccg.sem_parser.model.model import Encoder, Model, ScalarLogisticRegressor
+
+from smart_ccg.sem_parser.model.Encoder import Encoder
+from smart_ccg.sem_parser.model.Model import Model
+from smart_ccg.sem_parser.model.ScalarLogisticRegressor import ScalarLogisticRegressor
+from smart_ccg.sem_parser.model.model_utils import cosine_similarity
 
 
 class ElectraType(Enum):
@@ -40,28 +47,30 @@ def train_model(model: Model, dataframe, encoder_num_epochs, classifier_num_epoc
 
 
 def pre_encode_dataset(dataframe, model: Model):
-    dataframe["Lifted instance"] = dataframe["Lifted instance"].apply(model.pre_encoding)
+    dataframe["Lifted instance"] = dataframe["Lifted instance"].apply(model.preprocess)
     return dataframe
 
 
 def train_classifier(dataframe, model: Model, num_epochs):
-    model.classifier.train_from_generator(classifier_pair_generator(dataframe, model), num_epochs)
+    model.classifier.train_from_array(classifier_pairs(dataframe, model), num_epochs)
     return model
 
 
-def classifier_pair_generator(dataframe, model: Model):
+def classifier_pairs(dataframe: pd.DataFrame, model: Model) -> np.ndarray:
     dataframe_index_pairs = itertools.combinations(dataframe.index, 2)
+    res = []
     for id1, id2 in dataframe_index_pairs:
         encoded_instance_id1 = model.encoder(dataframe.loc[id1, "Lifted instance"])
         encoded_instance_id2 = model.encoder(dataframe.loc[id2, "Lifted instance"])
+        cosine_similarity_result = cosine_similarity(encoded_instance_id1, encoded_instance_id2)
 
-        model.similarity.update_state(encoded_instance_id1, encoded_instance_id2)
-        cosine_similarity = model.similarity.result()
-        model.similarity.reset_state()
+        has_same_dsl_output = dataframe.loc[id1, "DSL output"] == dataframe.loc[id2, "DSL output"]
 
-        has_same_DSL_output = dataframe.loc[id1, "DSL output"] == dataframe.loc[id2, "DSL output"]
-
-        yield cosine_similarity, float(1) if has_same_DSL_output else cosine_similarity, float(0)
+        if has_same_dsl_output:
+            res.append([float(cosine_similarity_result), float(1)])
+        else:
+            res.append([float(cosine_similarity_result), float(0)])
+    return np.array(res)
 
 
 def train_encoder(dataframe, model: Model, num_epochs):
@@ -71,6 +80,7 @@ def train_encoder(dataframe, model: Model, num_epochs):
 
 
 def encoder_pair_generator(dataframe, encoder, num_passes):
+    # TODO: Only positive examples are used here -> overfitting
     grouped_dict = get_all_examples_grouped_by_label(dataframe)
     # num_passes is used for repeating the input set for training such that the fit function does not run out of data
     for i in range(num_passes):
@@ -93,7 +103,7 @@ def get_unique_labels(dataframe):
 
 
 parser = argparse.ArgumentParser(description="This script trains the model and saves the model implemented in " +
-                                             "'model.py'.")
+                                             "'Model.py'.")
 parser.add_argument("model_directory", type=str, help="This is the directory, where the model files should be " +
                                                       "saved for later use.")
 parser.add_argument("dataset_location", type=str, help="The location of the dataset for training.")
