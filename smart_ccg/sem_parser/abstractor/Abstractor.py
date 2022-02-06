@@ -1,7 +1,9 @@
 from typing import List, Tuple
 
+import pandas as pd
 from nltk import CoreNLPDependencyParser
 
+from smart_ccg.sem_parser.abstractor.Table import Table
 from smart_ccg.sem_parser.abstractor.sentence.Sentence import Sentence
 from smart_ccg.sem_parser.abstractor.dependencytree.creation.LiftableDependencyTreeCreator import \
     LiftableDependencyTreeCreator
@@ -33,11 +35,17 @@ class Abstractor:
 
 
 if __name__ == '__main__':
-    string = "Create the table students containing the columns name, surname, mark and id."
+    # "Create the table students containing the columns name, surname, mark and id."
+    # "Create the table students containing the columns name surname mark and id."
+    # "Show all students which have passed the exam."
+    table = Table(["exam", "id"], "students", pd.DataFrame())
+    string = "Show all students which have passed the exam."
     abstractor = Abstractor()
     sentence, subsentences = abstractor.extract_sentence_instances_from(string)
-    print(sentence.values, sentence.objects, sentence.cases)
-    print(sentence.lifted())
-    print(sentence.case_lifted())
+    print(f"List of values: {sentence.values}")
+    print(f"List of objects: {sentence.objects}")
+    print(f"List of cases: {sentence.cases}")
+    print(f"Lifted sentence:\n", sentence.lifted(table))
+    print(f"Lifted cases:\n", sentence.case_lifted(table))
     for subsentence in subsentences:
-        print(subsentence.lifted())
+        print(f"Lifted subsentences:\n", subsentence.lifted(table))
