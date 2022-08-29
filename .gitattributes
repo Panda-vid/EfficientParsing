@@ -21,6 +21,8 @@
 *.ipynb filter=lfs diff=lfs merge=lfs -text
 *.csv filter=lfs diff=lfs merge=lfs -text
 /res/thesis_demonstration_set/training_examples filter=lfs diff=lfs merge=lfs -text
+/res/trained/good_model/trained_data/reranker_data filter=lfs diff=lfs merge=lfs -text
+/res/trained/nca_model/trained_data/reranker_data filter=lfs diff=lfs merge=lfs -text
 *.py !text !filter !merge !diff
 *.md !text !filter !merge !diff
 *.csv !text !filter !merge !diff
