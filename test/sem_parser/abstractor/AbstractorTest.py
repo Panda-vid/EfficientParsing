@@ -2,8 +2,7 @@ import unittest
 
 import pandas as pd
 
-from smart_ccg.sem_parser.abstractor.Abstractor import Abstractor
-from smart_ccg.sem_parser.abstractor.Table import Table
+from src.entity_abstractor.Abstractor import Abstractor
 
 
 class AbstractorTest(unittest.TestCase):
@@ -43,6 +42,15 @@ class AbstractorTest(unittest.TestCase):
         self.assertEqual(["have"], [case.word for case in sentence.cases])
         self.assertEqual("Show [table] [case]", sentence.lifted(table))
         self.assertEqual(["have [value] [column]"], sentence.case_lifted(table))
+
+    def test_abstractor_table_no_condition(self):
+        string = "Select exam and id from students."
+        table = Table(["exam", "id"], "students", pd.DataFrame())
+        sentence, subsentences = self.abstractor.extract_sentence_instances_from(string)
+        self.assertEqual(0, len(subsentences))
+        self.assertEqual(["exam", "id", "students"], [obj.word for obj in sentence.objects])
+        print(sentence.case_lifted(table))
+        self.assertEqual("Select [,column] [table]", sentence.lifted(table))
 
 
 if __name__ == '__main__':
