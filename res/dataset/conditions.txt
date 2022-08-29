@@ -1,0 +1,11 @@
+condition id	condition DSL	Lifted condition	Lifted condition DSL	condition column	condition value
+0	date == '01.04.22'	[column] is [value]	[column] == [value]	"[""date""]"	"[""'01.04.22'""]"
+1	name == 'Sophie Boehm'	[column] is [value]	[column] == [value]	"[""name""]"	"[""'Sophie Boehm'""]"
+2	private notes == ''	[column] are [value]	[column] == [value]	"[""private_notes""]"	"[""''""]"
+3	private notes == 'first meeting'	[column] are [value]	[column] == [value]	"[""private_notes""]"	"[""'first meeting'""]"
+4	phone == '06138848100'	[column] is [value]	[column] == [value]	"[""phone""]"	"[""'06138848100'""]"
+5	BY date descending	by [column] [value]	BY [column] [value]	"[""date""]"	"[""descending""]"
+6	BY surname ascending	by [column] [value]	BY [column] [value]	"[""surname""]"	"[""ascending""]"
+7	BY email ascending	by [column] [value]	BY [column] [value]	"[""email""]"	"[""ascending""]"
+8	BY slot descending	by [column] [value]	BY [column] [value]	"[""slot""]"	"[""descending""]"
+9	BY private notes descending	by [column] [value]	BY [column] [value]	"[""private_notes""]"	"[""descending""]"

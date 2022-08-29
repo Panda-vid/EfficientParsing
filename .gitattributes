@@ -19,6 +19,8 @@
 *.data-00000-of-00001 filter=lfs diff=lfs merge=lfs -text
 *.index filter=lfs diff=lfs merge=lfs -text
 *.ipynb filter=lfs diff=lfs merge=lfs -text
+*.csv filter=lfs diff=lfs merge=lfs -text
+/res/thesis_demonstration_set/training_examples filter=lfs diff=lfs merge=lfs -text
 *.py !text !filter !merge !diff
 *.md !text !filter !merge !diff
 *.csv !text !filter !merge !diff

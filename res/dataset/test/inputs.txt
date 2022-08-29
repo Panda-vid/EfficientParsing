@@ -1,0 +1,73 @@
+input id	column	table	context	condition id
+0	[["name","surname"]]	[["time_slots"]]	meeting_management	-1
+1	[["slot","surname","private notes"]]	[["time_slots"]]	meeting_management	-1
+2	[["date","private notes"]]	[["time_slots"]]	meeting_management	-1
+3	[["name","surname","email"]]	[["time_slots"]]	meeting_management	-1
+4	[["surname","private notes","phone"]]	[["time_slots"]]	meeting_management	-1
+5	[[]]	[["time_slots"]]	meeting_management	0
+6	[[]]	[["time_slots"]]	meeting_management	1
+7	[[]]	[["time_slots"]]	meeting_management	2
+8	[[]]	[["time_slots"]]	meeting_management	3
+9	[[]]	[["time_slots"]]	meeting_management	4
+10	[[]]	[["time_slots"]]	meeting_management	5
+11	[[]]	[["time_slots"]]	meeting_management	6
+12	[[]]	[["time_slots"]]	meeting_management	7
+13	[[]]	[["time_slots"]]	meeting_management	8
+14	[[]]	[["time_slots"]]	meeting_management	9
+15	[["name"]]	[["time_slots"]]	meeting_management	-1
+16	[["name","private notes"]]	[["time_slots"]]	meeting_management	-1
+17	[["date","email"]]	[["time_slots"]]	meeting_management	-1
+18	[["surname","private notes","date"]]	[["time_slots"]]	meeting_management	-1
+19	[["slot","phone"]]	[["time_slots"]]	meeting_management	-1
+20	[["institute","affiliation"]]	[["time_slots"]]	meeting_management	-1
+21	[[ "meeting length"]]	[["time_slots"]]	meeting_management	-1
+22	[["mobile","fax number"]]	[["time_slots"]]	meeting_management	-1
+23	[["middle name","week day"]]	[["time_slots"]]	meeting_management	-1
+24	[["birthday"]]	[["time_slots"]]	meeting_management	-1
+25	[[]]	[["medical_certificates"]]	attest_upload	10
+26	[["name","surname","student number","attachment name","date"]]	[["medical_certificates"]]	attest_upload	-1
+27	[["student number","attachment name","date"]]	[["medical_certificates"]]	attest_upload	-1
+28	[[]]	[["medical_certificates"]]	attest_upload	-1
+29	[[]]	[["medical_certificates"]]	attest_upload	11
+30	[["cleaning id"]]	[["holiday_management", "cleaning"]]	guest_management	-1
+31	[["role"]]	[["faculty"]]	faculty_management	-1
+32	[["firm"]]	[["cleaning"]]	guest_management	-1
+33	[["arrival","departure"]]	[["holiday_management"]]	guest_management	-1
+34	[["committee"]]	[["faculty"]]	faculty_management	-1
+35	[["name"]]	[["faculty"]]	faculty_management	12
+36	[[]]	[["faculty"]]	faculty_management	13
+37	[["role"]]	[["faculty"]]	faculty_management	-1
+38	[["name","student number"]]	[["medical_certificates"]]	attest_upload	-1
+39	[["major"]]	[["medical_certificates"]]	attest_upload	-1
+40	[["name","phone","arrival","departure"]]	[["holiday_management"]]	guest_management	-1
+41	[[]]	[["holiday_management"]]	guest_management	-1
+42	[[]]	[["faculty"]]	faculty_management	-1
+43	[[]]	[["holiday_management"]]	guest_management	-1
+44	[["name","surname","title","role"]]	[["faculty"]]	faculty_management	-1
+45	[[]]	[["faculty"]]	faculty_management	-1
+46	[["name","surname","staff id"]]	[["faculty"]]	faculty_management	-1
+47	[[]]	[["faculty"]]	faculty_management	-1
+48	[["fee"]]	[["cleaning"]]	guest_management	14
+49	[[]]	[["holiday_management"]]	guest_management	-1
+50	[[]]	[["cleaning"]]	guest_management	-1
+51	[[]]	[["medical_certificates"]]	attest_upload	-1
+52	[[]]	[["cleaning"]]	guest_management	-1
+53	[[]]	[["holiday_management"]]	guest_management	15
+54	[["fee","cost"]]	[["holiday_management"]]	guest_management	-1
+55	[["cost"]]	[["holiday_management"]]	guest_management	-1
+56	[["stay"]]	[["holiday_management"]]	guest_management	-1
+57	[["rent"]]	[["holiday_management"]]	guest_management	-1
+58	[["stay","daily rent"]]	[["holiday_management"]]	guest_management	-1
+59	[["total rent"]]	[["holiday_management"]]	guest_management	-1
+60	[["fee"]]	[["holiday_management"]]	guest_management	-1
+61	[["cleaning id"]]	[["holiday_management","cleaning"]]	guest_management	-1
+62	[["cleaning id"]]	[["holiday_management","cleaning"]]	guest_management	-1
+63	[[]]	[["medical_certificates"]]	attest_upload	16
+64	[[]]	[["cleaning"]]	guest_management	-1
+65	[[]]	[["faculty"]]	faculty_management	-1
+66	[[]]	[["faculty"]]	faculty_management	-1
+67	[[]]	[["time_slots"]]	meeting_management	17
+68	[[]]	[["time_slots"]]	meeting_management	-1
+69	[[]]	[["medical_certificates"]]	attest_upload	18
+70	[[]]	[["time_slots"]]	meeting_management	-1
+71	[[]]	[["cleaning"]]	guest_management	19

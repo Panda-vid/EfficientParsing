@@ -1,0 +1,10 @@
+Composite query	Lifted composite instance	DSL	decomposed query input ids	input id
+Add fee to total rent where cleaning id is not empty.	"Add [column] [table] [condition]"	"ADD([table], ['total cost']); FILTER([table], [condition]); SUM([table], [,column]); ASSIGN([table], ['total cost'])"	[32,53,54,60]	0
+Compute total rents from holiday management.	Compute [column] [table]	"ADD([table], ['stay']); SUBTRACT([table], ['arrival', 'departure']); ASSIGN([table], ['stay']); ADD([table], ['daily rent']); ADD([table], [,column]); MULTIPLY([table], ['stay', 'daily rent']); ASSIGN([table], [column])"	[33,39,55,56,57,58,59]	1
+Create meeting web form from time slots.	Create meeting web form [table]	"FILTER([table], name == ''); BIND FORM([table])"	[63,64]	2
+Create group view for administration in faculty.	Create group view [group] [table]	"SELECT([table], ['name', 'surname', 'phone', 'address', 'staff id']); BIND GROUP([table], [group])"	[46,47]	3
+Create group view for students in faculty.	"Create group view [,group] [table]"	"SELECT([table], ['name', 'surname', 'title', 'role']); BIND GROUP([table], [group]); BIND GROUP([table], [group]); BIND GROUP([table], [group])"	[44,45,65,66]	4
+Show name from faculty in descending order.	Show [column] [table] [condition]	"SORT([table], [condition]); SELECT([table], [,column])"	[36,37]	5
+Automatically delete all entries older than today in time slots.	Delete [table] [condition] 	"DELETE ROW([table], [condition]); LISTEN([table])"	[67,68]	6
+Automatically delete all certificates that are no longer viable in medical certificates.	Delete [table] [condition] 	"DELETE ROW([table], [condition]); LISTEN([table])"	[50,69]	7
+Count all rows where date is later than today.	Count rows [table] [condition]	"SELECT([table], [condition]); COUNT([table])"	[70,71]	8

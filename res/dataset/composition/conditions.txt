@@ -1,0 +1,6 @@
+condition id	condition DSL	Lifted condition	Lifted condition DSL	condition column	condition value
+0	cleaning id != ''	[column] is not [value]	[column] != [value]	["cleaning id"]	["''"]
+1	BY name descending	by [column] [value]	BY [column] [value]	["name"]	["descending"]
+2	date <= today	[column] older [value]	[column] <= [value]	["date"]	["today"]
+3	date <= today	[column] older [value]	[column] <= [value]	["date"]	["today"]
+4	date >= today	[column] later [value]	[column] >= [value]	["date"]	["today"]

@@ -1,0 +1,73 @@
+input id	query	Lifted instance	DSL output	difficulty
+0	"Select the name and surname."	"Select [,column] [table]"	"SELECT([table], [,column])"	1
+1	"Choose the slot, surname and private notes."	"Choose [,column] [table]"	"SELECT([table], [,column])"	1
+2	Show all the dates and private notes.	"Show [,column] [table]"	"SELECT([table], [,column])"	1
+3	"Give me the name, surname, and email."	"Give [,column] [table]"	"SELECT([table], [,column])"	1
+4	"Display the surname, private notes and phone."	"Display [,column] [table]"	"SELECT([table], [,column])"	1
+5	Filter the table time slots where the date is the 04.04.22.	Filter [table] [condition]	"FILTER([table], [condition])"	3
+6	Filter the table time slots where the name is Julia Farber.	Filter [table] [condition]	"FILTER([table], [condition])"	3
+7	Filter the table time slots where the private notes are not empty.	Filter [table] [condition]	"FILTER([table], [condition])"	3
+8	Filter the table time slots where the private notes are regular meet.	Filter [table] [condition]	"FILTER([table], [condition])"	3
+9	Filter time slots where the phone is 5323961496.	Filter [table] [condition]	"FILTER([table], [condition])"	3
+10	Sort the time slots by the emails descending.	Sort [table] [condition]	"SORT([table], [condition])"	3
+11	Sort the time slots by the surnames descending.	Sort [table] [condition]	"SORT([table], [condition])"	3
+12	Order the time slots by names ascending.	Order [table] [condition]	"SORT([table], [condition])"	3
+13	Rearrange the time slots by the slots descending.	Rearrange [table] [condition]	"SORT([table], [condition])"	3
+14	Sort the time slots by the phone numbers descending.	Sort [table] [condition]	"SORT([table], [condition])"	3
+15	Delete all the names.	Delete [column] [table]	"DELETE([table], [,column])"	1
+16	Delete the name and private notes.	"Delete [,column] [table]"	"DELETE([table], [,column])"	1
+17	Delete the date and email.	"Delete [,column] [table]"	"DELETE([table], [,column])"	1
+18	"Remove the surname, private notes and date."	"Remove [,column] [table]"	"DELETE([table], [,column])"	1
+19	Erase the slot and phone.	"Erase [,column] [table]"	"DELETE([table], [,column])"	1
+20	Append the columns institute and affiliation.	Append [column] [table]	"ADD([table], [,column])"	2
+21	Add the column meeting length.	"Add [,column] [table]"	"ADD([table], [,column])"	2
+22	Append the columns mobile and fax number.	"Append [,column] [table]"	"ADD([table], [,column])"	2
+23	Include the columns middle name and week day.	Include [column] [table]	"ADD([table], [,column])"	2
+24	Add the birthday column.	"Add [,column] [table]"	"ADD([table], [,column])"	2
+25	Arrange the medical certificates by the names ascending.	Arrange [condition] [table]	"SORT([table], [condition])"	3
+26	"Generate the table medical certificates with the columns name, surname, student number, attachment name, and date."	"Generate [table] [,column]"	"CREATE([table], [,column])"	2
+27	"Select the columns student number, attachment name and date from the table medical certificates."	"Select [table] [,column]"	"SELECT([table], [,column])"	1
+28	Make a web form from medical certificates.	Make web form [table]	BIND FORM([table])	1
+29	Take away all rows from medical certificates where the date is earlier than 11.08.2022.	Take away rows [table] [condition]	"DELETE ROW([table], [condition])"	3
+30	Append the tables holiday management and cleaning at the column cleaning id.	"Append [,table] [column]"	"JOIN([,table], [column])"	1
+31	Delete the role from faculty.	Delete [column] [table]	"DELETE([table], [,column])"	1
+32	Add the column firm to the cleaning table.	Add [column] [table]	"ADD([table], [,column])"	2
+33	Compute the difference between the departure and arrival times in holiday management.	"Copmute difference [,column] [table]"	"SUBTRACT([table], [,column])"	1
+34	Delete the committee column from faculty.	Delete [column] [table]	"DELETE([table], [,column])"	1
+35	Sort the faculty table by committee in ascending order.	Sort [table] [condition]	"SORT([table], [condition])"	3
+36	Order the faculty by the addresses descending.	Order [table] [condition]	"SORT([table], [condition])"	3
+37	Show the roles in faculty.	Show [column] [table]	"SELECT([table], [,column])"	1
+38	Return the name and student number from the table medical certificates.	"Return [,column] [table]"	"SELECT([table], [,column])"	1
+39	Add the column major to medical certificates.	Add [column] [table]	"ADD([table], [,column])"	2
+40	"Take the columns name, phone, arrival and departure from holiday management."	"Select [,column] [table]"	"SELECT([table], [,column])"	1
+41	Build a web form from the table holiday management.	Build web form [table]	BIND FORM([table])	1
+42	Listen to the faculty table.	Listen [table]	LISTEN([table])	1
+43	Bind the holiday management table to guests.	Bind [table] [group]	"BIND GROUP([table], [group])"	1
+44	"Take the name, surname, title and role from faculty."	"Take [table] [,column]"	"SELECT([table], [,column])"	1
+45	Bind the faculty table to RA.	Bind [table] [group]	"BIND GROUP([table], [group])"	1
+46	"Select the name, surname, staff id from faculty."	"Select [table] [,column]"	"SELECT([table], [,column])"	1
+47	Bind the faculty table to teaching.	Bind [table] [group]	"BIND GROUP([table], [group])"	1
+48	List the cleaning table by fees descending.	List [table] [condition]	"SORT([table], [condition])"	3
+49	Await changes in holiday management.	Await [table]	LISTEN([table])	1
+50	Observe cleaning.	Observe [table]	LISTEN([table])	1
+51	Follow medical certificates.	Follow [table]	LISTEN([table])	1
+52	Tie cleaning to cleaning staff.	Tie [table] [group]	"BIND GROUP([table], [group])"	1
+53	Filter holiday management where the cleaning id is empty.	Filter [table] [condition]	"FILTER([table], [condition])"	3
+54	Add the fees to cost.	"Add [,column] [table]"	"SUM([table], [,column])"	1
+55	Add the column cost to holiday management.	Add [column] [table]	"ADD([table], [,column])"	2
+56	Insert the result into the column stay.	Insert [column] [table]	"ASSIGN([table], [column])"	1
+57	Add the column rent to holiday management.	Add [column] [table]	"ADD([table], [,column])"	2
+58	Calculate the product of stay and daily rent.	"Calculate product [,column] [table]"	"MULTIPLY([table], [,column])"	1
+59	Overwrite the column total rent.	Overwrite [column] [table]	"ASSIGN([table], [column])"	1
+60	Assign to the fee.	Assign [column] [table]	"ASSIGN([table], [column])"	1
+61	Combine holiday and cleaning at the column cleaning id.	"Combine [,table] [column]"	"JOIN([,table], [column])"	1
+62	Attach the tables holiday and cleaning at the cleaning id.	"Attach [,table] [column]"	"JOIN([,table], [column])"	1
+63	Filter the medical certificates where the name is empty.	Filter [table] [condition]	"FILTER([table], [condition])"	3
+64	Create a web form from the table cleaning.	Create web form [table]	BIND FORM([table])	1
+65	Attach the faculty table to Bachelor Students.	Bind [table] [group]	"BIND GROUP([table], [group])"	1
+66	Bind faculty to students.	Bind [table] [group]	"BIND GROUP([table], [group])"	1
+67	Delete all rows from the time slots where the name is empty.	Delete rows [table] [condition]	"DELETE ROW([table], [condition])"	3
+68	Look for changes in the time slots.	Look [table]	LISTEN([table])	1
+69	Delete all the rows from the medical certificates where the date is today.	Delete rows [table] [condition]	"DELETE ROW([table], [condition])"	3
+70	Count the rows in the table time slots.	Count [table]	COUNT([table])	1
+71	Delete all entries in the cleaning table where the date is after today.	Delete rows [table] [condition]	"DELETE ROW([table], [condition])"	3
