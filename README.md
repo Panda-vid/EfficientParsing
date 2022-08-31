@@ -1,2 +1,2 @@
-# SmartCCG
-Semantic parser using Combinatory Categorial Grammars (CCGs) that learns new grammar rules by decompositional learning. Main work of a bachelors thesis in computer science. 
+# EfficientParsing
+Semantic parser for spreadsheet applications which is able to generalize new instances by Decomposition. Main project of a bachelors thesis in computer science. 
