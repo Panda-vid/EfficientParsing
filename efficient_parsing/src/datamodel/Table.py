@@ -25,6 +25,12 @@ class Table:
         dataframe = pd.read_csv(str(path), sep=";")
         return cls(dataframe, path.stem, application_context)
 
+    @classmethod
+    def create_test_table_instance(cls, columns: List[str], table_name: str, data: pd.DataFrame):
+        table_object = cls(data, table_name, table_name)
+        table_object.columns = [normalize(column_name) for column_name in columns]
+        return table_object
+
     def get_table_type(self, node: LiftableObjectDependencyTreeNode):
         if self.is_column(node):
             return TableType.COLUMN

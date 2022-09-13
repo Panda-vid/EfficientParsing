@@ -29,6 +29,7 @@ class Measurement:
                  reranker_attached_configurations: List[bool] = None,
                  abstractor_configurations: List[AbstractionType] = None,
                  resolver_embedding_types: List[EmbeddingType] = None,
+                 resolver_relative_not_sure_threshold: int = 2,
                  metric_learner_types: List[MetricLearnerType] = None,
                  bert_layer_types: List[BertKerasLayerType] = None,
                  table_embedder_bert_layer_types: List[BertKerasLayerType] = None,
@@ -43,7 +44,8 @@ class Measurement:
         self.false_prediction_data = pd.DataFrame()
         self.pipeline_test_inputs = self.create_pipeline_test_set(
             dataset_difficulties, reranker_attached_configurations, abstractor_configurations, resolver_embedding_types,
-            metric_learner_types, bert_layer_types, table_embedder_bert_layer_types, table_embedder_pooling_types,
+            resolver_relative_not_sure_threshold, metric_learner_types, bert_layer_types,
+            table_embedder_bert_layer_types, table_embedder_pooling_types,
             table_embedding_content_configurations, reranker_lambda_embedder_attachments, test_repetitions
         )
 
@@ -52,6 +54,7 @@ class Measurement:
                                  reranker_attached_configurations: List[bool],
                                  abstractor_configurations: List[AbstractionType],
                                  resolver_embedding_types: List[EmbeddingType],
+                                 resolver_relative_not_sure_threshold: int,
                                  metric_learner_types: List[MetricLearnerType],
                                  bert_layer_types: List[BertKerasLayerType],
                                  table_embedder_bert_layer_types: List[BertKerasLayerType],
@@ -64,6 +67,7 @@ class Measurement:
             reranker_attached_configurations=reranker_attached_configurations,
             abstractor_configurations=abstractor_configurations,
             resolver_embedding_types=resolver_embedding_types,
+            resolver_relative_not_sure_threshold=resolver_relative_not_sure_threshold,
             metric_learner_types=metric_learner_types,
             bert_layer_types=bert_layer_types,
             table_bert_layer_types=table_embedder_bert_layer_types,

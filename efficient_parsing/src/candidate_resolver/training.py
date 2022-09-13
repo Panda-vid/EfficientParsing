@@ -20,6 +20,7 @@ def create_and_train_model(
         embedding_function,
         self_attention: bool = False,
         metric_learner=None,
+        relative_not_sure_threshold: int = 4,
         regressor_num_epochs: int = 1,
         regressor_learning_rate: float = 1e-5,
         take_best_guess: bool = False):
@@ -37,7 +38,8 @@ def create_and_train_model(
                               nearest_neighbor_metric_learner=metric_learner,
                               take_best_guess=take_best_guess)
     max_positive_distance = train_model(model, embedded_dataset, 0, 1, regressor_num_epochs)
-    model.not_sure_threshold = max_positive_distance / 4
+    model.not_sure_threshold = max_positive_distance / relative_not_sure_threshold if relative_not_sure_threshold > 0 \
+        else float("inf")
     model.save()
     return model
 
@@ -102,7 +104,7 @@ def get_all_regressor_training_pairs_from(model: CandidateResolver):
                     1.0
                 ])
                 if distance > max_positive_distance:
-                    max_positive_distance =  distance
+                    max_positive_distance = distance
             else:
                 negative_train_examples.append([
                     euclidean_distance(feature_vector_i, feature_vector_j),

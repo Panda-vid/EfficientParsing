@@ -55,6 +55,7 @@ def create_resolver_model_from(resolver_dataset: pd.DataFrame,
                                utterance_embedding_type: EmbeddingType,
                                metric_learner_type: MetricLearnerType,
                                save_location: Path,
+                               relative_not_sure_threshold: int,
                                take_best_guess: bool = False):
     metric_learner = create_metric_learner(metric_learner_type)
     return candidate_resolver_training.create_and_train_model(
@@ -63,6 +64,7 @@ def create_resolver_model_from(resolver_dataset: pd.DataFrame,
         save_location,
         embedding_function_provider.select_embedding_function(utterance_embedding_type),
         metric_learner=metric_learner,
+        relative_not_sure_threshold=relative_not_sure_threshold,
         regressor_learning_rate=1e-3,
         take_best_guess=take_best_guess
     )

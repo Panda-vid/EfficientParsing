@@ -134,7 +134,7 @@ def abstractor_measurement():
         "abstractor_measurement", dataset_difficulties=data_difficulties,
         reranker_attached_configurations=reranker_attached, resolver_embedding_types=resolver_embedding_types,
         metric_learner_types=metric_learner_types, bert_layer_types=bert_layer_types,
-        abstractor_configurations=abstractor_types
+        abstractor_configurations=abstractor_types, resolver_relative_not_sure_threshold=4
     )
 
     measurement.run_tests()
@@ -154,11 +154,7 @@ def one_shot_generalization_test():
         reranker_attached_configurations=reranker_attached, resolver_embedding_types=resolver_embedding_types,
         metric_learner_types=metric_learner_types, bert_layer_types=bert_layer_types,
         abstractor_configurations=abstractor_types, test_repetitions=test_repetitions,
-        one_shot_generalization_test=True
+        one_shot_generalization_test=True, resolver_relative_not_sure_threshold=4
     )
 
     measurement.run_tests()
-
-
-if __name__ == '__main__':
-    one_shot_generalization_test()

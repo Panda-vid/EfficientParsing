@@ -50,7 +50,8 @@ class LiftableCaseDependencyTreeNode(LiftableDependencyTreeNode):
         return self.has_neighboring_value() or self.has_parent_value() or self.has_child_value()
 
     def has_neighboring_value(self) -> bool:
-        return all(LiftableValueDependencyTreeNode.isinstance(neighbor) for neighbor in self.get_neighbors())
+        return all(LiftableValueDependencyTreeNode.isinstance(neighbor) for neighbor in self.get_neighbors()) \
+               and len(self.get_neighbors()) > 0
 
     def has_child_value(self) -> bool:
         return all(LiftableValueDependencyTreeNode.isinstance(child) for child in self.children) \

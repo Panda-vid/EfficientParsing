@@ -25,6 +25,7 @@ class PipelineTestSetCreator:
                  reranker_attached_configurations: List[bool] = None,
                  abstractor_configurations: List[AbstractionType] = None,
                  resolver_embedding_types: List[EmbeddingType] = None,
+                 resolver_relative_not_sure_threshold: int = 2,
                  metric_learner_types: List[MetricLearnerType] = None,
                  bert_layer_types: List[BertKerasLayerType] = None,
                  table_bert_layer_types: List[BertKerasLayerType] = None,
@@ -39,6 +40,7 @@ class PipelineTestSetCreator:
         self.reranker_attached_configurations = reranker_attached_configurations
         self.abstractor_configurations = abstractor_configurations
         self.resolver_embedding_types = resolver_embedding_types
+        self.resolver_relative_not_sure_threshold = resolver_relative_not_sure_threshold
         self.metric_learner_types = metric_learner_types
         self.bert_layer_types = bert_layer_types
         self.table_bert_layer_types = table_bert_layer_types
@@ -111,7 +113,8 @@ class PipelineTestSetCreator:
                 embedding_function_provider,
                 resolver_argument_pack[1],
                 resolver_argument_pack[2],
-                save_location / "candidate_resolver"
+                save_location / "candidate_resolver",
+                relative_not_sure_threshold=self.resolver_relative_not_sure_threshold
             )
             condition_resolver = create_resolver_model_from(
                 condition_dataset,
@@ -120,7 +123,8 @@ class PipelineTestSetCreator:
                 resolver_argument_pack[1],
                 resolver_argument_pack[2],
                 save_location / "condition_resolver",
-                take_best_guess=True
+                take_best_guess=True,
+                relative_not_sure_threshold=0
             )
             candidate_reranker = self.create_reranker_model_if_necessary(
                 candidate_resolver, reranker_attached, reranker_dataset, reranker_argument_pack

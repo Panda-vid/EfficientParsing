@@ -47,7 +47,7 @@ def create_distance_histplot(
         data: pd.DataFrame,
         feature_column_name: str,
         label_column_name: str,
-        scorer
+        scorer,
 ):
     feature_vectors = data[feature_column_name]
     labels = data[label_column_name]

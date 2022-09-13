@@ -3,7 +3,7 @@ import tensorflow_hub as hub
 import tensorflow_text as text
 
 from typing import Dict
-from efficient_parsing.src.candidate_resolver.embedding.embedding_utils import apply_positional_encoding
+from src.candidate_resolver.embedding.embedding_utils import apply_positional_encoding
 from src.util.tfhub_utils import delete_matching_tfhub_cache
 
 
