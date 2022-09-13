@@ -15,3 +15,4 @@
 *.ipynb !text !filter !merge !diff
 *.txt !text !filter !merge !diff
 *.pdf !text !filter !merge !diff
+res/setup/lstm_parser_elmo.tar.gz filter=lfs diff=lfs merge=lfs -text
