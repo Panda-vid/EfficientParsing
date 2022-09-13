@@ -2,6 +2,7 @@ import unittest
 
 import pandas as pd
 
+from src.datamodel.Table import Table
 from src.entity_abstractor.Abstractor import Abstractor
 
 
@@ -19,38 +20,41 @@ class AbstractorTest(unittest.TestCase):
         sentence, subsentences = self.abstractor.extract_sentence_instances_from(string)
 
         self.assertEqual(0, len(sentence.values))
-        self.assertEqual(["students", "name", "surname", "mark", "id"], [obj.word for obj in sentence.objects])
+        self.assertEqual(["students", "name", "surname", "mark", "id"],
+                         [obj.word for pack in sentence.objects for obj in pack])
         self.assertEqual(0, len(sentence.cases))
         self.assertEqual("Create [table] [,column]", sentence.lifted())
-        self.assertEqual(0, len(subsentences))
+        self.assertEqual(1, len(subsentences))
 
     def test_abstractor_no_table_single_sentence_object_list_ungrammatical(self):
         string = "Create the table students containing the columns name surname mark and id."
         sentence, subsentences = self.abstractor.extract_sentence_instances_from(string)
 
-        self.assertEqual(0, len(subsentences))
-        self.assertNotEqual("Create [table] [,column]", sentence.lifted())
+        self.assertEqual(1, len(subsentences))
+        self.assertEqual("Create [table] [,column]", sentence.lifted())
+        self.assertNotEqual(["students", "name", "surname", "mark", "id"],
+                         [obj.word for pack in sentence.objects for obj in pack])
 
     def test_abstractor_table_single_sentence_condition(self):
         string = "Show all students which have passed the exam."
-        table = Table(["exam", "id"], "students", pd.DataFrame())
+        table = Table.create_test_table_instance(["exam", "id"], "students", pd.DataFrame())
         sentence, subsentences = self.abstractor.extract_sentence_instances_from(string)
 
-        self.assertEqual(0, len(subsentences))
+        self.assertEqual(1, len(subsentences))
         self.assertEqual(["passed"], [value.word for value in sentence.values])
-        self.assertEqual(["students", "exam"], [obj.word for obj in sentence.objects])
+        self.assertEqual(["students", "exam"], [obj.word for pack in sentence.objects for obj in pack])
         self.assertEqual(["have"], [case.word for case in sentence.cases])
-        self.assertEqual("Show [table] [case]", sentence.lifted(table))
-        self.assertEqual(["have [value] [column]"], sentence.case_lifted(table))
+        self.assertEqual("Show [table] [condition]", sentence.lifted(table))
+        self.assertEqual("have [value] [column]", sentence.case_lifted(table))
 
     def test_abstractor_table_no_condition(self):
-        string = "Select exam and id from students."
-        table = Table(["exam", "id"], "students", pd.DataFrame())
+        string = "From students select the exam and id."
+        table = Table.create_test_table_instance(["exam", "id"], "students", pd.DataFrame())
         sentence, subsentences = self.abstractor.extract_sentence_instances_from(string)
-        self.assertEqual(0, len(subsentences))
-        self.assertEqual(["exam", "id", "students"], [obj.word for obj in sentence.objects])
+        self.assertEqual(1, len(subsentences))
+        self.assertEqual(["students", "exam", "id"], [obj.word for pack in sentence.objects for obj in pack])
         print(sentence.case_lifted(table))
-        self.assertEqual("Select [,column] [table]", sentence.lifted(table))
+        self.assertEqual("[table] select [,column]", sentence.lifted(table))
 
 
 if __name__ == '__main__':
