@@ -21,6 +21,8 @@ jobs:
       run: |
         ./setup_venv.sh
         pip install flake8 pytest
+        pip install -U sphinx
+        pip install -U sphinx-autoapi
     - name: Lint with flake8
       run: |
         # stop the build if there are Python syntax errors or undefined names
