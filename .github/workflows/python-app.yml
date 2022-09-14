@@ -39,6 +39,5 @@ jobs:
         name: test-artifacts
         path: res/test
     - name: Test with pytest
-      working-directory: ./test
       run: |
         pytest
