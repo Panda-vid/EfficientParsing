@@ -18,7 +18,8 @@ jobs:
         python-version: '3.10'
     - name: Install dependencies
       run: |
-        pip install flake8 pytest
+        pip install flake8
+        pip install pytest
         ./setup_venv.sh
         pip install -U sphinx
         pip install -U sphinx-autoapi
