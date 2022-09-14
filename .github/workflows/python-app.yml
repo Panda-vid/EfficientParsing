@@ -18,7 +18,7 @@ jobs:
         python-version: '3.10'
     - name: Install dependencies
       run: |
-        sudo apt install gcc python3.10 python3-dev default-libmysqlclient-dev build-essential libpq-dev
+        sudo apt install gcc python3-dev default-libmysqlclient-dev build-essential libpq-dev
         pip install --upgrade pip
         pip install -r requirements.txt
         pip install depccg
