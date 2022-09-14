@@ -7,8 +7,13 @@ from src.entity_abstractor.Abstractor import Abstractor
 
 
 class AbstractorTest(unittest.TestCase):
-    def setUp(self) -> None:
-        self.abstractor = Abstractor()
+    @classmethod
+    def setUpClass(cls) -> None:
+        cls.abstractor = Abstractor()
+
+    @classmethod
+    def tearDownClass(cls) -> None:
+        cls.abstractor.stop_core_nlp_server()
 
     def test_abstractor_initialization(self):
         parse, = self.abstractor.dependency_parser.raw_parse("This is a test.")
