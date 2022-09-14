@@ -4,6 +4,7 @@ Main project of a bachelors thesis in computer science.
 
 ## Requirements:
 - Python 3.10
+- Java version 11 or newer
 - Ubuntu or Windows Subsystem for Linux
 
 ## Cloning the project:
