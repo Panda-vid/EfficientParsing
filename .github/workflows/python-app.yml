@@ -20,6 +20,8 @@ jobs:
       run: |
         sudo apt install gcc python3-dev default-libmysqlclient-dev build-essential libpq-dev
         pip install --upgrade pip
+        pip install flake8
+        pip install pytest
         pip install -r requirements.txt
         pip install depccg
         python -m nltk.downloader all
