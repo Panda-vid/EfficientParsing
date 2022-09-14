@@ -1,3 +1,7 @@
+"""
+This module contains the setups for each performance measurement from the thesis and is the interface for :py:module:`~efficient_parsing.do_measurement`.
+"""
+
 from src.candidate_reranker.configurables.reranker_configurable_enums import TableEmbedderPoolingType, \
     TableEmbeddingContent, LambdaEmbedderAttached
 from src.candidate_resolver.configurables.resolver_configurable_enums import EmbeddingType, MetricLearnerType, \
@@ -7,6 +11,10 @@ from src.evaluation.Measurement import Measurement
 
 
 def resolver_utterance_measurement():
+    """
+    Provides the setup for the resolver utterance measurement and runs it.
+    :return: None
+    """
     data_difficulties = [1, 2, 3]
     reranker_attached = [False]
     resolver_embedding_types = [EmbeddingType.MAX_POOLED]
@@ -21,6 +29,10 @@ def resolver_utterance_measurement():
 
 
 def resolver_postprocessing_measurement():
+    """
+    Provides the setup for the resolver utterance postprocessing measurement and runs it.
+    :return: None
+    """
     data_difficulties = [1, 2, 3]
     reranker_attached = [False]
     resolver_embedding_types = [embedding_type for embedding_type in EmbeddingType]
@@ -35,6 +47,10 @@ def resolver_postprocessing_measurement():
 
 
 def metric_learn_measurement():
+    """
+    Provides the setup for the resolver metric learning measurement and runs it.
+    :return: None
+    """
     data_difficulties = [1, 2, 3]
     reranker_attached = [False]
     resolver_embedding_types = [EmbeddingType.MAX_POOLED]
@@ -49,6 +65,10 @@ def metric_learn_measurement():
 
 
 def reranker_table_embedding_measurement():
+    """
+    Provides the setup for the reranker table embedding measurement and runs it.
+    :return: None
+    """
     data_difficulties = [1, 2, 3]
     reranker_attached = [True]
     lambda_embedder_attached = [LambdaEmbedderAttached.NO]
@@ -72,6 +92,10 @@ def reranker_table_embedding_measurement():
 
 
 def reranker_table_embedding_pooling_measurement():
+    """
+    Provides the setup for the reranker table embedding pooling measurement and runs it.
+    :return: None
+    """
     data_difficulties = [1, 2, 3]
     reranker_attached = [True]
     lambda_embedder_attached = [LambdaEmbedderAttached.NO]
@@ -98,6 +122,10 @@ def reranker_table_embedding_pooling_measurement():
 
 
 def reranker_lambda_embedder_attached_measurement():
+    """
+    Provides the setup for the reranker lambda embedding measurement and runs it.
+    :return: None
+    """
     data_difficulties = [1, 2, 3]
     reranker_attached = [True]
     lambda_embedder_attached = [LambdaEmbedderAttached.YES]
@@ -123,6 +151,10 @@ def reranker_lambda_embedder_attached_measurement():
 
 
 def abstractor_measurement():
+    """
+    Provides the setup for the abstractor measurement and runs it.
+    :return: None
+    """
     data_difficulties = [1, 2, 3]
     reranker_attached = [False]
     bert_layer_types = [BertKerasLayerType.ELECTRA_LARGE]
@@ -141,6 +173,10 @@ def abstractor_measurement():
 
 
 def one_shot_generalization_test():
+    """
+    Provides the setup for the one-shot generalization measurement and runs it.
+    :return: None
+    """
     data_difficulties = [3]
     reranker_attached = [False]
     bert_layer_types = [BertKerasLayerType.BERT_LARGE, BertKerasLayerType.ELECTRA_LARGE, BertKerasLayerType.BERT_SMALL]
