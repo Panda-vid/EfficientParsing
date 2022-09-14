@@ -25,6 +25,7 @@ jobs:
         pip install -U sphinx-autoapi
     - name: Lint with flake8
       run: |
+        source ./venv/bin/activate
         # stop the build if there are Python syntax errors or undefined names
         flake8 ./efficient_parsing ./test --count --select=E9,F63,F7,F82 --show-source --statistics
         # exit-zero treats all errors as warnings. The GitHub editor is 127 chars wide
@@ -34,6 +35,6 @@ jobs:
         name: test-artifacts
         path: res/test
     - name: Test with pytest
-      working-directory: ./test
       run: |
+        source ./venv/bin/activate
         pytest
