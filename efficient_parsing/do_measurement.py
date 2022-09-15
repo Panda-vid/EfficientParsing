@@ -54,7 +54,7 @@ def resolve_arguments(input_arguments) -> None:
     elif input_arguments.measurement == "reranker_lambda_embedding":
         do_reranker_lambda_embedding_measurement()
     elif input_arguments.measurement == "abstractor":
-        do_reranker_lambda_embedding_measurement()
+        do_abstractor_measurement()
     elif input_arguments.measurement == "generalization":
         do_one_shot_generalization_measurement()
 
