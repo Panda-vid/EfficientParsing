@@ -9,6 +9,8 @@ from src.entity_abstractor.Abstractor import Abstractor
 class AbstractorTest(unittest.TestCase):
     @classmethod
     def setUpClass(cls) -> None:
+        Abstractor.start_core_nlp_server()
+        Abstractor.wait_until_server_reachable()
         cls.abstractor = Abstractor()
 
     @classmethod

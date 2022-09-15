@@ -6,6 +6,7 @@ from src.candidate_reranker.configurables.reranker_configurable_enums import Tab
     TableEmbeddingContent, LambdaEmbedderAttached
 from src.candidate_resolver.configurables.resolver_configurable_enums import EmbeddingType, MetricLearnerType, \
     BertKerasLayerType
+from src.entity_abstractor.Abstractor import Abstractor
 from src.entity_abstractor.configurables.abstractor_configurable_enums import AbstractionType
 from src.evaluation.Measurement import Measurement
 
@@ -155,13 +156,14 @@ def abstractor_measurement():
     Provides the setup for the abstractor measurement and runs it.
     :return: None
     """
+    Abstractor.start_core_nlp_server()
+    Abstractor.wait_until_server_reachable()
     data_difficulties = [1, 2, 3]
     reranker_attached = [False]
     bert_layer_types = [BertKerasLayerType.ELECTRA_LARGE]
     resolver_embedding_types = [EmbeddingType.AVG_POOLED_POSITIONAL]
     metric_learner_types = [MetricLearnerType.LMNN]
     abstractor_types = [AbstractionType.DEPENDENCY, AbstractionType.MOCK]
-
     measurement = Measurement(
         "abstractor_measurement", dataset_difficulties=data_difficulties,
         reranker_attached_configurations=reranker_attached, resolver_embedding_types=resolver_embedding_types,
@@ -170,6 +172,7 @@ def abstractor_measurement():
     )
 
     measurement.run_tests()
+    Abstractor.stop_core_nlp_server()
 
 
 def one_shot_generalization_test():
