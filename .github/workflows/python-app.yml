@@ -40,4 +40,5 @@ jobs:
         path: res/test
     - name: Test with pytest
       run: |
-        pytest
+        # we deselect abstractor tests because they require a server to be started which doesn't to work here
+        pytest -k "not abstractor"
