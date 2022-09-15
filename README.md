@@ -1,3 +1,4 @@
+[![EfficientParsing](https://github.com/Panda-vid/EfficientParsing/actions/workflows/python-app.yml/badge.svg?branch=main)](https://github.com/Panda-vid/EfficientParsing/actions/workflows/python-app.yml)
 # EfficientParsing
 Semantic parser for spreadsheet applications which is able to generalize new instances by decomposition.   
 Main project of a bachelors thesis in computer science. 

@@ -24,8 +24,6 @@ class Abstractor:
     The sentence dependency parses are used by the Sentence class and other classes to annotate the words and lift the correct words for the abstraction mechanism.
     """
     def __init__(self):
-        self.start_core_nlp_server()
-        self.wait_until_server_reachable()
         self.dependency_parser = CoreNLPDependencyParser()
 
     @staticmethod
@@ -103,9 +101,6 @@ class Abstractor:
             word, word_type, parent_id, dependency = tuple(conll_line.split())
             res.append((word, word_type, int(parent_id), dependency))
         return res
-
-    def __del__(self):
-        self.stop_core_nlp_server()
 
     @staticmethod
     def stop_core_nlp_server():
