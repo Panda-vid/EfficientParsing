@@ -5,7 +5,9 @@ from typing import List, Callable, Any
 
 
 class LiftableDependencyTreeNode:
-
+    """
+    This parent class models any dependency tree node inside our liftable dependency tree.
+    """
     def __init__(self, node_id: int,
                  word: str,
                  word_type: str,
@@ -13,6 +15,16 @@ class LiftableDependencyTreeNode:
                  dependency: str,
                  depth=0,
                  children=None):
+        """
+
+        :param node_id:
+        :param word:
+        :param word_type: The word type e.g. VB verb etc..
+        :param parent_id: The parent node id.
+        :param dependency: The universal dependency associated with this word.
+        :param depth:
+        :param children:
+        """
         if children is None:
             children = []
 
@@ -28,17 +40,36 @@ class LiftableDependencyTreeNode:
 
     @staticmethod
     def isinstance(node: Any) -> bool:
+        """
+        Check whether input node is a dependency tree node.
+        :param node:
+        :return:
+        """
         return isinstance(node, LiftableDependencyTreeNode)
 
     def case_lifted(self, table=None) -> str:
+        """
+        Get the representation of the word corresponding to this node in the lifted condition string.
+        :param table: The active table in the parser's context.
+        :return:
+        """
         return self.lifted(table)
 
     def lifted(self, table=None) -> str:
+        """
+        Get the representation of the word corresponding to this node in the lifted string.
+        :param table: The active table in the parser's context.
+        :return:
+        """
         if self.dependency == "case":
             return self.word if self.parent.contains_case() else ""
         return self.word
 
     def nodes(self) -> List[LiftableDependencyTreeNode]:
+        """
+        All descendents of this node and the node itself.
+        :return:
+        """
         res = [self]
         for child in self.children:
             if child.is_leaf():
@@ -59,6 +90,10 @@ class LiftableDependencyTreeNode:
         return len(self.children) == 0
 
     def is_sentence_root(self) -> bool:
+        """
+        Check whether this node is the root of a liftable dependency tree.
+        :return:
+        """
         return self.parent == 0 and self.dependency == "ROOT"
 
     def is_oblique(self) -> bool:
@@ -68,6 +103,11 @@ class LiftableDependencyTreeNode:
         return isinstance(self.parent, LiftableDependencyTreeNode)
 
     def has_ancestor_with_property(self, property_function: Callable[[LiftableDependencyTreeNode], bool]) -> bool:
+        """
+        Check whether an ancestor has a property defined by the property function given to this method.
+        :param property_function:
+        :return:
+        """
         return any([property_function(ancestor) for ancestor in self.get_ancestors()])
 
     def get_ancestors(self) -> List[LiftableDependencyTreeNode]:
@@ -89,9 +129,17 @@ class LiftableDependencyTreeNode:
         return self.word
 
     def is_valid_condition(self) -> bool:
+        """
+        Check whether this node is a condition where an object is related to some value.
+        :return:
+        """
         return False
 
     def contains_case(self) -> bool:
+        """
+        Check whether this node contains a sentence case.
+        :return:
+        """
         return False
 
     def __eq__(self, other) -> bool:

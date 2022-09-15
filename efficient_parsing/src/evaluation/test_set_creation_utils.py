@@ -1,3 +1,6 @@
+"""
+This module provides helper functions for creating semantic parser pipelines and semantic parser pipeline test sets.
+"""
 from pathlib import Path
 from typing import Tuple
 
@@ -22,6 +25,12 @@ from src.entity_abstractor.configurables.abstractor_configurable_enums import Ab
 
 def get_resolver_representation_from_arguments(
         resolver_argument_pack: Tuple[BertKerasLayerType, EmbeddingType, MetricLearnerType]) -> str:
+    """
+    This function defines the name describing the resolver representation inside the .csv tables containing the accuracy measures.
+    The first argument describes the embedding language model the second argument describes the postprocessing method and the last argument signifies what type of metric learning is used.
+    :param resolver_argument_pack:
+    :return:
+    """
     return "({0}_{1}_metric_learner_{2})".format(
         resolver_argument_pack[0].name,
         resolver_argument_pack[1].name,
@@ -35,6 +44,15 @@ def get_reranker_representation_from_arguments(
             Tuple[BertKerasLayerType, TableEmbedderPoolingType, TableEmbeddingContent],
             LambdaEmbedderAttached
         ]) -> str:
+    """
+    This function defines the reranker representation inside the .csv tables containing the accuracy measures.
+    The first two slots contains table embedding language model name and table embedding pooling method.
+    The third slot signifies whether contents are included in the table embedding or not.
+    The last slot says whether the lambda embedder is attached or not.
+    :param reranker_attached:
+    :param reranker_argument_pack:
+    :return:
+    """
     table_input_pack, lambda_embedder_attached = reranker_argument_pack
     return "_reranker({0}_{1}_{2}_lambda_attached_{3})".format(
         table_input_pack[0].name,

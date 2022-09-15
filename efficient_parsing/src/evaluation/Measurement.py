@@ -6,8 +6,7 @@ from typing import List, Dict, NamedTuple, Iterable
 
 import numpy as np
 import pandas as pd
-from sklearn.metrics import accuracy_score, f1_score, precision_score, recall_score
-from tqdm import tqdm
+from sklearn.metrics import accuracy_score
 
 from src.candidate_reranker.configurables.reranker_configurable_enums import TableEmbedderPoolingType, \
     TableEmbeddingContent, LambdaEmbedderAttached
@@ -22,6 +21,9 @@ from src.util.Storage import Storage
 
 
 class Measurement:
+    """
+    This class defines some accuracy measurement done on a semantic parse pipeline test set.
+    """
     def __init__(self,
                  measurement_name: str,
                  one_shot_generalization_test: bool = False,
@@ -62,6 +64,22 @@ class Measurement:
                                  table_embedding_content_configurations: List[TableEmbeddingContent],
                                  reranker_lambda_embedder_attachments: List[LambdaEmbedderAttached],
                                  test_repetitions: int):
+        """
+        Retrieve the test set of semantic parser pipelines.
+        :param dataset_difficulties:
+        :param reranker_attached_configurations:
+        :param abstractor_configurations:
+        :param resolver_embedding_types:
+        :param resolver_relative_not_sure_threshold:
+        :param metric_learner_types:
+        :param bert_layer_types:
+        :param table_embedder_bert_layer_types:
+        :param table_embedder_pooling_types:
+        :param table_embedding_content_configurations:
+        :param reranker_lambda_embedder_attachments:
+        :param test_repetitions:
+        :return:
+        """
         pipeline_test_set_creator = PipelineTestSetCreator(
             dataset_difficulties=dataset_difficulties,
             reranker_attached_configurations=reranker_attached_configurations,
@@ -80,6 +98,11 @@ class Measurement:
 
     @staticmethod
     def create_measurement_directories_if_necessary(measurement_name: str):
+        """
+        Creates the directories where the accuracy scores and mistranslated instances are saved.
+        :param measurement_name:
+        :return:
+        """
         measurements_directory_path = Path(__file__).parents[3] / "res" / "measurements"
         if not measurements_directory_path.is_dir():
             measurements_directory_path.mkdir()
@@ -89,6 +112,10 @@ class Measurement:
         return measurement_directory_path
 
     def run_tests(self):
+        """
+        Run the measurement for all pipeline configurations in the pipeline test set.
+        :return:
+        """
         i = 1
         for pipeline_test_input in self.pipeline_test_inputs:
             self.measured_data = pd.concat(
@@ -109,6 +136,13 @@ class Measurement:
 
     def run_atomic_action_test(self, dataset_difficulty: int, pipeline_name: str,
                                semantic_parser_pipelines: Iterable[SemanticParserPipeline]) -> Dict[str, float]:
+        """
+        This method runs the atomic action test feeding inputs from the dataset to the semantic parser pipeline.
+        :param dataset_difficulty:
+        :param pipeline_name:
+        :param semantic_parser_pipelines:
+        :return:
+        """
         test_joined_data, test_condition_data = Storage().load_test_dataset(dataset_difficulty)
         accuracies = []
         for semantic_parser_pipeline in semantic_parser_pipelines:
@@ -137,6 +171,15 @@ class Measurement:
     def run_one_shot_generalization_test(self, dataset_difficulty: int, pipeline_name: str,
                                          semantic_parser_pipelines: Iterable[SemanticParserPipeline]) \
             -> Dict[str, float]:
+        """
+        This method implements the one-shot generalization test.
+        First it gives the unknown composites to the semantic parser pipeline measureing how many have been recognized as new.
+        Afterward, it retrains the semantic parser using decompositions from the dataset before checking how many compositions have been correctly generalized.
+        :param dataset_difficulty:
+        :param pipeline_name:
+        :param semantic_parser_pipelines:
+        :return:
+        """
         measured_dict = {}
         composition_data, composition_condition_data, atomic_action_data = Storage().load_one_shot_generalization_data()
         for semantic_parser_pipeline in semantic_parser_pipelines:
@@ -152,6 +195,13 @@ class Measurement:
     def train_programs_by_decomposition(self, semantic_parser_pipeline: SemanticParserPipeline,
                                         composition_data: pd.DataFrame,
                                         atomic_action_data: pd.DataFrame):
+        """
+        This method provides the semantic parser with the natural language decomposition from the compostion, and atomic action data.
+        :param semantic_parser_pipeline:
+        :param composition_data:
+        :param atomic_action_data:
+        :return:
+        """
         recognized = []
         for row in composition_data.itertuples(index=False):
             prediction = semantic_parser_pipeline.predict(row[0])
@@ -167,6 +217,15 @@ class Measurement:
     def test_new_composed_instances(self, semantic_parser_pipeline: SemanticParserPipeline,
                                     composition_data: pd.DataFrame, composition_recognition_list: List[bool],
                                     composition_condition_data: pd.DataFrame, pipeline_name: str):
+        """
+        In this method the parser checks whether the newly trained recognized composites are correctly generalized.
+        :param semantic_parser_pipeline:
+        :param composition_data:
+        :param composition_recognition_list:
+        :param composition_condition_data:
+        :param pipeline_name:
+        :return:
+        """
         predicted_programs = []
         correct_programs = []
         for row in composition_data.itertuples():
@@ -197,6 +256,13 @@ class Measurement:
     def train_semantic_parser_pipeline_using_decomposition(self, semantic_parser_pipeline: SemanticParserPipeline,
                                                            row: NamedTuple,
                                                            atomic_action_data: pd.DataFrame):
+        """
+        In this method the decomposition is given to the semantic parser for retraining.
+        :param semantic_parser_pipeline:
+        :param row:
+        :param atomic_action_data:
+        :return:
+        """
         decomposed_atomic_action_data = self.retrieve_decomposed_atomic_action_data(
             row[3], atomic_action_data
         )
@@ -208,6 +274,15 @@ class Measurement:
 
     def save_example_information_if_prediction_incorrect(self, predicted_program: str, correct_program: str,
                                                          data_row: NamedTuple, pipeline_name: str):
+        """
+        Add mistranslated instances to a .csv file containing the pipeline configuration,
+        the predicted program and the correct program as well as other information about the mistranslated instance like the difficulty.
+        :param predicted_program:
+        :param correct_program:
+        :param data_row:
+        :param pipeline_name:
+        :return:
+        """
         if predicted_program != correct_program:
             self.false_prediction_data = pd.concat(
                 [
@@ -228,6 +303,12 @@ class Measurement:
 
     @staticmethod
     def retrieve_correct_program(row: NamedTuple, condition_row: pd.Series):
+        """
+        Retrieve the correct DSL program for the parser to check against.
+        :param row:
+        :param condition_row:
+        :return:
+        """
         abstractor = MockAbstractor()
         lifted_instance, inputs, lifted_condition = abstractor.abstract(row.query)[0]
         grounded_program = FunctionTemplate.ground_lifted_program(
@@ -238,6 +319,12 @@ class Measurement:
     @staticmethod
     def retrieve_decomposed_atomic_action_data(decomposition_input_ids: List[int],
                                                atomic_action_data: pd.DataFrame) -> pd.DataFrame:
+        """
+        Retrieve the atomic action rows in the atomic action dataset corresponding to the decomposition of a given composition example.
+        :param decomposition_input_ids:
+        :param atomic_action_data:
+        :return:
+        """
         return atomic_action_data[atomic_action_data["input id"].isin(decomposition_input_ids)]
 
     @staticmethod
@@ -248,6 +335,11 @@ class Measurement:
 
     @staticmethod
     def remove_first_row_entry(row: NamedTuple) -> NamedTuple:
+        """
+        Remove the first row entry of a data row from the data set.
+        :param row:
+        :return:
+        """
         row_dict = row._asdict()
         del row_dict["Index"]
         old_keys = list(row_dict.keys())
@@ -259,6 +351,12 @@ class Measurement:
 
     @staticmethod
     def rename_anonymous_dict_key(dict_key: str):
+        """
+        Helper method to remove anonymous row keys from the dataset row.
+        Anonymous row keys have the following form: _[0-9A-Za-z], meaning an underscore in front of a number or letter
+        :param dict_key:
+        :return:
+        """
         if "_" == dict_key[0]:
             new_number = int(dict_key[-1]) - 1
             dict_key = dict_key.replace(dict_key[-1], str(new_number))

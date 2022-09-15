@@ -6,6 +6,9 @@ from src.candidate_reranker.lambda_calculus_embedding.lambda_embedding_function_
 
 
 class LambdaEmbedder:
+    """
+    This class implements the bag-of-features lambda embedding described in the thesis.
+    """
     def __init__(
             self,
             dataset,
@@ -13,6 +16,13 @@ class LambdaEmbedder:
             lambda_embedder_function,
             lambda_annotator_function,
             no_hit_included):
+        """
+        :param dataset:
+        :param label_column_name:
+        :param lambda_embedder_function:
+        :param lambda_annotator_function:
+        :param no_hit_included: This parameter describes whether an additional dimension should be included in the lambda calculus embedding counting unhit abstractions (abstractions which have not yet been seen) in the embedding.
+        """
         self.dataset = dataset
         self.label_column_name = label_column_name
         self.lambda_annotator_function = lambda_annotator_function
@@ -37,6 +47,9 @@ class LambdaEmbedder:
 
 
 class Builder:
+    """
+    For a better understanding of the hyperparameters please refer to the Github of the depccg parser linked in the README file.
+    """
     def __init__(self):
         self.lambda_embedder_dataset = None
         self.label_column_name = None

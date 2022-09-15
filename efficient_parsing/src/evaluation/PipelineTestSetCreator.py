@@ -20,6 +20,9 @@ from src.util.Storage import Storage
 
 
 class PipelineTestSetCreator:
+    """
+    This class creates semantic parser pipeline test set by iterating through lists of configurables defined in the configurable packages of each subsystem.
+    """
     def __init__(self,
                  dataset_difficulties: List[int] = None,
                  reranker_attached_configurations: List[bool] = None,

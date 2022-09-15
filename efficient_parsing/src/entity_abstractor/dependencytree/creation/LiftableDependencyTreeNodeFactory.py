@@ -12,6 +12,9 @@ from src.entity_abstractor.dependencytree.nodes.LiftableValueDependencyTreeNode 
 
 
 class LiftableDependencyTreeNodeFactory:
+    """
+    This class decides which dependency node type gets assigned to the words in a given sentence.
+    """
     def __init__(self, object_dependency_tokens: List[str],
                  value_dependency_tokens: List[str],
                  stopword_dependency_tokens: List[str],
@@ -21,6 +24,18 @@ class LiftableDependencyTreeNodeFactory:
                  case_dependency_token: str,
                  auxilliary_dependency_token: str,
                  root_token: str):
+        """
+
+        :param object_dependency_tokens: List of universal dependencies corresponding to object nodes.
+        :param value_dependency_tokens: List of universal dependencies corresponding to value nodes.
+        :param stopword_dependency_tokens: List of universal dependencies corresponding to stopword nodes.
+        :param oblique_dependency_token: List of universal dependencies corresponding to oblique dependencies.
+        :param compound_dependency_token: List of universal dependencies corresponding to compound nodes.
+        :param conjunction_dependency_token: List of universal dependencies corresponding to conjunctions.
+        :param case_dependency_token: List of universal dependencies corresponding to case nodes.
+        :param auxilliary_dependency_token: List of universal dependencies corresponding to auxilliary dependencies.
+        :param root_token:
+        """
         self.object_dependency_tokens = object_dependency_tokens
         self.value_dependency_tokens = value_dependency_tokens
         self.stopword_dependency_tokens = stopword_dependency_tokens
@@ -33,6 +48,10 @@ class LiftableDependencyTreeNodeFactory:
 
     @classmethod
     def get_default_instance(cls):
+        """
+        Create a Factory using the default lists of dependencies.
+        :return:
+        """
         object_dependency_tokens = ["obj", "appos", "nmod"]
         value_dependency_tokens = ["nummod", "amod", "acl:relcl"]
         stopword_dependency_tokens = ["det", "nsubj", "punct", "cc", "acl"]
@@ -61,6 +80,12 @@ class LiftableDependencyTreeNodeFactory:
 
     def create_node(self, parent_node: LiftableDependencyTreeNode, node_data: Tuple[int, str, str, int, str, int])\
             -> Tuple[LiftableDependencyTreeNode, LiftableDependencyTreeNode]:
+        """
+        Create a node and give the correct type according to the dependency parse structure.
+        :param parent_node:
+        :param node_data:
+        :return:
+        """
         node_id, word, word_type, parent_id, dependency, depth = node_data
         if self.is_object_dependency(dependency):
             node = LiftableObjectDependencyTreeNode(node_id, word, word_type, parent_id, dependency, depth)
@@ -90,6 +115,18 @@ class LiftableDependencyTreeNodeFactory:
     def resolve_auxilliary_dependency(self, parent_node: LiftableDependencyTreeNode,
                                       node_id: int, word: str, word_type: str, parent_id: int, dependency: str,
                                       depth: int) -> LiftableDependencyTreeNode:
+        """
+        Find correct node type for a word with auxilliary dependency.
+        This can either be a case node if the parent node is a value or a stopword if the parent is not a value node.
+        :param parent_node:
+        :param node_id:
+        :param word:
+        :param word_type:
+        :param parent_id:
+        :param dependency:
+        :param depth:
+        :return:
+        """
         if LiftableValueDependencyTreeNode.isinstance(parent_node):
             node = LiftableCaseDependencyTreeNode(node_id, word, word_type, parent_id, dependency, depth)
         else:
@@ -99,6 +136,17 @@ class LiftableDependencyTreeNodeFactory:
     def resolve_conjunction_dependency(self, parent_node: LiftableDependencyTreeNode,
                                        node_id: int, word: str, word_type: str, parent_id: int, dependency: str,
                                        depth: int) -> LiftableDependencyTreeNode:
+        """
+        Inherit the node type of the conjunction head in the dependency parse.
+        :param parent_node:
+        :param node_id:
+        :param word:
+        :param word_type:
+        :param parent_id:
+        :param dependency:
+        :param depth:
+        :return:
+        """
         if LiftableObjectDependencyTreeNode.isinstance(parent_node):
             node = LiftableObjectDependencyTreeNode(node_id, word, word_type, parent_id, dependency, depth)
         elif LiftableCaseDependencyTreeNode.isinstance(parent_node):

@@ -1,3 +1,6 @@
+"""
+This module provides different scoring functions for the nearest neighbor search.
+"""
 import numpy as np
 
 

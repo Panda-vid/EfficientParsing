@@ -10,6 +10,11 @@ from src.candidate_resolver.NearestNeighbors import NearestNeighbors
 
 
 class CandidateResolver:
+    """
+    The candidate resolver consists of an embedding function a nearest neighbor search and a regression.
+    The nearest neighbor search finds program templates by looking at trained corresponding lifted utterances comparing it with the embedded lifted input utterance.
+    The regression assigns the distances found in the nearest neighbor search a corresponding probability that the distance belongs to a pair of lifted utterances with the same program template.
+    """
     def __init__(self,
                  embedding_function,
                  regressor: tf.keras.Model,
@@ -80,6 +85,13 @@ class CandidateResolver:
                                                       embedded_dataframe: pd.DataFrame,
                                                       feature_column_index: int,
                                                       label_column_index: int):
+        """
+        Save the feature vectors of the embedded utterances and their respective dsl programs internally.
+        :param embedded_dataframe:
+        :param feature_column_index:
+        :param label_column_index:
+        :return:
+        """
         self.add_feature_vectors_and_dsl_programs_from(embedded_dataframe, feature_column_index, label_column_index)
         self.train_metric_if_required()
 

@@ -13,6 +13,11 @@ from src.util.Storage import Storage
 
 
 class CandidateReranker:
+    """
+    The candidate reranker reranks the given outputs after the combination step.
+    It does that by embedding the table information and input utterance jointly, embedding a lambda calculus parse made by another parser and the original output probability.
+    All embeddings get concatenated and fed to a feedforward neural network.
+    """
     def __init__(self,
                  table_embedder: TableEmbedder,
                  lambda_embedder: LambdaEmbedder,

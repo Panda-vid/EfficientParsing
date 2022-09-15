@@ -1,3 +1,7 @@
+"""
+This model provides functions to interface with the external lambda calculus parser.
+"""
+
 import depccg.parsing
 
 from depccg.instance_models import load_model
@@ -6,12 +10,6 @@ from depccg.annotator import english_annotator, annotate_XX, logger
 from depccg.printer import to_string
 from depccg.tree import *
 from depccg.allennlp.utils import read_params
-
-
-"""
-    To setup the functionality of this interface enter into terminal the following: 
-    python -m spacy download en_core_web_sm
-"""
 
 
 def setup_model(annotator: str = "spacy", language: str = "en", unary_penalty: float = 0.1,

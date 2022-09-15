@@ -9,6 +9,10 @@ from src.util.Storage import Storage
 
 
 class MockAbstractor:
+    """
+    This class provides a perfect abstraction mechanism to measure the impact of abstraction on parse performance.
+    For this it uses the dataset which provides all inputs and the lifted instance for a given utterance.
+    """
     def __init__(self):
         storage = Storage()
         self.input_data, self.condition_data = storage.load_abstraction_recombination_data()
@@ -17,10 +21,21 @@ class MockAbstractor:
 
     @classmethod
     def abstract_utterance(cls, utterance: str) -> List[Tuple[str, Dict[str, Any], str]]:
+        """
+        Abstract a given utterance without initializing a class instance manually.
+        :param utterance:
+        :return:
+        """
         abstractor = MockAbstractor()
         return abstractor.abstract(utterance)
 
     def abstract(self, utterance: str, table: Table = None) -> List[Tuple[str, Dict[str, Any], str]]:
+        """
+        Abstract a given natural language utterance.
+        :param utterance: The natural language utterance
+        :param table: The table on which the operation is done
+        :return lifted_string, extracted_inputs, lifted_condition: The lifted string, all recognized inputs in a dict and the lifted condition if one exists.
+        """
         filtered_data_set_example = self.input_data[self.input_data["query"] == utterance]
         if len(filtered_data_set_example.index) != 0:
             lifted_condition, condition_inputs = self.get_condition_input_if_possible(filtered_data_set_example)
@@ -37,6 +52,11 @@ class MockAbstractor:
 
     def get_condition_input_if_possible(self, filtered_data_set_example: pd.Series) \
             -> Tuple[str, List[Tuple[str, str]]]:
+        """
+        Finds the lifted condition as well as the respective inputs of this condition.
+        :param filtered_data_set_example:
+        :return lifted_condition, condition_inputs: The condition inputs are a list of dictionaries which have DSL data type identifiers as keys and the respective value for this data type from the natural language instance as values.
+        """
         if filtered_data_set_example["condition id"].values[0] != -1:
             filtered_data_set_example = filtered_data_set_example.merge(
                 self.condition_data[
@@ -47,6 +67,11 @@ class MockAbstractor:
         return None, None
 
     def get_composition_condition_input_if_possible(self, filtered_data_set_example: pd.Series):
+        """
+        Does the same as the function above but looks in the composite dataset rather than the atomic action dataset.
+        :param filtered_data_set_example:
+        :return lifted_condition, condition_inputs:
+        """
         if filtered_data_set_example["condition id"].values[0] != -1:
             filtered_data_set_example = filtered_data_set_example.merge(
                 self.composition_condition_data[
@@ -59,6 +84,11 @@ class MockAbstractor:
 
     @staticmethod
     def extract_condition_data(filtered_data_set_example: pd.Series):
+        """
+        Extracts the pertinent information for abstraction from a dataset row.
+        :param filtered_data_set_example: the dataset row corresponding to the utterance given.
+        :return lifted_condition, condition_inputs:
+        """
         lifted_condition = filtered_data_set_example["Lifted condition"].values[0]
         column_condition_inputs = filtered_data_set_example["condition column"].values[0]
         value_condition_inputs = filtered_data_set_example["condition value"].values[0]
@@ -75,6 +105,13 @@ class MockAbstractor:
     def pack_inputs(column_input: List[List[str]],
                     table_input: List[List[str]],
                     condition_input: List[Dict[str, str]]) -> Dict[str, Any]:
+        """
+        Creates a dictionary containing the DSL data types as keys and the respective values for this data type as values in a list of list for each discrete input in the input utterance.
+        :param column_input: Input values corresponding to the 'column' DSL data type.
+        :param table_input: Input values corresponding to the 'table' DSL data type.
+        :param condition_input: Input dictionaries corresponding to the 'column' DSL data type.
+        :return input_dict: the input dictionary for the candidate programs
+        """
         res = {}
         if len(column_input) > 0:
             res[TableType.COLUMN.value] = column_input

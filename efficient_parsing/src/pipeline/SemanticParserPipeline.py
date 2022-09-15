@@ -16,6 +16,10 @@ from src.util.Storage import Storage
 
 
 class SemanticParserPipeline:
+    """
+    This class combines all subsystems of the semantic parser and defines the retraining of these systems.
+    An overview of the structure can be found in the thesis.
+    """
     def __init__(self,
                  entity_abstractor: Abstractor | MockAbstractor,
                  candidate_resolver: CandidateResolver,
@@ -195,11 +199,3 @@ class SemanticParserPipeline:
             )
         ]
         return Storage().get_matching_tables([table_names])
-
-    def save(self):
-        # TODO: save model pipeline
-        pass
-
-    def load(self):
-        # TODO: load model pipeline
-        pass

@@ -13,6 +13,10 @@ class Multiplicity(Enum):
 
 
 class FunctionTemplate:
+    """
+    Grounds program templates by filling in the inputs extracted by the abstractor.
+    (e.g., SELECT([table], [,column]) -> SELECT(['time_slots'], ['date']))
+    """
     def __init__(self, lifted_program: str, lifted_condition: str = None):
         self.assigment = self.extract_assignment(lifted_program)
         self.standard_fill_tuples = self.extract_standard_fill_tuples_from(self.assigment)
@@ -31,6 +35,14 @@ class FunctionTemplate:
 
     @staticmethod
     def extract_assignment(output_function_template: str) -> Dict[Tuple[str, int], Tuple[List[int], Multiplicity]]:
+        """
+        Get the function signature of a given template by finding all DSL type placeholders and creating a dict describing the signature.
+        The signature dict contains keys with the DSL type and a number describing which input of the type it is, if there are multiple input lists of the same type.
+        The values are the position inside the function template format string which gets filled and the multiplicity of the input.
+        (e.g., {(column, 0): (0, single), (table, 0): (1, single), (column, 1): (2, multiple)})
+        :param output_function_template:
+        :return assignment:
+        """
         assignment = {}
         for position, input_parameter_information \
                 in enumerate(FunctionTemplate.extract_input_signature(output_function_template)):
@@ -44,6 +56,11 @@ class FunctionTemplate:
     @staticmethod
     def extract_standard_fill_tuples_from(assignment: Dict[Tuple[str, int], Tuple[List[int], Multiplicity]]) \
             -> Tuple[int, str]:
+        """
+        This enables partial grounding by introducing another assignment dict which corresponds to filling the placeholders inside the program template format string.
+        :param assignment: The function template input signature.
+        :return:
+        """
         standard_fill_tuples = []
         for (table_type, number), (position, multiplicity) in assignment.items():
             multiplicity_token = "" if multiplicity == Multiplicity.SINGLE else ","
@@ -57,6 +74,13 @@ class FunctionTemplate:
     def create_output_function_template_from(lifted_functions: str,
                                              assignment: Dict[Tuple[str, int], Tuple[List[int], Multiplicity]])\
             -> str:
+        """
+        This method creates a format string for the given function template.
+        (e.g. "SELECT([table], [,column])" -> "SELECT({0}, {1})")
+        :param lifted_functions:
+        :param assignment: The function template input signature.
+        :return:
+        """
         for key, value in assignment.items():
             table_type, type_pack_number = key
             template_positions, multiplicity = value
@@ -71,17 +95,35 @@ class FunctionTemplate:
 
     @staticmethod
     def extract_input_signature(output_function_template: str) -> Iterable[Tuple[str, int, Multiplicity]]:
+        """
+        Find all DSL type tags and extract the input signature for a single match of the DSL type tag inside the function template.
+        :param output_function_template:
+        :return:
+        """
         for match in re.finditer(r"\[(,)?(.+?)(\d)?]", output_function_template):
             yield FunctionTemplate.extract_input_parameter_information_from(match)
 
     @staticmethod
     def extract_input_parameter_information_from(match: re.Match) -> Tuple[str, int, Multiplicity]:
+        """
+        Extract the input signature for a single match of the DSL type tag inside the function template.
+        If a comma is found inside the tag, the multiplicity is 'multiple' else its single.
+        The remaining text inside the tag corresponds to a DSL input type.
+        :param match:
+        :return:
+        """
         multiplicity = Multiplicity.MULTIPLE if match.group(1) == "," else Multiplicity.SINGLE
         table_type = match.group(2)
         number = int(match.group(3)) if match.group(3) is not None else 0
         return table_type, number, multiplicity
 
     def resolve_input(self, inputs: Dict[str, Any]):
+        """
+        Fill the format string with the inputs from the entity abstractor.
+        If input types are found which cannot be found inside the function signature return an empty string.
+        :param inputs:
+        :return:
+        """
         function_template_fill_tuples = []
         for table_type, values in inputs.items():
             for pack_number, value_pack in enumerate(values):
@@ -109,6 +151,13 @@ class FunctionTemplate:
                                            input_table_type: str,
                                            input_pack_number: int,
                                            value_pack: List[str]) -> Tuple[int, str]:
+        """
+        Creates an input signature for a condition the same way it is being done for the function template.
+        :param input_table_type:
+        :param input_pack_number:
+        :param value_pack:
+        :return:
+        """
         positions = self.get_positions_in_template_of_input(input_table_type, input_pack_number)
         return [
             (
@@ -122,6 +171,11 @@ class FunctionTemplate:
         ]
 
     def get_grounded_condition(self, value_pack: Dict[str, str] | List[Dict[str, str]]) -> Tuple[int, str]:
+        """
+        Ground a condition template. The implementation is analogous to the implementation for function templates.
+        :param value_pack:
+        :return:
+        """
         condition_template_fill_tuples = []
         if isinstance(value_pack, list):
             for condition_pair_number, condition_input in enumerate(value_pack):

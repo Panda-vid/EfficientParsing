@@ -17,23 +17,38 @@ from src.entity_abstractor.dependencytree.creation.LiftableDependencyTreeNodeFac
 
 
 class Abstractor:
+    """
+    This class abstracts natural language utterances by removing the pertinent objects from a sentence and inserting DSL data types in their place.
+    (e.g.: Create the table time slots. -> Create [table])
+    To do this, the class starts a Stanford CoreNLP server which provides dependency parses to the abstraction system.
+    The sentence dependency parses are used by the Sentence class and other classes to annotate the words and lift the correct words for the abstraction mechanism.
+    """
     def __init__(self):
         self.start_core_nlp_server()
         self.wait_until_server_reachable()
         self.dependency_parser = CoreNLPDependencyParser()
 
     @staticmethod
-    def start_core_nlp_server():
+    def start_core_nlp_server() -> None:
+        """
+        Starts the Stanford CoreNLP server in this project.
+        :return:
+        """
         server_path = Path(__file__).parents[3] / "res" / "abstraction" / "stanford-corenlp-4.2.2"
         command = "java -mx4g -cp '*' edu.stanford.nlp.pipeline.StanfordCoreNLPServer " + \
-                  "-preload tokenize,ssplit,pos,lemma,ner,parse,depparse -status_port 9000 -port 9000 -timeout 15000 &"
+                  "-preload tokenize,ssplit,pos,lemma,ner,parse,depparse -status_port 9000 -port 9000 -timeout 50000 &"
         subprocess.Popen(
             shlex.split(command),
             stdout=subprocess.PIPE, cwd=server_path
         )
 
     @staticmethod
-    def wait_until_server_reachable():
+    def wait_until_server_reachable() -> None:
+        """
+        This method checks if the server is reachable by trying to obtain a dependency parse for the sentence:
+        "The quick brown fox jumped over the lazy dog."
+        :return:
+        """
         response_code = 0
         while response_code != 200:
             time.sleep(5)
@@ -44,13 +59,25 @@ class Abstractor:
                 ).status_code
             except ConnectionError as error:
                 pass
+        time.sleep(10)
 
     def abstract(self, utterance: str, table: Table) -> List[Tuple[str, Dict[str, Any], str]]:
+        """
+        Abstract a given natural language utterance.
+        :param utterance: The natural language utterance
+        :param table: The table on which the operation is done
+        :return lifted_string, extracted_inputs, lifted_condition: The lifted string, all recognized inputs in a dict and the lifted condition if one exists.
+        """
         sentence, subsentences = self.extract_sentence_instances_from(utterance)
         return [sentence.abstract(table)] if len(subsentences) == 0 \
             else [subsentence.abstract(table) for subsentence in subsentences]
 
     def extract_sentence_instances_from(self, utterance: str) -> Tuple[Sentence, List[Sentence]]:
+        """
+        Finds all subsentences and creates Sentence instances from them.
+        :param utterance: The natural language utterance
+        :return whole_sentence, subsentences: The sentence instances for both the whole sentence and all subsentences.
+        """
         raw_nodes = self.extract_raw_dependency_parse_nodes_from(utterance)
         dependency_tree_creator = LiftableDependencyTreeCreator(raw_nodes, LiftableDependencyTreeNodeFactory
                                                                 .get_default_instance())
@@ -65,6 +92,11 @@ class Abstractor:
         )
 
     def extract_raw_dependency_parse_nodes_from(self, utterance: str) -> List[Tuple[str, str, int, str]]:
+        """
+        Translates the dependency parse in the conll format to tuples which can be translated by the system to dependency tree nodes.
+        :param utterance:
+        :return:
+        """
         parse, = self.dependency_parser.raw_parse(utterance)
         res = []
         for pos, conll_line in enumerate(parse.to_conll(4).split("\n")[:-1]):
@@ -77,6 +109,10 @@ class Abstractor:
 
     @staticmethod
     def stop_core_nlp_server():
+        """
+        Stops the Core NLP server.
+        :return:
+        """
         url = "http://localhost:9000/shutdown?"
         shutdown_key = subprocess.getoutput("cat /tmp/corenlp.shutdown")
         requests.post(url, data="", params={"key": shutdown_key})
